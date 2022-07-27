@@ -1,0 +1,167 @@
+@import url(/css/theme/fonts.css);
+@import url(/css/theme/color.css);
+@import url(/css/theme/reset.css);
+@import url(/css/customization/layout.css);
+@import url(/css/customization/sizing.css);
+@import url(/css/customization/spacing.css);
+@import url(/css/customization/typrography.css);
+
+*, body {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    box-sizing: border-box;
+    color: var(--primary-color);
+}
+
+body {
+    display: block;
+}
+
+/* navigation */
+button:hover {
+    cursor: pointer;
+}
+a {
+    text-decoration-line: none;
+}
+
+.nav_logo {
+    width: 120px;
+    height: 47px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.nav_logo > img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav_menu {
+    width: 415px;
+    height: 48px;
+}
+.menu_list {
+    width: 100%;
+    height: 100%;
+}
+.menu_list > li > a {
+    text-decoration-line: none;
+    position: relative;
+    box-sizing: border-box;
+}
+.menu_list > .item > a::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.25s linear;
+    box-sizing: border-box;
+}
+.menu_list > .item > a:hover::after {
+    width: 100%;
+}
+.menu_list > li > a:hover {
+    color: var(--primary-color);
+}
+.menu_list > li > .menu_home {
+    color: var(--primary-color);
+}
+.menu_list > li > .menu_home::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.nav_btn {
+    width: 602px;
+}
+.nav_search {
+    width: 310px;
+    height: 50px;
+}
+.nav_search > input {
+    width: 210px;
+}
+.nav_search > img {
+    width: 20.05px;
+    height: 20.05px;
+}
+
+.login_btn {
+    width: 118px;
+    height: 51px;
+}
+
+.signup_btn {
+    width: 150px;
+    height: 51px;
+}
+
+/* banner */
+.banner {
+    margin: 0 auto;
+    max-width: 1620px;
+    height: 708px;
+}
+
+.banner_text {
+    width: 628px;
+    height: 468px;
+}
+.text_title {
+    width: 100%;
+    height: 234px;
+}
+.text_desc {
+    width: 100%;
+    height: 42px;
+}
+.play_btn:hover {
+    box-shadow: rgba(62,53,120, 0.2) 0px 19px 29px 0px;
+}
+
+.banner_image {
+    width: 912px;
+    height: 718px;
+    background-image: url(/assets/images/heroImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.brand_logo {
+    margin: 0 auto;
+    max-width: 1620px;
+    height: auto;
+    padding: 100px 0px;
+}
+.client_logo {
+    margin: 0 auto;
+    max-width: 1380px;
+    height: 51px;
+}
+
+.steps_card:hover {
+    box-shadow: 0px 19px 29px 0px rgba(62,53,120, 0.14);
+}
+
+.whychooseus_card_item:hover {
+    box-shadow: 0px 19px 29px 0px rgba(62,53,120, 0.14);
+}
+
+.cardprofile:hover {
+    box-shadow: 0px 19px 29px 0px rgba(62,53,120, 0.14);
+}
+
+.steps_desc {
+    display: none;
+}

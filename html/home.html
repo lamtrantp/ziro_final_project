@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/js/index.js" defer></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <div class="container w-1-1 h-auto">
+
+        <!-- HEADER -->
+
+        <div class="nav flex flex-row justify-between items-center w-1-1 h-99 bg-white-lilac-50">
+
+            <div class="nav_main flex flex-row justify-between m-0-auto px-40 w-1620 h-51">
+
+                <a class="nav_logo " href="/html/home.html"><img src="/assets/icons/logo.svg" alt=""></a>
+
+                <div class="nav_menu">
+                    <ul class="menu_list flex flex-row justify-between items-center">
+                        <li><a class="menu_home py-12 text-base leading-24 text-secondary-color" href="/html/home.html">Home</a></li>
+                        <li class="item"><a class="menu_pricing py-12 text-base leading-24 text-secondary-color" href="#pricing_plan">Pricing</a></li>
+                        <li class="item"><a class="menu_blog py-12 text-base leading-24 text-secondary-color" href="/html/eventlist.html">Blog</a></li>
+                        <li class="item"><a class="menu_becom py-12 text-base leading-24 text-secondary-color" href="/html/joblist.html">Become a member</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav_btn flex flex-row justify-between items-center">
+                    <div class="nav_search flex flex-row justify-between items-center mx-30 bg-third rounded-37">
+                        <input type="text" class="border-none font-open-sans text-lg leading-24_5 text-secondary-color outline-none" id="" placeholder="Search here">
+                        <img src="/assets/icons/search.svg" alt="">
+                    </div>
+                    <button class="login_btn text-lg font-semibol leading-27 text-secondary-color bg-titan-white-50 rounded-37 border-none">Log in</button>
+                    <button class="signup_btn text-lg font-semibol leading-27 text-third-color bg-primary rounded-37 border-none">Sign up</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BANNER -->
+
+        <div class="main_banner w-1-1 h-auto bg-white-lilac-50">
+            <div class="banner flex flex-row justify-between items-center px-40">
+                <div class="banner_text">
+                    <div class="text_title font-semibol leading-80 text-6xl">
+                        <span class="text-secondary-color">Find out</span>
+                        <span class="text-primary-color">talented freelancer</span>
+                        <span class="text-secondary-color">with better review faster</span>
+                    </div>
+                    <div class="text_desc text-sm leading-21 text-secondary-color pr-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="text_btn flex flex-row justify-start items-center w-1-1 h-51 mt-68">
+                        <button class="w-181 h-51 mr-20 font-semibol text-base leading-24 text-third-color bg-primary rounded-37 border-none">Discover Now</button>
+                        <a class=" flex flex-row justify-between items-center h-1-1 w-172" href="https://www.youtube.com/embed/pj5LRL3nwBg" target="_top">
+                            <div class="play_btn w-51 h-1-1 rounded-1_2 border-1-titan-white-50 bg-third flex flex-row justify-center items-center"><img class="w-20 h-20" src="/assets/icons/play_btn.svg" alt=""></div>
+                            <span class="font-medium text-base leading-24 text-secondary-color">Watch Video</span>
+                        </a>
+                    </div>
+                    <div class="w-1-1 h-6 mt-60 flex flex-row justify-start">
+                        <div class="w-45 h-1-1 rounded-3 bg-primary mr-20"></div>
+                        <div class="w-25 h-1-1 rounded-3 bg-perfume-200"></div>
+                    </div>
+                </div>
+                <div class="banner_image"></div>
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+
+        <div class="content w-1-1 h-auto">
+
+            <div class="brand_logo">
+                <div class="client_logo flex flex-row justify-between items-center">
+                    <img src="/assets/icons/client1.svg" alt="">
+                    <img src="/assets/icons/client2.svg" alt="">
+                    <img src="/assets/icons/client3.svg" alt="">
+                    <img src="/assets/icons/client4.svg" alt="">
+                    <img src="/assets/icons/client5.svg" alt="">
+                </div>
+            </div>
+
+            <div class="steps mt-43 max-w-1620 h-878 p-60-28 m-0-auto">
+                <div class="flex flex-row justify-between w-1-1 h-1-1">
+                    <div class="flex flex-col w-652 h-1-1 px-12">
+                        <div class="font-open-sans text-19 leading-28_5 self-start">How it works</div>
+                        <h1 class="text-46 leading-69 font-semibol text-secondary-color mt-12">Start find a job you love with us easily</h1>
+
+                        <div class="flex flex-col w-1-1 h-486 mt-43">
+                            <div id="steps_card" class="steps_card w-1-1 h-120 p-20 flex flex-row justify-between rounded-20 shadow-blue-bell-500">
+                                <div class="w-80 h-80 pt-13 rounded-24 font-semibol text-4xl leading-54 text-center bg-blue-chalk-100 text-purpe-heart">1</div>
+                                <div class="w-484 flex flex-col justify-center">
+                                    <div class="flex flex-row justify-between">
+                                        <span class="text-secondary-color font-semibol text-28 leading-32">Complete Profile</span>
+                                        <img id="" class="w-20 h-20" src="/assets/icons/steps_card_1.svg" alt="">
+                                    </div>
+                                    <span id="steps_desc" class="steps_desc text-secondary-color mt-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                                </div>   
+                            </div>
+
+                            <div id="steps_card2" class="steps_card w-1-1 h-120 my-34 p-20 flex flex-row justify-between rounded-20 shadow-blue-bell-500">
+                                <div class="w-80 h-80 pt-13 rounded-24 font-semibol text-4xl leading-54 text-center bg-titan-white-100 text-cerulean-blue-700">2</div>
+
+                                <div class="w-484 flex flex-col justify-center">
+                                    <div class="flex flex-row justify-between">
+                                        <span class="text-secondary-color font-semibol text-28 leading-32">Search Vacancies</span>
+                                        <img class="w-20 h-20" src="/assets/icons/steps_card_1.svg" alt="">
+                                    </div>
+                                    <span id="steps_desc2" class="steps_desc text-secondary-color mt-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                                </div>
+                            </div>
+
+                            <div id="steps_card3" class="steps_card w-1-1 h-120 p-20 flex flex-row justify-between rounded-20 shadow-blue-bell-500">
+                                <div class="w-80 h-80 pt-13 rounded-24 font-semibol text-4xl leading-54 text-center bg-hint-of-green-50 text-emerald-400">3</div>
+
+                                <div class="w-484 flex flex-col justify-center">
+                                    <div class="flex flex-row justify-between">
+                                        <span class="text-secondary-color font-semibol text-28 leading-32">Apply Jobs</span>
+                                        <img class="w-20 h-20" src="/assets/icons/steps_card_1.svg" alt="">
+                                    </div>
+                                    <span id="steps_desc3" class="steps_desc text-secondary-color mt-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative w-782 h-758 px-12 rounded-40 bg-steps-bg bg-center bg-no-repeat bg-cover">
+                        <img class="absolute -top-26 left-112 w-80 h-58" src="/assets/icons/steps_bg_1.svg" alt="">
+                        <img class="absolute top-121 -right-112 w-272 h-279" src="/assets/icons/steps_bg_2.svg" alt="">
+                        <img class="absolute bottom-85 -left-32" src="/assets/icons/steps_bg_3.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="whychooseus mt-43 p-60-40 max-w-1620 h-610 m-0-auto flex flex-col items-center">
+                <div class="whychooseus_title font-semibol text-32 leading-48 text-secondary-color text-center">Why Choose Us</div>
+
+                <div class="whychooseus_decs w-524 mt-12 text-sm leading-21 text-secondary-color text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+
+                <div class="whychooseus_card_list w-1309 h-328 mt-60 p-12 flex flex-row items-center justify-between">
+                    <div class="whychooseus_card_item w-412 h-304 rounded-30 shadow-blue-bell-500 p-40">
+                        <div class="whychooseus_card_icon w-81 h-81 rounded-20 flex justify-center items-center text-third-color bg-coral-400"><img src="/assets/icons/whychooseus_crad_icon.svg" alt=""></div>
+                        <div class="whychooseus_card_title my-22 font-semibol text-3xl leading-36 text-secondary-color">Trusted</div>
+                        <div class="whychooseus_card_desc text-sm leading-21 text-secondary-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                    </div>
+
+                    <div class="whychooseus_card_item w-412 h-304 rounded-30 shadow-blue-bell-500 p-40">
+                        <div class="whychooseus_card_icon w-81 h-81 rounded-20 flex justify-center items-center text-third-color bg-lavender-500"><img src="/assets/icons/whychooseus_crad_icon.svg" alt=""></div>
+                        <div class="whychooseus_card_title my-22 font-semibol text-3xl leading-36 text-secondary-color ">Easy to Use</div>
+                        <div class="whychooseus_card_desc text-sm leading-21 text-secondary-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                    </div>
+
+                    <div class="whychooseus_card_item w-412 h-304 rounded-30 shadow-blue-bell-500 p-40">
+                        <div class="whychooseus_card_icon w-81 h-81 rounded-20 flex justify-center items-center text-third-color bg-picton-blue-400"><img src="/assets/icons/whychooseus_crad_icon.svg" alt=""></div>
+                        <div class="whychooseus_card_title my-22 font-semibol text-3xl leading-36 text-secondary-color">Faster</div>
+                        <div class="whychooseus_card_desc text-sm leading-21 text-secondary-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featureProfile m-0-auto mt-43 p-60-40 max-w-1620 h-auto">
+
+                <div class="title flex flex-row justify-between items-center">
+                    <span class="text-28 font-semibol leading-42 text-secondary-color">Featured profile this week</span>
+                    <a class="h-22 font-semibol leading-24" href="">View more</a>
+                </div> 
+
+                <div class="list_cardprofile grid grid-cols-4 mt-25 w-1-1 h-auto">
+                    <div class="p-35-12">
+                        <div class="cardprofile p-33 rounded-18 shadow-blue-bell-500">
+                            <div class="flex flex-row justify-start items-center">
+                                <div class="profile_image relative mr-18 w-83 h-83">
+                                    <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/profile_avt1.jpeg" alt="">
+                                    <div class="profile_status absolute right-0 bottom-0 w-31 h-31 rounded-1_2 border-5-third online"></div>
+                                </div>
+
+                                <div class="flex flex-col justify-center">
+                                    <div class="profile_name text-xl font-semibol leading-30 text-secondary-color">David Hutapea</div>
+                                    <div class="profile_work mt-3 text-15 leading-22_5 text-black-900">UI/UX Designer</div>
+                                </div>
+                            </div>
+
+                            <div class="profile_action flex flex-row justify-between items-center mt-29">
+                                <div class="profile_rating flex flex-row justify-start">
+                                    <div class="rating_icons mr-12">
+                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
+                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
+                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
+                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
+                                        <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
+                                    </div>
+                                    <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
+                                </div>
+                                <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$84/hr</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-35-12">
+                        <div class="cardprofile p-33 rounded-18 shadow-blue-bell-500">
+                            <div class="flex flex-row justify-start items-center">
+                                <div class="profile_image relative mr-18 w-83 h-83">
+                                    <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/profile_avt2.jpeg" alt="">
+                                    <div class="profile_status absolute right-0 bottom-0 w-31 h-31 rounded-1_2 border-5-third online"></div>
+                                </div>
+
+                                <div class="flex flex-col justify-center">
+                                    <div class="profile_name text-xl font-semibol leading-30 text-secondary-color">Henry Simatupang</div>
+                                    <div class="profile_work mt-3 text-15 leading-22_5 text-black-900">Photographer</div>
+                                </div>
+                            </div>
+
+                            <div class="profile_action flex flex-row justify-between items-center mt-29">
+                                <div class="profile_rating flex flex-row justify-start">
+                                    <div class="rating_icons mr-12">
+                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
+                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
+                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
+                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
+                                        <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
+                                    </div>
+                                    <div class="rating_number text-base font-bold leading-24 text-black-900">4.8</div>
+                                </div>
+                                <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$95/hr</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-35-12">
+                        <div class="cardprofile p-33 rounded-18 shadow-blue-bell-500">
+                            <div class="flex flex-row justify-start items-center">
+                                <div class="profile_image relative mr-18 w-83 h-83">
+                                    <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/profile_avt3.jpeg" alt="">
+                                    <div class="profile_status absolute right-0 bottom-0 w-31 h-31 bg-gray-600 rounded-1_2 border-5-third"></div>
+                                </div>
+
+                                <div class="flex flex-col justify-center">
+                                    <div class="profile_name text-xl font-semibol leading-30 text-secondary-color">Jennie Smith</div>
+                                    <div class="profile_work mt-3 text-15 leading-22_5 text-black-900">Content Writer</div>
+                                </div>
+                            </div>
+
+                            <div class="profile_action flex flex-row justify-between items-center mt-29">
+                                <div class="profile_rating flex flex-row justify-start">
+                                    <div class="rating_icons mr-12">
+                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
+                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
+                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
+                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
+                                        <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
+                                    </div>
+                                    <div class="rating_number text-base font-bold leading-24 text-black-900">4.6</div>
+                                </div>
+                                <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$86/hr</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-35-12">
+                        <div class="cardprofile p-33 rounded-18 shadow-blue-bell-500">
+                            <div class="flex flex-row justify-start items-center">
+                                <div class="profile_image relative mr-18 w-83 h-83">
+                                    <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/profile_avt4.jpeg" alt="">
+                                    <div class="profile_status absolute right-0 bottom-0 w-31 h-31 rounded-1_2 border-5-third online"></div>
+                                </div>
+
+                                <div class="flex flex-col justify-center">
+                                    <div class="profile_name text-xl font-semibol leading-30 text-secondary-color">Louis Anderson</div>
+                                    <div class="profile_work mt-3 text-15 leading-22_5 text-black-900">Customer Service</div>
+                                </div>
+                            </div>
+
+                            <div class="profile_action flex flex-row justify-between items-center mt-29">
+                                <div class="profile_rating flex flex-row justify-start">
+                                    <div class="rating_icons mr-12">
+                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
+                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
+                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
+                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
+                                        <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
+                                    </div>
+                                    <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
+                                </div>
+                                <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$27/hr</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FEATURED JOBS -->
+
+            <div class="feature_job m-0-auto mt-43 p-60-40 max-w-1620">
+
+                <div class="feature_job_category flex flex-col justify-center items-center m-0-auto w-524">
+                    <div class="feature_job_title text-32 font-semibol leading-48 text-secondary-color">Featured Jobs</div>
+                    <div class="feature_job_desc mt-12 text-sm leading-21 text-center text-secondary-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                </div>
+
+                <div class="fearute_job_list_items grid grid-cols-4 -mx-12 mt-60">
+
+                    <div class="my-12 px-12">
+
+                        <div class="job_card relative mx-15 p-40-30 hover">
+
+                            <div class="job_dropdown absolute top-40 right-30 w-20 h-30">
+                                <button class="job_dropdown_btn w-20 h-20 bg-third border-none p-0">
+                                    <img src="/assets/icons/job_dropdown_icon.svg" alt="" class="w-20 h-20">
+                                </button>
+                            </div>
+
+                            <div class="job_infor h-197 flex flex-col justify-between items-center mb-40">
+                                <div class="job_image w-115 h-115">
+                                    <img src="/assets/images/job_image_1.png" alt="" class="w-115 h-115 rounded-1_2">
+                                </div>
+                                <h5 class="job_title text-xl font-semibol leading-30 text-secondary-color">
+                                    <a href="" class="text-secondary-color">Database Programmer</a>
+                                </h5>
+                                <div class="job_author leading-22">
+                                    <a href="">Maximoz Team</a>
+                                </div>
+                            </div>
+
+                            <ul class="job_detail h-67">
+                                <li class="job_detail_item flex flex-row justify-between items-center">
+                                    <div class="job_detail_start w-24 h-24"><img src="/assets/icons/job_detail_item1.svg" alt="" class="w-24 h-24"></div>
+                                    <div class="job_detail_center text-15 font-medium leading-22_5 text-mine-shaft-900">$14,000 - $25,000</div>
+                                    <div class="job_detail_end text-15 leading-22_5 text-silver-chalice-400">/monthly</div>
+                                </li>
+                                <li class="job_detail_item flex flex-row justify-between items-center mt-18">
+                                    <div class="job_detail_start w-24 h-24"><img src="/assets/icons/job_detail_item2.svg" alt="" class="w-1-1 h-1-1"></div>
+                                    <div class="job_detail_center text-15 font-medium leading-22_5 text-mine-shaft-900">London, England</div>
+                                    <div class="job_detail_end text-15 leading-22_5 text-silver-chalice-400">View Maps</div>
+                                </li>
+                            </ul>
+
+                            <div class="job_action flex flex-row justify-between items-center mt-40">
+                                <button class="btn_icon btn_icon-md btn_icon-persimmon-400 hover_svg_2">
+                                    <span><svg width="24" height="20" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.625 0.0548401C14.7823 0.0548401 12.9558 1.91498 12 3.58626C11.0442 1.91498 9.21773 0.0548401 6.375 0.0548401C2.76736 0.0548401 0 2.81789 0 6.48253C0 10.4562 3.46706 13.1622 8.64436 17.2594C11.1795 19.2638 11.3423 19.4162 12 19.9449C12.5367 19.5134 12.8338 19.2534 15.3556 17.2594C20.5329 13.1622 24 10.4562 24 6.48253C24 2.81793 21.2326 0.0548401 17.625 0.0548401Z"/>
+                                    </svg></span>
+                                </button>
+                                <a href="" class="p-14-62 font-semibol bg-titan-white-50 rounded-26 border-none hover_btn_1">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-12 px-12">
+
+                        <div class="job_card relative mx-15 p-40-30 hover">
+
+                            <div class="job_dropdown absolute top-40 right-30 w-20 h-30">
+                                <button class="job_dropdown_btn w-20 h-20 bg-third border-none p-0">
+                                    <img src="/assets/icons/job_dropdown_icon.svg" alt="" class="w-20 h-20">
+                                </button>
+                            </div>
+
+                            <div class="job_infor h-197 flex flex-col justify-between items-center mb-40">
+                                <div class="job_image w-115 h-115">
+                                    <img src="/assets/images/job_image_2.png" alt="" class="w-115 h-115 rounded-1_2">
+                                </div>
+                                <h5 class="job_title text-xl font-semibol leading-30 text-secondary-color">
+                                    <a href="" class="text-secondary-color">Database Programmer</a>
+                                </h5>
+                                <div class="job_author leading-22">
+                                    <a href="">Maximoz Team</a>
+                                </div>
+                            </div>
+
+                            <ul class="job_detail h-67">
+                                <li class="job_detail_item flex flex-row justify-between items-center">
+                                    <div class="job_detail_start w-24 h-24"><img src="/assets/icons/job_detail_item1.svg" alt="" class="w-24 h-24"></div>
+                                    <div class="job_detail_center text-15 font-medium leading-22_5 text-mine-shaft-900">$14,000 - $25,000</div>
+                                    <div class="job_detail_end text-15 leading-22_5 text-silver-chalice-400">/monthly</div>
+                                </li>
+                                <li class="job_detail_item flex flex-row justify-between items-center mt-18">
+                                    <div class="job_detail_start w-24 h-24"><img src="/assets/icons/job_detail_item2.svg" alt="" class="w-1-1 h-1-1"></div>
+                                    <div class="job_detail_center text-15 font-medium leading-22_5 text-mine-shaft-900">London, England</div>
+                                    <div class="job_detail_end text-15 leading-22_5 text-silver-chalice-400">View Maps</div>
+                                </li>
+                            </ul>
+
+                            <div class="job_action flex flex-row justify-between items-center mt-40">
+                                <button class="btn_icon btn_icon-md btn_icon-persimmon-400 hover_svg_2">
+                                    <span><svg width="24" height="20" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.625 0.0548401C14.7823 0.0548401 12.9558 1.91498 12 3.58626C11.0442 1.91498 9.21773 0.0548401 6.375 0.0548401C2.76736 0.0548401 0 2.81789 0 6.48253C0 10.4562 3.46706 13.1622 8.64436 17.2594C11.1795 19.2638 11.3423 19.4162 12 19.9449C12.5367 19.5134 12.8338 19.2534 15.3556 17.2594C20.5329 13.1622 24 10.4562 24 6.48253C24 2.81793 21.2326 0.0548401 17.625 0.0548401Z"/>
+                                    </svg></span>
+                                </button>
+                                <a href="" class="p-14-62 font-semibol bg-titan-white-50 rounded-26 border-none hover_btn_1">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-12 px-12">
+
+                        <div class="job_card relative mx-15 p-40-30 hover">
+
+                            <div class="job_dropdown absolute top-40 right-30 w-20 h-30">
+                                <button class="job_dropdown_btn w-20 h-20 bg-third border-none p-0">
+                                    <img src="/assets/icons/job_dropdown_icon.svg" alt="" class="w-20 h-20">
+                                </button>
+                            </div>
+
+                            <div class="job_infor h-197 flex flex-col justify-between items-center mb-40">
+                                <div class="job_image w-115 h-115">
+                                    <img src="/assets/images/job_image_3.png" alt="" class="w-115 h-115 rounded-1_2">
+                                </div>
+                                <h5 class="job_title text-xl font-semibol leading-30 text-secondary-color">
+                                    <a href="" class="text-secondary-color">Database Programmer</a>
+                                </h5>
+                                <div class="job_author leading-22">
+                                    <a href="">Maximoz Team</a>
+                                </div>
+                            </div>
+
+                            <ul class="job_detail h-67">
+                                <li class="job_detail_item flex flex-row justify-between items-center">
+                                    <div class="job_detail_start w-24 h-24"><img src="/assets/icons/job_detail_item1.svg" alt="" class="w-24 h-24"></div>
+                                    <div class="job_detail_center text-15 font-medium leading-22_5 text-mine-shaft-900">$14,000 - $25,000</div>
+                                    <div class="job_detail_end text-15 leading-22_5 text-silver-chalice-400">/monthly</div>
+                                </li>
+                                <li class="job_detail_item flex flex-row justify-between items-center mt-18">
+                                    <div class="job_detail_start w-24 h-24"><img src="/assets/icons/job_detail_item2.svg" alt="" class="w-1-1 h-1-1"></div>
+                                    <div class="job_detail_center text-15 font-medium leading-22_5 text-mine-shaft-900">London, England</div>
+                                    <div class="job_detail_end text-15 leading-22_5 text-silver-chalice-400">View Maps</div>
+                                </li>
+                            </ul>
+
+                            <div class="job_action flex flex-row justify-between items-center mt-40">
+                                <button class="btn_icon btn_icon-md btn_icon-persimmon-400 hover_svg_2">
+                                    <span><svg width="24" height="20" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.625 0.0548401C14.7823 0.0548401 12.9558 1.91498 12 3.58626C11.0442 1.91498 9.21773 0.0548401 6.375 0.0548401C2.76736 0.0548401 0 2.81789 0 6.48253C0 10.4562 3.46706 13.1622 8.64436 17.2594C11.1795 19.2638 11.3423 19.4162 12 19.9449C12.5367 19.5134 12.8338 19.2534 15.3556 17.2594C20.5329 13.1622 24 10.4562 24 6.48253C24 2.81793 21.2326 0.0548401 17.625 0.0548401Z"/>
+                                    </svg></span>
+                                </button>
+                                <a href="" class="p-14-62 font-semibol bg-titan-white-50 rounded-26 border-none hover_btn_1">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-12 px-12">
+
+                        <div class="job_card relative mx-15 p-40-30 hover">
+
+                            <div class="job_dropdown absolute top-40 right-30 w-20 h-30">
+                                <button class="job_dropdown_btn w-20 h-20 bg-third border-none p-0">
+                                    <img src="/assets/icons/job_dropdown_icon.svg" alt="" class="w-20 h-20">
+                                </button>
+                            </div>
+
+                            <div class="job_infor h-197 flex flex-col justify-between items-center mb-40">
+                                <div class="job_image w-115 h-115">
+                                    <img src="/assets/images/job_image_4.png" alt="" class="w-115 h-115 rounded-1_2">
+                                </div>
+                                <h5 class="job_title text-xl font-semibol leading-30 text-secondary-color">
+                                    <a href="" class="text-secondary-color">Database Programmer</a>
+                                </h5>
+                                <div class="job_author leading-22">
+                                    <a href="">Maximoz Team</a>
+                                </div>
+                            </div>
+
+                            <ul class="job_detail h-67">
+                                <li class="job_detail_item flex flex-row justify-between items-center">
+                                    <div class="job_detail_start w-24 h-24"><img src="/assets/icons/job_detail_item1.svg" alt="" class="w-24 h-24"></div>
+                                    <div class="job_detail_center text-15 font-medium leading-22_5 text-mine-shaft-900">$14,000 - $25,000</div>
+                                    <div class="job_detail_end text-15 leading-22_5 text-silver-chalice-400">/monthly</div>
+                                </li>
+                                <li class="job_detail_item flex flex-row justify-between items-center mt-18">
+                                    <div class="job_detail_start w-24 h-24"><img src="/assets/icons/job_detail_item2.svg" alt="" class="w-1-1 h-1-1"></div>
+                                    <div class="job_detail_center text-15 font-medium leading-22_5 text-mine-shaft-900">London, England</div>
+                                    <div class="job_detail_end text-15 leading-22_5 text-silver-chalice-400 hover_btn_1">View Maps</div>
+                                </li>
+                            </ul>
+
+                            <div class="job_action flex flex-row justify-between items-center mt-40">
+                                <button class="btn_icon btn_icon-md btn_icon-persimmon-400 hover_svg_2">
+                                    <span><svg width="24" height="20" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.625 0.0548401C14.7823 0.0548401 12.9558 1.91498 12 3.58626C11.0442 1.91498 9.21773 0.0548401 6.375 0.0548401C2.76736 0.0548401 0 2.81789 0 6.48253C0 10.4562 3.46706 13.1622 8.64436 17.2594C11.1795 19.2638 11.3423 19.4162 12 19.9449C12.5367 19.5134 12.8338 19.2534 15.3556 17.2594C20.5329 13.1622 24 10.4562 24 6.48253C24 2.81793 21.2326 0.0548401 17.625 0.0548401Z"/>
+                                    </svg></span>
+                                </button>
+                                <a href="" class="p-14-62 font-semibol bg-titan-white-50 rounded-26 border-none hover_btn_1">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="feature_job_viewmore_btn mt-74 mb-14 px-40 text-center">
+                    <a href="" class="p-14-45 font-semibol text-third-color bg-primary rounded-26 border-none hover">View more</a>
+                </div>
+
+            </div>
+
+            <!-- What our Customer Says -->
+
+            <div class="customer m-0-auto mt-43 p-60-40 max-w-1620">
+
+                <div class="customer_category flex flex-col justify-center items-center m-0-auto mb-80 w-524">
+                    <div class="customer_title text-32 font-semibol leading-48 text-secondary-color">What our Customer Says</div>
+                    <div class="customer_desc mt-12 text-sm leading-21 text-center text-secondary-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                </div>
+
+                <div class="customer_slider m-0-auto max-w-1309 flex flex-row justify-between items-center">
+
+                    <div class="customer_slider_image relative w-300 h-300 bg-cover bg-center bg-no-repeat bg-customer rounded-1_2 border-t-r-none">
+                        <img src="/assets/icons/customer_icon1.svg" alt="" class="absolute w-60 h-60 -top-21 -left-10">
+                        <img src="/assets/icons/customer_icon2.svg" alt="" class="absolute w-68 h-68 bottom-45 -left-35">
+                    </div>
+
+                    <div class="customer_slider_content flex flex-col justify-between w-949 h-300 px-10 pb-19">
+                        <div class="custoer_slider_heeader flex flex-row justify-between items-center">
+
+                            <div class="customer_slider_left_header flex flex-col justify-between h-49">
+                                <div class="customer_slider_title text-lg font-semibol leading-22 text-secondary-color">William Smith</div>
+                                <div class="customer_slider_desc text-15 leading-22_5 text-mine-shaft-800">CEO of True Love Studios</div>
+                            </div>
+
+                            <div class="customer_slider_right_header flex flex-row justify-end items-center">
+                                <div class="customer_slider_rating flex flex-row justify-between w-130 h-18">
+                                    <div class="rating_item1"><img src="/assets/icons/rating1.svg" alt="" class="w-18 h-18"></div>
+                                    <div class="rating_item2"><img src="/assets/icons/rating1.svg" alt="" class="w-18 h-18"></div>
+                                    <div class="rating_item3"><img src="/assets/icons/rating1.svg" alt="" class="w-18 h-18"></div>
+                                    <div class="rating_item4"><img src="/assets/icons/rating1.svg" alt="" class="w-18 h-18"></div>
+                                    <div class="rating_item5"><img src="/assets/icons/rating2.svg" alt="" class="w-18 h-18"></div>
+                                </div>
+
+                                <div class="customer_slider_number ml-15 text-xl font-semibol leading-30">4.8</div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="customer_slider_center text-secondary-color">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur</div>
+
+                        <div class="customer_slider_end flex flex-row justify-between items-center h-57">
+                            <div class="customer_slider_btn w-120 flex flex-row justify-between items-center">
+                                <button class="flex justify-center items-center w-50 h-50 bg-third rounded-1_2 border-none hover hover_btn_1 hover_svg_1">
+                                    <svg width="22" height="13" viewBox="0 0 22 13" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.9827 8.00191H3.41632L6.70733 11.293C7.65264 12.2383 6.23467 13.6562 5.28936 12.7109L2.29213 9.70897L0.291316 7.70502C-0.0964593 7.31494 -0.0964593 6.68493 0.291316 6.29485L5.28936 1.29097C5.47952 1.09556 5.74126 0.985926 6.01397 0.988194C6.91417 0.988307 7.35595 2.08475 6.70733 2.70898L3.4085 6.00004H21.0345C22.4209 6.06882 22.3174 8.07093 20.9827 8.00191V8.00191Z"/>
+                                    </svg>
+                                </button>
+                                <button class="flex justify-center items-center w-50 h-50 bg-third rounded-1_2 border-none shadow-blue-bell-500 hover_btn_1 hover_svg_1">
+                                    <svg width="22" height="13" viewBox="0 0 22 13" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.01728 8.00191H19.5837L16.2927 11.293C15.3474 12.2383 16.7653 13.6562 17.7106 12.7109L20.7079 9.70897L22.7087 7.70502C23.0965 7.31494 23.0965 6.68493 22.7087 6.29485L17.7106 1.29097C17.5205 1.09556 17.2587 0.985926 16.986 0.988194C16.0858 0.988307 15.6441 2.08475 16.2927 2.70898L19.5915 6.00004H1.96552C0.579128 6.06882 0.682644 8.07093 2.01728 8.00191V8.00191Z"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="relative customer_slider_avt_group w-auto h-57">
+                                <div class="avatar absolute right-168 w-57 h-57 bg-third rounded-1_2">
+                                    <div class="m-3 w-51 h-51 bg-primary rounded-1_2"></div>
+                                </div>
+                                <div class="avatar absolute rigth-126 w-57 h-57 bg-third rounded-1_2">
+                                    <div class="m-3 w-51 h-51 bg-primary rounded-1_2"></div>
+                                </div>
+                                <div class="avatar absolute right-84 w-57 h-57 bg-third rounded-1_2">
+                                    <div class="m-3 w-51 h-51 bg-primary rounded-1_2"></div>
+                                </div>
+                                <div class="avatar absolute right-42 w-57 h-57 bg-third rounded-1_2">
+                                    <div class="m-3 w-51 h-51 bg-primary rounded-1_2"></div>
+                                </div>
+                                <div class="avatar absolute right-0 w-57 h-57 bg-third rounded-1_2">
+                                    <div class="flex justify-center items-center m-3 w-51 h-51 bg-primary rounded-1_2"><span class="font-semibol text-third-color">21k+</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- counter -->
+
+            <div class="relative m-0-auto mt-60 p-60-40 max-w-1620 h-394">
+
+                <img src="/assets/icons/count_bg_1.svg" alt="" class="absolute w-126 h-126 border-t-l-20 z-1">
+                <img src="/assets/icons/count_bg_2.svg" alt="" class="absolute top-119 left-144 z-1 w-60 h-60">
+                <img src="/assets/icons/count_bg_3.svg" alt="" class="absolute right-56 z-1">
+                <img src="/assets/icons/count_bg_4.svg" alt="" class="absolute bottom-60 left-200 z-1 w-300 h-50">
+
+                <div class="relative counter p-80 h-274 bg-primary rounded-20">
+
+                    <div class="grid grid-cols-4 w-1-1 h-1-1">
+
+                        <div class="flex flex-col justify-between items-center">
+                            <div class="text-50 font-semibol leading-75 text-third-color">36.8k</div>
+                            <div class="text-third-color">Talented Freelancer</div>
+                        </div>
+                        <div class="flex flex-col justify-between items-center">
+                            <div class="text-50 font-semibol leading-75 text-third-color">459k</div>
+                            <div class="text-third-color">VIsitors</div>
+                        </div>
+                        <div class="flex flex-col justify-between items-center">
+                            <div class="text-50 font-semibol leading-75 text-third-color">56.5k</div>
+                            <div class="text-third-color">Contract Made</div>
+                        </div>
+                        <div class="flex flex-col justify-between items-center">
+                            <div class="text-50 font-semibol leading-75 text-third-color z-10">852k</div>
+                            <div class="text-third-color">Companies</div>
+                        </div>
+                        
+                    </div>
+
+                    <img src="/assets/icons/count_icon1.svg" alt="" class="count_icon1 absolute bottom-10 left-400 w-40 h-40">
+                    <img src="/assets/icons/count_icon2.svg" alt="" class="count_icon2 absolute bottom-40 right-16 w-77 h-77">
+
+                </div>
+
+            </div>
+
+            <!-- Pricing Plan -->
+
+            <div id="pricing_plan" class="pricing_plan m-0-auto mt-60 p-60-40 max-w-1620">
+
+                <div class="pricing_plan_category flex flex-col justify-center items-center m-0-auto w-524">
+                    <div class="pricing_plan_title text-32 font-semibol leading-48 text-secondary-color">Pricing Plan</div>
+                    <div class="pricing_plan_desc mt-12 text-sm leading-21 text-center text-secondary-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                </div>
+
+                <div class="flex flex-row justify-between items-center m-0-auto mt-60 p-12 max-w-1155 h-561">
+                    <div class="p-47 w-361 h-1-1 rounded-20 hover">
+                        <div class="text-26 font-bold leading-31 text-center text-secondary-color">FREE</div>
+                        <div class="mt-40 text-50 font-semibol leading-75 text-center text-secondary-color">$ 0</div>
+                        <div class="text-center text-secondary-color">per month</div>
+                        <div class="flex flex-row justify-start items-center mt-40 h-40">
+                            <div class="mr-20 w-20 h-20"><img src="/assets/icons/pricing_plan_icon1.svg" alt="" class="w-20 h-20"></div>
+                            <span class="text-15 leading-22_5 text-secondary-color">Lorem ipsum dolor sit ame</span>
+                        </div>
+                        <div class="flex flex-row justify-start items-center h-61">
+                            <div class="mr-20 w-20 h-20"><img src="/assets/icons/pricing_plan_icon1.svg" alt="" class="w-20 h-20"></div>
+                            <span class="text-15 leading-22_5 text-secondary-color">Consectetur adipiscing elit, sed Do</span>
+                        </div>
+                        <div class="flex flex-row justify-start items-center h-40">
+                            <div class="mr-20 w-20 h-20"><img src="/assets/icons/pricing_plan_icon1.svg" alt="" class="w-20 h-20"></div>
+                            <span class="text-15 leading-22_5 text-secondary-color">eiusmod tempor incididunt</span>
+                        </div>
+                        <div class="mt-55">
+                            <a href="" class="pricing_plan_learn_btn p-15-88 font-semibol rounded-26 bg-titan-white-50 hover_btn_1">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="p-47 w-361 h-1-1 rounded-20 hover">
+                        <div class="text-26 font-bold leading-31 text-center text-secondary-color">FREE</div>
+                        <div class="mt-40 text-50 font-semibol leading-75 text-center text-secondary-color">$ 0</div>
+                        <div class="text-center text-secondary-color">per month</div>
+                        <div class="flex flex-row justify-start items-center mt-40 h-40">
+                            <div class="mr-20 w-20 h-20"><img src="/assets/icons/pricing_plan_icon1.svg" alt="" class="w-20 h-20"></div>
+                            <span class="text-15 leading-22_5 text-secondary-color">Lorem ipsum dolor sit ame</span>
+                        </div>
+                        <div class="flex flex-row justify-start items-center h-61">
+                            <div class="mr-20 w-20 h-20"><img src="/assets/icons/pricing_plan_icon1.svg" alt="" class="w-20 h-20"></div>
+                            <span class="text-15 leading-22_5 text-secondary-color">Consectetur adipiscing elit, sed Do</span>
+                        </div>
+                        <div class="flex flex-row justify-start items-center h-40">
+                            <div class="mr-20 w-20 h-20"><img src="/assets/icons/pricing_plan_icon1.svg" alt="" class="w-20 h-20"></div>
+                            <span class="text-15 leading-22_5 text-secondary-color">eiusmod tempor incididunt</span>
+                        </div>
+                        <div class="mt-55">
+                            <a href="" class="pricing_plan_learn_btn p-15-88 font-semibol rounded-26 bg-titan-white-50 hover_btn_1">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="p-47 w-361 h-1-1 rounded-20 hover">
+                        <div class="text-26 font-bold leading-31 text-center text-secondary-color">FREE</div>
+                        <div class="mt-40 text-50 font-semibol leading-75 text-center text-secondary-color">$ 0</div>
+                        <div class="text-center text-secondary-color">per month</div>
+                        <div class="flex flex-row justify-start items-center mt-40 h-40">
+                            <div class="mr-20 w-20 h-20"><img src="/assets/icons/pricing_plan_icon1.svg" alt="" class="w-20 h-20"></div>
+                            <span class="text-15 leading-22_5 text-secondary-color">Lorem ipsum dolor sit ame</span>
+                        </div>
+                        <div class="flex flex-row justify-start items-center h-61">
+                            <div class="mr-20 w-20 h-20"><img src="/assets/icons/pricing_plan_icon1.svg" alt="" class="w-20 h-20"></div>
+                            <span class="text-15 leading-22_5 text-secondary-color">Consectetur adipiscing elit, sed Do</span>
+                        </div>
+                        <div class="flex flex-row justify-start items-center h-40">
+                            <div class="mr-20 w-20 h-20"><img src="/assets/icons/pricing_plan_icon1.svg" alt="" class="w-20 h-20"></div>
+                            <span class="text-15 leading-22_5 text-secondary-color">eiusmod tempor incididunt</span>
+                        </div>
+                        <div class="mt-55">
+                            <a href="" class="pricing_plan_learn_btn p-15-88 font-semibol rounded-26 bg-titan-white-50 hover_btn_1">Learn More</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- latest mews -->
+
+            <div class="latest_news m-0-auto p-60-40 max-w-1620">
+
+                <div class="flex flex-row justify-between">
+                    <div class="latest_news_catelory flex flex-col justify-between w-616 h-102">
+                        <div class="text-32 font-semibol leading-48 text-secondary-color">Latest News</div>
+                        <div class="text-sm leading-21 text-secondary-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                    </div>
+                    <div class="flex flex-row justify-between w-150 h-5 self-end">
+                        <div class="w-40 h-1-1 bg-alto-300"></div>
+                        <div class="w-100 h-1-1 bg-primary"></div>
+                    </div>
+                </div>
+
+                <div class="flex flex-row justify-between mt-60 px-5">
+                    <div class="blog_item1 grid grid-row-2 w-516 h-450 rounded-20 bg-blog-item1 bg-center bg-cover bg-no-repeat">
+                        <div class="p-27-15 justify-self-end">
+                            <a href="" class="p-12_5-24_5 text-15 font-bold leading-22_5 text-third-color bg-coral-400 rounded-23_5">PEOPLES</a>
+                        </div>  
+                        <div class="flex flex-col justify-between p-40">
+                            <div class="flex flex-row mt-14">
+                                <span class="text-third-color">James</span>
+                                <span class="ml-22 text-third-color">24min read</span>
+                            </div>
+                            <div class="mb-8 pr-8 text-28 font-bold leading-42 text-third-color">
+                                A Media Critic Focuses on the Crisis in Local News
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog_item2 grid grid-row-2 w-984 h-450 rounded-20 bg-blog-item2 bg-center bg-cover bg-no-repeat">
+                        <div class="p-27-15 justify-self-end">
+                            <a href="" class="p-12_5-24_5 text-15 font-bold leading-22_5 text-third-color bg-coral-400 rounded-23_5">TECHNOLOGY</a>
+                        </div>  
+                        <div class="flex flex-col justify-between p-40">
+                            <div class="flex flex-row mt-1">
+                                <span class="text-third-color">James</span>
+                                <span class="ml-22 text-third-color">24min read</span>
+                            </div>
+                            <div class="text-26 font-bold leading-40 text-third-color">
+                                Let’s increase your skills in pandemic with Ziro Workshops 2020
+                            </div>
+                            <span class="text-third-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+
+        <div class="footer mt-43 w-1-1 h-auto bg-ebony-clay-900">
+
+            <div class="m-0-auto p-80-40 max-w-1620">
+
+                <div class="grid grid-cols-2">
+                    <span class="text-4xl font-semibol leading-54 text-third-color">Don’t miss our weekly updates about freelancer career</span>
+
+                    <div class="justify-self-end self-center">
+                        <div class="newsletter_form p-7 rounded-35 border-2-secondary">
+                            <input type="text" name="" id="" placeholder="Enter your email address..." class="px-25 w-262 h-50 bg-ebony-clay-900 border-none outline-none text-third-color">
+                            <button class="btn btn-md btn-coral-400"><span class="font-semibol text-third-color">SUBSCRIBE</span></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="m-0-auto grid grid-cols-5 p-80-28 max-w-1620">
+                <div class="flex flex-col px-12">
+                    <img src="/assets/icons/logo_white.svg" alt="" class="w-130 h-51">
+                    <span class="mt-34 text-sm leading-21 text-third-color">
+                        Ziro is a Freelance Landing Website lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    </span>
+                    <div class="flex flex-row mt-34">
+                        <a href="" class="icon-55-55">
+                            <svg width="18" height="18" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.9709 10.1002L9.46872 6.91501H6.35612V4.84804C6.35612 3.97663 6.79093 3.12723 8.18496 3.12723H9.6V0.415383C9.6 0.415383 8.31589 0.200195 7.08815 0.200195C4.52483 0.200195 2.84933 1.72576 2.84933 4.48745V6.91501H0V10.1002H2.84933V17.8002H6.35612V10.1002H8.9709Z"/>
+                            </svg>
+                        </a>
+                        <a href="" class="icon-55-55">
+                            <svg width="18" height="18" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.7908 4.0894C15.802 4.25995 15.802 4.43054 15.802 4.60109C15.802 9.80309 12.1726 15.797 5.53908 15.797C3.49542 15.797 1.59696 15.1513 0 14.0305C0.290366 14.0671 0.569525 14.0793 0.871063 14.0793C2.55733 14.0793 4.10963 13.458 5.34923 12.3981C3.76344 12.3615 2.43451 11.2285 1.97663 9.6691C2.2 9.70563 2.42333 9.73 2.65788 9.73C2.98172 9.73 3.3056 9.68125 3.60711 9.59601C1.95432 9.2305 0.714691 7.64676 0.714691 5.73408V5.68536C1.19488 5.97775 1.7533 6.16049 2.34513 6.18483C1.37356 5.47821 0.737034 4.27214 0.737034 2.90766C0.737034 2.17671 0.915681 1.50666 1.22839 0.921888C3.00403 3.3097 5.67308 4.86906 8.66594 5.03965C8.61011 4.74726 8.5766 4.44273 8.5766 4.13815C8.5766 1.9696 10.1847 0.203125 12.1837 0.203125C13.2223 0.203125 14.1603 0.67825 14.8192 1.44576C15.6344 1.27521 16.4162 0.946263 17.1086 0.495513C16.8405 1.40924 16.271 2.17675 15.5228 2.66403C16.2487 2.57879 16.9522 2.35945 17.5999 2.05491C17.1086 2.83458 16.4944 3.52896 15.7908 4.0894Z"/>
+                            </svg>
+                        </a>
+                        <a href="" class="icon-55-55">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" data-inject-url="https://peterdraw.studio/ziro-html/assets/icons/youtube.svg">
+                                <path d="M19.5821 5.25311C19.3521 4.36624 18.6744 3.66776 17.8139 3.43072C16.2542 3 10 3 10 3C10 3 3.74586 3 2.18613 3.43072C1.32565 3.6678 0.647936 4.36624 0.417919 5.25311C0 6.86062 0 10.2145 0 10.2145C0 10.2145 0 13.5685 0.417919 15.176C0.647936 16.0629 1.32565 16.7322 2.18613 16.9693C3.74586 17.4 10 17.4 10 17.4C10 17.4 16.2541 17.4 17.8139 16.9693C18.6744 16.7322 19.3521 16.0629 19.5821 15.176C20 13.5685 20 10.2145 20 10.2145C20 10.2145 20 6.86062 19.5821 5.25311V5.25311ZM7.95453 13.2597V7.16944L13.1818 10.2146L7.95453 13.2597V13.2597Z"></path>
+                            </svg>
+                        </a>
+                        <a href="" class="icon-55-55">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <path d="M18.5714 0H1.42411C0.638393 0 0 0.62035 0 1.38188V17.7848C0 18.5463 0.638393 19.1667 1.42411 19.1667H18.5714C19.3571 19.1667 20 18.5463 20 17.7848V1.38188C20 0.62035 19.3571 0 18.5714 0ZM6.04464 16.4286H3.08036V7.28162H6.04911V16.4286H6.04464ZM4.5625 6.03237C3.61161 6.03237 2.84375 5.29222 2.84375 4.38523C2.84375 3.47824 3.61161 2.73809 4.5625 2.73809C5.50893 2.73809 6.28125 3.47824 6.28125 4.38523C6.28125 5.2965 5.51339 6.03237 4.5625 6.03237V6.03237ZM17.1562 16.4286H14.192V11.9792C14.192 10.9182 14.1696 9.55338 12.6518 9.55338C11.1071 9.55338 10.8705 10.7085 10.8705 11.9022V16.4286H7.90625V7.28162H10.75V8.53088H10.7902C11.1875 7.81213 12.1562 7.05487 13.5982 7.05487C16.5982 7.05487 17.1562 8.95015 17.1562 11.4144V16.4286V16.4286Z"></path>
+                            </svg>
+                        </a>
+                        <a href="" class="icon-55-55">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <path d="M10.0022 4.87225C7.16453 4.87225 4.87563 7.16166 4.87563 10C4.87563 12.8383 7.16453 15.1277 10.0022 15.1277C12.8399 15.1277 15.1288 12.8383 15.1288 10C15.1288 7.16166 12.8399 4.87225 10.0022 4.87225ZM10.0022 13.3337C8.16843 13.3337 6.66927 11.8387 6.66927 10C6.66927 8.16133 8.16397 6.66629 10.0022 6.66629C11.8405 6.66629 13.3352 8.16133 13.3352 10C13.3352 11.8387 11.836 13.3337 10.0022 13.3337V13.3337ZM16.5343 4.6625C16.5343 5.32746 15.9989 5.85853 15.3385 5.85853C14.6737 5.85853 14.1428 5.32299 14.1428 4.6625C14.1428 4.00201 14.6782 3.46647 15.3385 3.46647C15.9989 3.46647 16.5343 4.00201 16.5343 4.6625ZM19.9297 5.87638C19.8539 4.27424 19.488 2.85507 18.3146 1.68582C17.1456 0.516568 15.7267 0.150619 14.1249 0.070289C12.4741 -0.0234297 7.52593 -0.0234297 5.87507 0.070289C4.27775 0.146156 2.8589 0.512105 1.68544 1.68136C0.511991 2.85061 0.150586 4.26978 0.0702733 5.87192C-0.0234244 7.52315 -0.0234244 12.4724 0.0702733 14.1236C0.146124 15.7258 0.511991 17.1449 1.68544 18.3142C2.8589 19.4834 4.27329 19.8494 5.87507 19.9297C7.52593 20.0234 12.4741 20.0234 14.1249 19.9297C15.7267 19.8538 17.1456 19.4879 18.3146 18.3142C19.4835 17.1449 19.8494 15.7258 19.9297 14.1236C20.0234 12.4724 20.0234 7.52761 19.9297 5.87638V5.87638ZM17.797 15.8953C17.449 16.7701 16.7752 17.4439 15.8963 17.7965C14.58 18.3186 11.4568 18.1981 10.0022 18.1981C8.54769 18.1981 5.41997 18.3142 4.1082 17.7965C3.23369 17.4484 2.55996 16.7745 2.20747 15.8953C1.68544 14.5788 1.80591 11.4549 1.80591 10C1.80591 8.54513 1.68991 5.41671 2.20747 4.10465C2.55549 3.22995 3.22922 2.55606 4.1082 2.2035C5.42443 1.68136 8.54769 1.80185 10.0022 1.80185C11.4568 1.80185 14.5845 1.68582 15.8963 2.2035C16.7708 2.5516 17.4445 3.22548 17.797 4.10465C18.319 5.42118 18.1985 8.54513 18.1985 10C18.1985 11.4549 18.319 14.5833 17.797 15.8953Z"></path>
+                                </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col px-12">
+                    <span class="text-lg font-semibol leading-22 text-third-color">Ziro</span>
+                    <span class="mt-32 text-sm leading-21 text-third-color">Why Ziro</span>
+                    <span class="mt-24 text-sm leading-21 text-third-color">Enterprise</span>
+                    <span class="mt-24 text-sm leading-21 text-third-color">Customer Story</span>
+                    <span class="mt-24 text-sm leading-21 text-third-color">Security</span>
+                    <span class="mt-24 text-sm leading-21 text-third-color">Pricing</span>
+                </div>
+
+                <div class="flex flex-col px-12">
+                    <span class="text-lg font-semibol leading-22 text-third-color">Resources</span>
+                    <span class="mt-32 text-sm leading-21 text-third-color">Download</span>
+                    <span class="mt-24 text-sm leading-21 text-third-color">Help Center</span>
+                    <span class="mt-24 text-sm leading-21 text-third-color">Events</span>
+                    <span class="mt-24 text-sm leading-21 text-third-color">Guides</span>
+                    <span class="mt-24 text-sm leading-21 text-third-color">Partner</span>
+                    <span class="mt-24 text-sm leading-21 text-third-color">Directories</span>
+                </div>
+
+                <div class="flex flex-col px-12">
+                    <span class="text-lg font-semibol leading-22 text-third-color">Company</span>
+                    <span class="mt-32 text-sm leading-21 text-third-color">About us</span>
+                    <span class="mt-24 text-sm leading-21 text-third-color">Contact us</span>
+                    <span class="mt-24 text-sm leading-21 text-third-color">Products</span>
+                    <span class="mt-24 text-sm leading-21 text-third-color">Login</span>
+                    <span class="mt-24 text-sm leading-21 text-third-color">Sign Up</span>
+                    <span class="mt-24 text-sm leading-21 text-third-color">FAQ</span>
+                </div>
+
+                <div class="flex flex-col px-12">
+                    <span class="text-lg font-semibol leading-22 text-third-color">Get in Touch with Us</span>
+                    <div class="mt-32 flex flex-row">
+                        <img src="/assets/icons/footer_icon6.svg" alt="" class="w-22 h-22">
+                        <span class="ml-15 text-sm leading-21 text-third-color">832  Thompson Drive, San Fransisco
+                            CA 94107, United States</span>
+                    </div>
+
+                    <div class="mt-24 flex flex-row">
+                        <img src="/assets/icons/footer_icon7.svg" alt="" class="w-22 h-22">
+                        <span class="ml-15 text-sm leading-21 text-third-color">+123 345123 556</span>
+                    </div>
+
+                    <div class="mt-24 flex flex-row">
+                        <img src="/assets/icons/footer_icon8.svg" alt="" class="w-22 h-22">
+                        <span class="ml-15 text-sm leading-21 text-third-color">support@ziro.id</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t-1-bright-gray-800">
+                <div class="copyright m-0-auto flex flex-row justify-between max-w-1620 p-25-40">
+                    <span class="text-sm leading-21 text-third-color">Ziro Freelancer Landing Website  -   © 2020 All Rights Reserved</span>
+                    <span class="text-sm leading-21 text-third-color">Made with ♥ by Peterdraw</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

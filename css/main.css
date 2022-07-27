@@ -1,0 +1,32 @@
+@import url(/css/theme/reset.css);
+@import url(/css/theme/fonts.css);
+@import url(/css/theme/color.css);
+@import url(/css/customization/layout.css);
+@import url(/css/customization/sizing.css);
+@import url(/css/customization/spacing.css);
+@import url(/css/customization/typrography.css);
+@import url(/css/customization/button.css);
+
+*, body {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    box-sizing: border-box;
+    color: var(--primary-color);
+}
+body {
+    display: block;
+}
+.container {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1620px;
+    height: auto;
+    padding-left: 28px;
+    padding-right: 28px;
+}
