@@ -114,7 +114,11 @@
     border-radius: 26px;
 }
 .link-md {
-    padding: 15px 36px;
+    padding: 14px 36px;
+    border-radius: 26px;
+}
+.link-14-45 {
+    padding: 14px 45px;
     border-radius: 26px;
 }
 .link-lg {
@@ -136,8 +140,7 @@
     background-color: var(--c-titan-white-50);
 }
 .link-titan-white-50:hover {
-    background-color: var(--primary-color);
-    color: var(--third-color);
+    background-color: var(--c-titan-white-100);
 }
 .link-primary {
     background-color: var(--primary-color);
@@ -151,6 +154,13 @@
     color: var(--primary-color);
 }
 
+.link_icon-sm {
+    padding: 12px;
+    border-radius: 50%;
+}
+.link_icon-third {
+    background-color: var(--third-color);
+}
 
 .input {
     border: none;

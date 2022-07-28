@@ -350,4 +350,7 @@
 .bg-blog-item2 {
     background-image: url(/assets/images/blog_item2.png);
 }
+.bg-detail-header {
+    background-image: url(/assets/images//detail_header_bg.png);
+}
 
