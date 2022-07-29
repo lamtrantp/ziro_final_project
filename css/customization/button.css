@@ -113,12 +113,28 @@
     padding: 12.5px 24px;
     border-radius: 26px;
 }
+.link-14-22 {
+    padding: 14px 22px;
+    border-radius: 26px;
+}
+.link-14-30_5 {
+    padding: 14px 30.5px;
+    border-radius: 26px;
+}
 .link-md {
     padding: 14px 36px;
     border-radius: 26px;
 }
+.link-14-37_5 {
+    padding: 14px 37.5px;
+    border-radius: 26px;
+}
 .link-14-45 {
     padding: 14px 45px;
+    border-radius: 26px;
+}
+.link-15-45 {
+    padding: 15px 45px;
     border-radius: 26px;
 }
 .link-lg {
@@ -142,8 +158,19 @@
 .link-titan-white-50:hover {
     background-color: var(--c-titan-white-100);
 }
+.link-titan-white-100 {
+    background-color: var(--c-titan-white-100);
+    color: var(--primary-color);
+}
+.link-titan-white-100:hover {
+    background-color: var(--primary-color);
+    color: var(--third-color);
+}
 .link-primary {
     background-color: var(--primary-color);
+}
+.link-wild-sand-50 {
+    background-color: var(--c-wild-sand-50);
 }
 .link-outline {
     border: 2px solid var(--c-titan-white-100);
@@ -152,6 +179,10 @@
 .link-outline:hover {
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
+}
+.link-outline_2 {
+    border: 2px solid var(--c-titan-white-100);
+    color: var(--secondary-color);
 }
 
 .link_icon-sm {

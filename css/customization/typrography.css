@@ -108,6 +108,9 @@
 .leading-22_5 {
     line-height: 22.5px;
 }
+.leading-22_8 {
+    line-height: 22.8px;
+}
 .leading-23 {
     line-height: 23px;
 }
@@ -230,6 +233,9 @@
 .text-silver-chalice-400 {
     color: var(--c-silver-chalice-400);
 }
+.text-silver-chalice-500 {
+    color: var(--c-silver-chalice-500);
+}
 .text-third-color {
     color: var(--third-color);
 }
@@ -276,6 +282,15 @@
 .bg-ebony-clay-900 {
     background-color: var(--c-ebony-clay-900);
 }
+.bg-fuchsia-blue-600 {
+    background-color: var(--c-fuchsia-blue-600);
+}
+.bg-gallery-100 {
+    background-color: var(--c-gallery-100);
+}
+.bg-geyser-200 {
+    background-color: var(--c-geyser-200);
+}
 .bg-gray-600 {
     background-color: var(--c-gray-600);
 }
@@ -290,6 +305,15 @@
 }
 .bg-lavender-500 {
     background-color: var(--c-lavender-500);
+}
+.bg-lightning-yellow-400 {
+    background-color: var(--c-lightning-yellow-400);
+}
+.bg-magnolia-50 {
+    background-color: var(--c-magnolia-50);
+}
+.bg-medium-purple-600 {
+    background-color: var(--c-medium-purple-600);
 }
 .bg-melrose-300 {
     background-color: var(--c-melrose-300);
@@ -306,6 +330,9 @@
 .bg-port-gore-900 {
     background-color: var(--c-port-gore-900);
 }
+.bg-sunset-orange-500 {
+    background-color: var(--c-sunset-orange-500);
+}
 .bg-tan-hide-400 {
     background-color: var(--c-tan-hide-400);
 }
@@ -320,6 +347,9 @@
 }
 .bg-white-11 {
     background-color: rgba(255, 255, 255, 0.11);
+}
+.bg-wild-sand-50 {
+    background-color: var(--c-wild-sand-50);
 }
 
 /* bg position */
@@ -354,3 +384,15 @@
     background-image: url(/assets/images//detail_header_bg.png);
 }
 
+.input-sm {
+    width: 338px;
+    height: 58px;
+    border-radius: 29px;
+    padding: 15px 30px;
+}
+
+.input-outline {
+    background-color: var(--c-alabaster);
+    border: 2px solid var(--c-silver-400);
+    outline-color: var(--primary-color);
+}

@@ -2,6 +2,7 @@
     --primary-color: #5F4BDB;
     --secondary-color: #363848;
     --third-color: #FFFFFF;
+    --c-alabaster: #FBFBFB;
     --c-alto-300: #DADADA;
     --c-apple-500: #30C736;
     --c-black-900: #000000;
@@ -20,6 +21,7 @@
     --c-emerald-400: #3DCD65;
     --c-flesh-200: #FFCFA3;
     --c-fog-200: #E4CFFF;
+    --c-fuchsia-blue-600: #8653C7;
     --c-gallery-100: #EEEEEE;
     --c-geyser-200: #DEE2E6;
     --c-gray-500: #909090;
@@ -30,6 +32,7 @@
     --c-jungle-green-500: #2BC155;
     --c-lavender-500: #BF58D9;
     --c-lightning-yellow-400: #FFBE17;
+    --c-magnolia-50: #F6EEFF;
     --c-martinique-900: #3C3662;
     --c-medium-purple-600: #8743DF;
     --c-melrose-300: #B2C3FF;
@@ -46,10 +49,13 @@
     --c-silver-300: #C4C4C4;
     --c-silver-400: #C2C2C2;
     --c-silver-chalice-400: #A9A9A9;
+    --c-silver-chalice-500: #9F9F9F;
     --c-scooter-400: #3CB5DB;
+    --c-sunset-orange-500: #FF4A55;
     --c-tan-hide-400: #FBA556;
     --c-titan-white-50: #F0EEFF;
     --c-titan-white-100: #E7E9FF;
+    --c-wild-sand-50: #F5F5F5;
     --c-wild-watermelon--500: #FF477E;
     --c-west-side-500: #FF8412;
     --c-white-lilac-50: #F8F9FD;
