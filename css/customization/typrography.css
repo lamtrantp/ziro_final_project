@@ -1,3 +1,6 @@
+html {
+    font-size: 10px;
+}
 /* !!typrography!! */
 /* font family */
 .font-Poppins {
@@ -48,6 +51,9 @@
 }
 .text-4xl {
     font-size: 36px;
+}
+.text-39 {
+    font-size: 3.9rem;
 }
 .text-40 {
     font-size: 40px;
@@ -132,6 +138,9 @@
 .leading-28_5 {
     line-height: 28.5px;
 }
+.leading-28_8 {
+    line-height: 28.8px;
+}
 .leading-30 {
     line-height: 30px;
 }
@@ -158,6 +167,9 @@
 }
 .leading-54 {
     line-height: 54px;
+}
+.leading-58_5 {
+    line-height: 5.85rem;
 }
 .leading-60 {
     line-height: 60px;
@@ -202,6 +214,12 @@
 }
 .text-coral-400 {
     color: var(--c-coral-400);
+}
+.text-dove-gray-500 {
+    color: var(--c-dove-gray-500);
+}
+.text-ebony-clay-900 {
+    color: var(--c-ebony-clay-900);
 }
 .text-emerald-400 {
     color: var(--c-emerald-400);

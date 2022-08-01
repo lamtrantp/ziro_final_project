@@ -57,8 +57,14 @@
 .mt-3 {
     margin-top: 3px;
 }
+.mt-4 {
+    margin-top: 4px;
+}
 .mt-5 {
     margin-top: 5px;
+}
+.mt-8 {
+    margin-top: 8px;
 }
 .mt-9 {
     margin-top: 9px;
@@ -96,6 +102,9 @@
 .mt-25 {
     margin-top: 25px;
 }
+.mt-26 {
+    margin-top: 26px;
+}
 .mt-29 {
     margin-top: 29px;
 }
@@ -119,6 +128,9 @@
 }
 .mt-43 {
     margin-top: 43px;
+}
+.mt-46 {
+    margin-top: 46px;
 }
 .mt-55 {
     margin-top: 55px;
@@ -245,6 +257,9 @@
 .p-14_5-45 {
     padding: 14.75px 45px;
 }
+.p-15-20 {
+    padding: 15px 20px;
+}
 .p-15-30 {
     padding: 15px 30px;
 }
@@ -356,9 +371,17 @@
     padding-top: 4px;
     padding-bottom: 4px;
 }
+.py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .py-12 {
     padding-top: 12px;
     padding-bottom: 12px;
+}
+.py-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .py-20 {
     padding-top: 20px;
@@ -394,6 +417,12 @@
 .pl-12 {
     padding-left: 12px;
 }
+.pl-50 {
+    padding-left: 50px;
+}
+.gap-4 {
+    gap: 4px;
+}
 
 .gap-5 {
     gap: 5px;
@@ -403,6 +432,9 @@
 }
 .gap-10 {
     gap: 10px;
+}
+.gap-12 {
+    gap: 12px;
 }
 .gap-14 {
     gap: 14px;
@@ -415,6 +447,12 @@
 }
 .gap-20 {
     gap: 20px;
+}
+.gap-21 {
+    gap: 21px;
+}
+.gap-22 {
+    gap: 22px;
 }
 .gap-24 {
     gap: 24px;
