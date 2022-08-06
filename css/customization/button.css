@@ -46,6 +46,9 @@
     fill: var(--third-color);
     background-color: var(--primary-color);
 }
+.btn_icon-white:hover > span >i::before {
+    color: var(--third-color);
+}
 .btn_icon-outline {
     border: 2px solid var(--c-geyser-200);
     background-color: var(--third-color);
@@ -67,6 +70,10 @@
 .btn-147-54 {
     width: 147px;
     height: 54px;
+}
+.btn-129-50 {
+    width: 129px;
+    height: 50px;
 }
 .btn-md {
     width: 159px;
@@ -108,6 +115,11 @@
     background-color: var(--third-color);
 }
 
+.accordion-btn:hover {
+    box-shadow: 0px 19px 29px 0px rgba(62,53,120, 0.14);
+}
+
+
 /* size */
 .link-6-12 {
     padding: 6px 12px;
@@ -121,6 +133,22 @@
     padding: 12.5px 24px;
     border-radius: 26px;
 }
+.link-13-79 {
+    padding: 13px 79px;
+    border-radius: 50px;
+}
+.link-13_5-35 {
+    padding: 13.5px 35px;
+    border-radius: 50px;
+}
+.link-13_5-44 {
+    padding: 13.5px 44px;
+    border-radius: 50px;
+}
+.link_learn_more {
+    padding: 13.5px 81px;
+    border-radius: 50px;
+}
 .link-14-22 {
     padding: 14px 22px;
     border-radius: 26px;
@@ -130,7 +158,7 @@
     border-radius: 26px;
 }
 .link-md {
-    padding: 14px 36px;
+    padding: 13px 35px;
     border-radius: 26px;
 }
 .link-14-37_5 {
@@ -166,6 +194,14 @@
 .link-titan-white-50:hover {
     background-color: var(--c-titan-white-100);
 }
+.link-titan-white-50-primary {
+    background-color: var(--c-titan-white-50);
+    color: var(--primary-color);
+}
+.link-titan-white-50-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--third-color);
+}
 .link-titan-white-100 {
     background-color: var(--c-titan-white-100);
     color: var(--primary-color);
@@ -176,6 +212,9 @@
 }
 .link-primary {
     background-color: var(--primary-color);
+}
+.link-primary:hover {
+    background-color: var(--c-royal-blue-800);
 }
 .link-wild-sand-50 {
     background-color: var(--c-wild-sand-50);
@@ -191,6 +230,19 @@
 .link-outline_2 {
     border: 2px solid var(--c-titan-white-100);
     color: var(--secondary-color);
+}
+
+.link-w-full {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--c-titan-white-50);
+}
+.link-w-full:hover {
+    background-color: var(--primary-color);
+}
+.link-w-full > span:hover {
+    color: var(--third-color);
 }
 
 .link_icon-sm {

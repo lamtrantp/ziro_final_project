@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/js/index.js" defer></script>
+    <script src="/js/application/applicaton.js" defer></script>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/application.css">
 </head>
@@ -175,36 +175,55 @@
                                     <div class="grid-cols-3">
                                         <div class="px-12 flex-col gap-10">
                                             <span class="font-medium text-secondary-color">First Name</span>
-                                            <input type="text" placeholder="Type here" class="input-outline input-sm text-secondary-color">
+                                            <div class="flex-col gap-5">
+                                                <input type="text" placeholder="Type here" class="form_inp_first_name input-outline input-sm text-secondary-color">
+                                                <span class="text-10 leading-15 text-persimmon-400 flex-row gap-5 items-center" id="notification_first_name"></span>
+                                            </div>
                                         </div>
+                                        
                                         <div class="px-12 flex-col gap-10">
                                             <span class="font-medium text-secondary-color">Middle Name</span>
-                                            <input type="text" placeholder="Type here" class="input-outline input-sm text-secondary-color">
+                                            <div class="flex-col gap-5">
+                                                <input type="text" placeholder="Type here" class="form_inp_middle_name input-outline input-sm text-secondary-color">
+                                                <span class="text-10 leading-15 text-persimmon-400 flex-row gap-5 items-center" id="notification_middle_name"></span>
+                                            </div>
                                         </div>
                                         <div class="px-12 flex-col gap-10">
                                             <span class="font-medium text-secondary-color">Last Name</span>
-                                            <input type="text" placeholder="Type here" class="input-outline input-sm text-secondary-color">
+                                            <div class="flex-col gap-5">
+                                                <input type="text" placeholder="Type here" class="form_inp_last_name input-outline input-sm text-secondary-color">
+                                                <span class="text-10 leading-15 text-persimmon-400 flex-row gap-5 items-center" id="notification_last_name"></span>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="grid-cols-3">
                                         <div class="px-12 flex-col gap-10">
                                             <span class="font-medium text-secondary-color">Birth Date</span>
-                                            <input type="date" placeholder="Type here" class="input-outline input-sm text-secondary-color">
+                                            <div class="flex-col gap-5">
+                                                <input type="date" placeholder="Type here" class="form_inp_birth_date input-outline input-sm text-secondary-color">
+                                                <span class="text-10 leading-15 text-persimmon-400 flex-row gap-5 items-center" id="notification_birth_date"></span>
+                                            </div>
                                         </div>
                                         <div class="px-12 flex-col gap-10">
                                             <span class="font-medium text-secondary-color">Email Address</span>
-                                            <input type="text" placeholder="Type here" class="input-outline input-sm text-secondary-color">
+                                            <div class="flex-col gap-5">
+                                                <input type="email" placeholder="Type here" class="form_inp_email input-outline input-sm text-secondary-color">
+                                                <span class="text-10 leading-15 text-persimmon-400 flex-row gap-5 items-center" id="notification_email"></span>
+                                            </div>
                                         </div>
                                         <div class="px-12 flex-col gap-10">
                                             <span class="font-medium text-secondary-color">Phone Number</span>
-                                            <input type="text" placeholder="Type here" class="input-outline input-sm text-secondary-color">
+                                            <div class="flex-col gap-5">
+                                                <input type="text" placeholder="Type here" class="form_inp_phone_number input-outline input-sm text-secondary-color">
+                                                <span class="text-10 leading-15 text-persimmon-400 flex-row gap-5 items-center" id="notification_phone_number"></span>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="px-12 w-1-1 h-1-1 flex-col gap-10">
                                         <span class="font-medium text-secondary-color">About You</span>
-                                        <textarea name="" id="" cols="30" rows="10" class="input-outline w-1-1 h-154 p-15-30 rounded-20 text-secondary-color" placeholder="Type here"></textarea>
+                                        <textarea name="" id="" cols="30" rows="10" class="form_inp_about input-outline w-1-1 h-154 p-15-30 rounded-20 text-secondary-color" placeholder="Type here"></textarea>
                                     </div>
 
                                     <div class="px-12 w-1-1 flex-col gap-10">
@@ -248,7 +267,7 @@
                                     </div>
 
                                     <div class="px-12 w-1-1 flex-row justify-between">
-                                        <button class="btn btn-primary btn-2xl">
+                                        <button class="form_btn_submit btn btn-primary btn-2xl">
                                             <span class="flex justify-center items-center font-semibol text-third-color">Submit</span>
                                         </button>
 

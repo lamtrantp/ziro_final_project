@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+}
+
 /* !!Layout!! */
 /* display */
 .flex {
@@ -5,6 +9,9 @@
 }
 .grid {
     display: grid;
+}
+.hidden {
+    display: none;
 }
 
 
@@ -20,6 +27,14 @@
 }
 .flex-wrap {
     flex-wrap: wrap;
+}
+
+/* flex wrap */
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-nowrap {
+    flex-wrap: nowrap;
 }
 
 /* grid */
@@ -95,6 +110,9 @@
 .items-center {
     align-items: center;
 }
+.items-end {
+    align-items: flex-end;
+}
 
 /* align self */
 .self-start {
@@ -122,6 +140,9 @@
 }
 .-top-26 {
     top: -26px;
+}
+.top-0 {
+    top: 0px;
 }
 .-top-7 {
     top: -7px;
@@ -186,6 +207,9 @@
 .bottom-10 {
     bottom: 10px;
 }
+.bottom-37 {
+    bottom: 37px;
+}
 .bottom-40 {
     bottom: 40px;
 }
@@ -201,20 +225,32 @@
 .bottom-107 {
     bottom: 107px;
 }
-.-left-10 {
-    left: -10px;
+.-left-35 {
+    left: -35px;
 }
 .-left-32 {
     left: -32px;
 }
-.-left-35 {
-    left: -35px;
+.-left-15 {
+    left: -15px;
+}
+.-left-10 {
+    left: -10px;
+}
+.-left-4 {
+    left: -4px;
 }
 .left-25 {
     left: 25px;
 }
 .left-40 {
     left: 40px;
+}
+.left-80 {
+    left: 80px;
+}
+.left-92 {
+    left: 92px;
 }
 .left-104 {
     left: 104px;
@@ -236,6 +272,9 @@
 }
 
 /* z-index */
+.-z-1 {
+    z-index: -1;
+}
 .z-0 {
     z-index: 0;
 }
@@ -257,6 +296,9 @@
 }
 .rounded-4 {
     border-radius: 4px;
+}
+.rounded-5 {
+    border-radius: 5px;
 }
 .rounded-10 {
     border-radius: 10px;
@@ -281,6 +323,9 @@
 }
 .rounded-24 {
     border-radius: 24px;
+}
+.rounded-25 {
+    border-radius: 25px;
 }
 .rounded-25_5 {
     border-radius: 25.5px;
@@ -364,8 +409,8 @@
 .border-none {
     border-style: none;
 }
-.border-t-r-none {
-    border-top-right-radius: 0px;
+.border-t-r-16 {
+    border-top-right-radius: 16px;
 }
 .border-1 {
     border: 1px solid;
@@ -448,7 +493,7 @@
     background-color: var(--c-martinique-900);
 }
 
-.event_banner1 {
+/* .event_banner1 {
     width: 770px;
     height: 579px;
     left: calc(50% - 805px/2 - 407.5px);
@@ -456,5 +501,6 @@
     background-size: cover;
     background-position: center;
     border-radius: 30px;
-}
+} */
 
+/* index.css */
