@@ -23,6 +23,12 @@ body {
     display: block;
 }
 
+.header_nav_btn {
+    display: none;
+}
+
+
+/* steps */
 .steps2_background {
     max-width: 100%;
     max-height: 100%;
@@ -298,71 +304,7 @@ body {
     color: var(--third-color);
 }
 
-/* footer */
-.form_btn_inner {
-    height: 66px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 50rem;
-    padding: 7px;
-    display: grid;
-    grid-template-columns: 1fr 129px;
-}
-.form_control {
-    padding: 0 20px;
-    width: auto;
-    border-radius: inherit;
-    border: none;
-    outline: none;
-    color: var(--third-color);
-    background-color: transparent;
-}
-.desc {
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.5;
-}
-.social_link {
-    padding: 12px 17.5px;
-    border-radius: 50%;
-    background-color: transparent;
-}
-.social_link:hover {
-    background-color: var(--c-scooter-400);
-}
-.social_link:hover > i::before {
-    color: var(--third-color);
-}
-.social_link2 {
-    padding: 12px 13.5px;
-    border-radius: 50%;
-    background-color: transparent;
-}
-.social_link3 {
-    padding: 12px 12px;
-    border-radius: 50%;
-    background-color: transparent;
-}
-.social_link4 {
-    padding: 12px 14.5px;
-    border-radius: 50%;
-    background-color: transparent;
-}
-.social_link5 {
-    padding: 12px 14.5px;
-    border-radius: 50%;
-    background-color: transparent;
-}
 
-.footer_title {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.2;
-    color: var(--third-color);
-}
-
-.header_nav_btn {
-    display: none;
-}
 
 @media screen and (min-width: 576px) {
     .brand_swiper_wrapper {
@@ -566,6 +508,7 @@ body {
         width: 34%;
     }
 
+    /* header */
     .nav_menu_icon {
         display: none;
     }

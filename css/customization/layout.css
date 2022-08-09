@@ -14,6 +14,17 @@ html {
     display: none;
 }
 
+/* overflow */
+.overflow-hidden {
+    overflow: hidden;
+}
+.overflow-auto {
+    overflow: auto;
+}
+/* visibility */
+.invisible {
+    visibility: hidden;
+}
 
 /* !!flexbox & grid!! */
 /* flex-diraction */
@@ -168,6 +179,9 @@ html {
 .top-233 {
     top: 233px;
 }
+.top-20_percent {
+    top: 20%;
+}
 .-right-112 {
     right: -112px;
 }
@@ -242,6 +256,9 @@ html {
 }
 .left-25 {
     left: 25px;
+}
+.left-30 {
+    left: 30px;
 }
 .left-40 {
     left: 40px;

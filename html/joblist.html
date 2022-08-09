@@ -12,795 +12,211 @@
 <body>
     <div class="container">
         <!-- HEADER -->
-        <div class="nav flex flex-row justify-between items-center w-1-1 h-99">
-
-            <div class="nav_main flex flex-row justify-between m-0-auto px-40 w-1620 h-51">
-
-                <a class="nav_logo " href="/html/home.html"><img src="/assets/icons/logo.svg" alt=""></a>
-
-                <div class="nav_menu">
-                    <ul class="menu_list flex flex-row justify-between items-center">
-                        <li class="item"><a class="py-12 text-base leading-24 text-secondary-color" href="/html/home.html">Home</a></li>
-                        <li class="item"><a class="menu_pricing py-12 text-base leading-24 text-secondary-color" href="/html/home.html#pricing_plan">Pricing</a></li>
-                        <li class="item"><a class="py-12 text-base leading-24 text-secondary-color" href="/html/eventlist.html">Blog</a></li>
-                        <li class="menu_becom"><a class="py-12 text-base leading-24 text-secondary-color" href="/html/joblist.html">Become a member</a></li>
+        <header class="bg-white-lilac-50">
+            <div class="header_nav m-0-auto max-w-1620 p-24-40 flex-row justify-between items-center ">
+                <div class="header_logo flex-row items-center gap-20">
+                    <a href="" class="text-48 leading-39">
+                        <span class="icon-logo_ziro"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span></span>
+                    </a>
+    
+                    <button class="nav_menu_icon btn w-20 h-20 bg-third hidden">
+                        <img src="/assets/icons/navbar_toggler.svg" alt="" class="w-20 h-20">
+                    </button>
+                </div>
+    
+                <div class="header_nav_menu flex items-center hidden">
+                    <ul class="menu_list flex-row items-center gap-41">
+                        <li class="menu_item_focus">
+                            <a class="menu_home relative py-12 text-secondary-color" href="/html/home.html">Home</a>
+                        </li>
+    
+                        <li class="menu_item">
+                            <a class="menu_pricing relative py-12 leading-24 text-secondary-color" href="#pricing_plan">Pricing</a>
+                        </li>
+    
+                        <li class="menu_item">
+                            <a class="menu_blog relative py-12 leading-24 text-secondary-color" href="/html/eventlist.html">Blog</a>
+                        </li>
+    
+                        <li class="menu_item">
+                            <a class="menu_becom relative py-12 leading-24 text-secondary-color" href="/html/joblist.html">Become a member</a>
+                        </li>
                     </ul>
                 </div>
-                
-                <div class="nav_btn flex flex-row justify-between items-center">
-                    <div class="nav_search flex flex-row justify-between items-center mx-30 bg-third rounded-37 border-1-titan-white-50">
-                        <input type="text" class="border-none font-open-sans text-lg leading-24_5 text-secondary-color outline-none" id="" placeholder="Search here">
-                        <img src="/assets/icons/search.svg" alt="">
-                    </div>
-                    <a href="/html/application.html" class="link-md link-titan-white-50"><span class="font-semibol text-secondary-color">Log In</span></a>
-                    <a href="/html/application.html" class="link-14-45 link-primary"><span class="font-semibol text-third-color">Sign Up</span></a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="content">
-            <!-- SEARCH MAIN -->
-            <div class="m-0-auto px-28 max-w-1620">
-                <div class="search_main grid-cols-2 w-1-1 h-768">
-                    <div class="py-180 pl-12 w-1-1 h-768">
-                        <div>
-                            <div class="text-6xl font-semibol leading-78 text-secondary-color">
-                                Find your dream jobs through
-                                <span class="text-primary">Ziro</span> 
-                                easily
-                            </div>
     
-                            <div class="flex-row justify-between items-center mt-60 p-7 w-758 h-66 rounded-33 shadow-blue-bell-500">
-                                <input type="text" class="input w-581 h-52 text-secondary-color px-20" placeholder="Search here...">
+                <button class="header_nav_btn_icon btn w-20 h-20 bg-third">
+                    <img src="/assets/icons/navbar_toggler.svg" alt="" class="w-20 h-20">
+                </button>
     
-                                    <!-- btn mau -->
-                                <button class="btn btn-lg btn-primary"><span class="font-semibol text-third-color">Search Job</span></button>
+                <div class="header_nav_btn flex-row items-center gap-12">
+                    <form action="" class="header_nav_form hidden">
+                        <div class="form_search flex-row items-center pl-25 rounded-25 bg-third">
+                            <input class="form_search_input input max-w-235 py-12 text-secondary-color" type="text" name="" id="" placeholder="Search here">
     
-                            </div>
-    
-                            <div class="suggestions flex-row mt-34">
-                                <a href="" class="mr-12 link-outline link-6-12">Web Dev</a>
-                                <a href="" class="mr-12 link-outline link-6-12">Mobile Dev</a>
-                                <a href="" class="mr-12 link-outline link-6-12">Design</a>
-                                <a href="" class="mr-12 link-outline link-6-12">Writing</a>
-                                <a href="" class="mr-12 link-outline link-6-12">Admin Support</a>
-                            </div>
-                            <div class="mt-12 suggestions flex-row">
-                                <a href="" class="mr-12 link-outline link-6-12">Customer Service</a>
-                                <a href="" class="mr-12 link-outline link-6-12">Marketing</a>
-                                <a href="" class="mr-12 link-outline link-6-12">Accounting</a>
-                                <a href="" class="mr-12 link-outline link-6-12">View all categories</a>
-                            </div>
+                            <button class="btn_icon btn_icon-sm bg-third">
+                                <span>
+                                    <img src="/assets/icons/header_form_search_icon.svg" alt="" class="w-20 h-20">
+                                </span>
+                            </button>
                         </div>
+                    </form>
+    
+                    <div>
+                        <a href="/html/application.html" class="link-13_5-35 link-titan-white-50">
+                            <span class="font-semibol text-secondary-color">Log In</span>
+                        </a>
                     </div>
     
                     <div>
-                        <img src="/assets/images/joblist_search_header_bg.png" alt="" class="mt-36 w-800 h-732">
+                        <a href="/html/application.html" class="link-13_5-44 link-primary">
+                            <span class="font-semibol text-third-color">Sign Up</span>
+                        </a>
                     </div>
     
                 </div>
             </div>
-            <!--NAV_TITLE -->
-            <div class="m-0-auto mt-43 px-40 max-w-1620">
-                <div class="nav_title flex-row justify-between items-center">
-                    <span class="text-28 font-semibol leading-42 text-secondary-color">Showing 34 Jobs</span>
-                    <div class="flex-row gap-34 items-center">
-    
-                        <div class="flex-row gap-43 items-center">
-                            <div class="flex-row gap-25 items-center">
-                                <div class="checkbox-type">
-                                    <input type="checkbox" class="checkbox-type-input">
-                                    <span class="font-semibol text-secondary-color">Fulltime</span>
-                                </div>
-                                <div class="checkbox-type">
-                                    <input type="checkbox" class="checkbox-type-input">
-                                    <span class="font-semibol text-secondary-color">Fulltime</span>
-                                </div>
+
+        </header>
+
+        <main class="main m-0-auto max-w-1620">
+
+            <!-- joblist banner -->
+            <div class="px-40">
+                <div class="banner-1 -mx-12 flex-col">
+                    <div class="px-12 w-1-1">
+                        <div class="joblist-banner-bg flex">
+                            <img src="/assets/images/joblist_search_header_bg.png" alt="" class="w-1-1 h-auto">
+                        </div>
+                    </div>
+
+                    <div class="my-34 px-12 flex-col">
+                        <h1 class="heading-header-1 text-secondary-color">Find your dream jobs through <span class="text-primary-color">Ziro</span> easily</h1>
+
+                        <form action="" class="mt-60 w-1-1 flex justify-end items-center">
+                            <div class="form_search w-1-1">
+                                <input class="form_search_content" type="email" placeholder="Search here" value="">
+                                <button class="form_btn_search btn btn-133-50 btn-primary">
+                                    <span class="font-semibol text-third-color">Search Job</span>
+                                </button>
                             </div>
-                            <div class="flex-row gap-25 items-center">
-                                <div class="checkbox-switch">
-                                    <span class="font-semibol text-secondary-color">Details</span>
-                                    <input type="checkbox">
+                        </form>
+
+                        <div class="suggestions mt-34 flex-row flex-wrap justify-center gap-12">
+                            <a href="" class="link-wev-dev link-6-12 link-outline3 font-medium">Web Dev</a>
+                            <a href="" class="link-mobile-dev link-6-12 link-outline3 font-medium">Mobile Dev</a>
+                            <a href="" class="link-design link-6-12 link-outline3 font-medium">Design</a>
+                            <a href="" class="link-writing link-6-12 link-outline3 font-medium">Writing</a>
+                            <a href="" class="link-admin-sp hidden link-6-12 link-outline3 font-medium">Admin Support</a>
+                            <a href="" class="link-customer-service hidden link-6-12 link-outline3 font-medium">Customer Service</a>
+                            <a href="" class="link-marketing hidden link-6-12 link-outline3 font-medium">Marketing</a>
+                            <a href="" class="link-accouting hidden link-6-12 link-outline3 font-medium">Accounting</a>
+                            <a href="" class="link-view-all link-6-12 link-outline3 font-medium">View all categories</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner-2 hidden -mx-12">
+                    <div class="grid-cols-2">
+                        <div class="banner-2-content my-80 px-12">
+                            <h1 class="heading-header-2 text-secondary-color">Find your dream jobs through <span class="text-primary-color">Ziro</span> easily</h1>
+
+                            <form action="" class="mt-60 w-1-1 flex justify-end items-center">
+                                <div class="form_search w-1-1">
+                                    <input class="form_search_content" type="email" placeholder="Search here" value="">
+                                    <button class="form_btn_search btn btn-133-50 btn-primary">
+                                        <span class="font-semibol text-third-color">Search Job</span>
+                                    </button>
                                 </div>
-                                <div class="checkbox-switch">
-                                    <span class="font-semibol text-secondary-color">Salary</span>
-                                    <input type="checkbox">
-                                </div>
+                            </form>
+
+                            <div class="suggestions mt-34 flex-row flex-wrap gap-12">
+                                <a href="" class="link-wev-dev link-6-12 link-outline3 font-medium">Web Dev</a>
+                                <a href="" class="link-mobile-dev link-6-12 link-outline3 font-medium">Mobile Dev</a>
+                                <a href="" class="link-design link-6-12 link-outline3 font-medium">Design</a>
+                                <a href="" class="link-writing link-6-12 link-outline3 font-medium">Writing</a>
+                                <a href="" class="link-admin-sp hidden link-6-12 link-outline3 font-medium">Admin Support</a>
+                                <a href="" class="link-customer-service hidden link-6-12 link-outline3 font-medium">Customer Service</a>
+                                <a href="" class="link-marketing hidden link-6-12 link-outline3 font-medium">Marketing</a>
+                                <a href="" class="link-accouting hidden link-6-12 link-outline3 font-medium">Accounting</a>
+                                <a href="" class="link-view-all link-6-12 link-outline3 font-medium">View all categories</a>
                             </div>
                         </div>
-    
-                        <div class="flex-row gap-15 items-center">
 
-                            <button class="btn btn-outline btn-sm ">
-                                <span class="flex-row items-center gap-15 justify-center">
-                                    <span class="font-medium text-secondary-color">Newest</span>
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="11" viewBox="0 0 20 11" fill="#5F4BDB">
-                                        <path d="M19.6273 1.77879L10.6273 9.77878C10.4448 9.9391 10.2102 10.0275 9.96728 10.0275C9.72437 10.0275 9.48977 9.9391 9.30728 9.77878L0.307278 1.77879C0.121445 1.6003 0.0116842 1.35696 0.000880246 1.09952C-0.00992376 0.842077 0.0790634 0.5904 0.249287 0.396964C0.419511 0.203528 0.657833 0.0832638 0.91456 0.0612484C1.17129 0.039233 1.42661 0.117165 1.62728 0.278796L9.96728 7.68878L18.3073 0.278796C18.4046 0.185284 18.5199 0.112452 18.6462 0.0646883C18.7724 0.0169249 18.9071 -0.00478066 19.0419 0.000879482C19.1768 0.00653962 19.3091 0.0394483 19.4309 0.0976224C19.5528 0.155797 19.6615 0.238031 19.7507 0.339371C19.8399 0.440711 19.9076 0.559058 19.9498 0.687279C19.9921 0.8155 20.0079 0.950941 19.9963 1.08544C19.9848 1.21994 19.9462 1.35071 19.8827 1.46987C19.8193 1.58903 19.7324 1.69412 19.6273 1.77879Z"></path>
-                                        </svg></span>
-                                </span>
-                            </button>
-
-                            <button class="btn_icon btn_icon-md btn_icon-outline">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#5F4BDB">
-                                        <path d="M1 4H12C12 4.53043 12.2107 5.03914 12.5858 5.41421C12.9609 5.78929 13.4696 6 14 6H16C16.5304 6 17.0391 5.78929 17.4142 5.41421C17.7893 5.03914 18 4.53043 18 4H19C19.2652 4 19.5196 3.89464 19.7071 3.70711C19.8946 3.51957 20 3.26522 20 3C20 2.73478 19.8946 2.48043 19.7071 2.29289C19.5196 2.10536 19.2652 2 19 2H18C18 1.46957 17.7893 0.960859 17.4142 0.585786C17.0391 0.210714 16.5304 0 16 0H14C13.4696 0 12.9609 0.210714 12.5858 0.585786C12.2107 0.960859 12 1.46957 12 2H1C0.734784 2 0.48043 2.10536 0.292893 2.29289C0.105357 2.48043 0 2.73478 0 3C0 3.26522 0.105357 3.51957 0.292893 3.70711C0.48043 3.89464 0.734784 4 1 4V4ZM14 2H16V3V4H14V2ZM19 9H10C10 8.46957 9.78929 7.96086 9.41421 7.58579C9.03914 7.21071 8.53043 7 8 7H6C5.46957 7 4.96086 7.21071 4.58579 7.58579C4.21071 7.96086 4 8.46957 4 9H1C0.734784 9 0.48043 9.10536 0.292893 9.29289C0.105357 9.48043 0 9.73478 0 10C0 10.2652 0.105357 10.5196 0.292893 10.7071C0.48043 10.8946 0.734784 11 1 11H4C4 11.5304 4.21071 12.0391 4.58579 12.4142C4.96086 12.7893 5.46957 13 6 13H8C8.53043 13 9.03914 12.7893 9.41421 12.4142C9.78929 12.0391 10 11.5304 10 11H19C19.2652 11 19.5196 10.8946 19.7071 10.7071C19.8946 10.5196 20 10.2652 20 10C20 9.73478 19.8946 9.48043 19.7071 9.29289C19.5196 9.10536 19.2652 9 19 9ZM6 11V9H8V10V11H6ZM19 16H16C16 15.4696 15.7893 14.9609 15.4142 14.5858C15.0391 14.2107 14.5304 14 14 14H12C11.4696 14 10.9609 14.2107 10.5858 14.5858C10.2107 14.9609 10 15.4696 10 16H1C0.734784 16 0.48043 16.1054 0.292893 16.2929C0.105357 16.4804 0 16.7348 0 17C0 17.2652 0.105357 17.5196 0.292893 17.7071C0.48043 17.8946 0.734784 18 1 18H10C10 18.5304 10.2107 19.0391 10.5858 19.4142C10.9609 19.7893 11.4696 20 12 20H14C14.5304 20 15.0391 19.7893 15.4142 19.4142C15.7893 19.0391 16 18.5304 16 18H19C19.2652 18 19.5196 17.8946 19.7071 17.7071C19.8946 17.5196 20 17.2652 20 17C20 16.7348 19.8946 16.4804 19.7071 16.2929C19.5196 16.1054 19.2652 16 19 16ZM12 18V16H14V17V18H12Z"></path>
-                                    </svg>
-                                </span>
-                            </button>
+                        <div class="px-12">
+                            <div class="relative w-1-1 h-1-1">
+                                <img src="/assets/images/joblist_search_header_bg.png" alt="" class="banner-2-bg absolute bottom-0 right-0 w-35rem h-auto">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- JOB CARD -->
-            <div class="m-0-auto mt-60 px-40 max-w-1620">
-                <div class="w-1-1 h-1352 grid-rows-9 gap-34">
-                    <div class="job_card_harizontal p-20 rounded-20 flex-row items-center hover">
-                        <div class="job_infor w-450 h-80 flex items-center">
-                            <div class="job_image mr-20">
-                                <img src="/assets/images/joblist_job_image-1.png" alt="" class="w-80 h-80">
-                            </div>
-                            <div class="job_infor_inner flex-col justify-between h-57">
-                                <a href="" class="text-xl font-semibol text-secondary-color">Senior UX Designer</a>
-                                <a href="" class="text-15 font-medium">Highspeed Studios</a>
-                            </div>
-                        </div>
 
-                        <div class="flex-row justify-between items-center w-600 h-80">
-                            <div class="job_infor_card flex-row items-center w-290 h-1-1">
-                                <div class="infor_card_icon mr-15 flex justify-center items-center w-54 h-54 rounded-1_2 bg-jungle-green-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF">
-                                        <path d="M10.4046 5.60143C7.9752 5.60143 5.87177 7.28874 5.34477 9.66027L3.61889 17.4267C3.60623 17.4837 3.59984 17.5419 3.59984 17.6002C3.59984 18.042 3.95798 18.4002 4.39976 18.4002H16.4094C16.4678 18.4002 16.526 18.3938 16.5829 18.3811C17.0142 18.2853 17.2861 17.858 17.1903 17.4267L15.4644 9.66027C14.9374 7.28874 12.834 5.60143 10.4046 5.60143ZM10.4046 4.00159C13.5838 4.00159 16.3365 6.2097 17.0261 9.31322L18.752 17.0797C19.0395 18.3734 18.2238 19.6553 16.93 19.9429C16.7591 19.9808 16.5845 20 16.4094 20H4.39976C3.07441 20 2 18.9256 2 17.6002C2 17.4251 2.01916 17.2506 2.05715 17.0797L3.78302 9.31322C4.47269 6.2097 7.22536 4.00159 10.4046 4.00159Z"></path>
-                                        <path d="M12.0045 8.80111C12.4463 8.80111 12.8044 9.15924 12.8044 9.60103C12.8044 10.0428 12.4463 10.4009 12.0045 10.4009H10.0047C9.78379 10.4009 9.60472 10.58 9.60472 10.8009C9.60472 11.0218 9.78379 11.2009 10.0047 11.2009H10.8046C11.9091 11.2009 12.8044 12.0962 12.8044 13.2007C12.8044 14.3051 11.9091 15.2005 10.8046 15.2005H8.8048C8.36302 15.2005 8.00488 14.8423 8.00488 14.4006C8.00488 13.9588 8.36302 13.6006 8.8048 13.6006H10.8046C11.0255 13.6006 11.2046 13.4216 11.2046 13.2007C11.2046 12.9798 11.0255 12.8007 10.8046 12.8007H10.0047C8.90022 12.8007 8.00488 11.9054 8.00488 10.8009C8.00488 9.69645 8.90022 8.80111 10.0047 8.80111H12.0045Z"></path>
-                                        <path d="M9.60474 8.0012C9.60474 7.55942 9.96288 7.20128 10.4047 7.20128C10.8465 7.20128 11.2046 7.55942 11.2046 8.0012V9.60105C11.2046 10.0428 10.8465 10.401 10.4047 10.401C9.96288 10.401 9.60474 10.0428 9.60474 9.60105V8.0012Z"></path>
-                                        <path d="M11.2046 16.0004C11.2046 16.4422 10.8465 16.8003 10.4047 16.8003C9.96288 16.8003 9.60474 16.4422 9.60474 16.0004V14.4006C9.60474 13.9588 9.96288 13.6007 10.4047 13.6007C10.8465 13.6007 11.2046 13.9588 11.2046 14.4006V16.0004Z"></path>
-                                        <path d="M9.54748 4.50445C9.71155 4.91463 9.51204 5.38016 9.10185 5.54424C8.69167 5.70831 8.22614 5.5088 8.06206 5.09861L6.46222 1.09901C6.20224 0.449068 6.84348 -0.197693 7.49563 0.0566953C8.09463 0.290354 8.54108 0.401965 8.80477 0.401965C8.87041 0.401965 8.92483 0.387937 9.04361 0.33746C9.07514 0.324059 9.11218 0.307698 9.19907 0.269255C9.6128 0.0879397 9.93961 0.00200497 10.4046 0.00200497C10.8685 0.00200497 11.2005 0.0881679 11.6156 0.267733C11.7209 0.313853 11.763 0.332196 11.8002 0.347533C11.9028 0.389764 11.9521 0.401965 12.0045 0.401965C12.2527 0.401965 12.7032 0.28935 13.3194 0.0544675C13.9707 -0.193814 14.6059 0.451807 14.347 1.09901L12.7472 5.09861C12.5831 5.5088 12.1176 5.70831 11.7074 5.54424C11.2972 5.38016 11.0977 4.91463 11.2617 4.50445L12.2683 1.98805C12.1763 1.9972 12.0884 2.00181 12.0045 2.00181C11.7125 2.00181 11.4706 1.94195 11.1911 1.82687C11.1359 1.80414 11.0754 1.77776 10.9804 1.73608C10.7489 1.6359 10.6177 1.60185 10.4046 1.60185C10.1936 1.60185 10.0697 1.63442 9.84124 1.73456C9.76276 1.76933 9.71304 1.79129 9.66931 1.80987C9.36971 1.93719 9.11906 2.00181 8.80477 2.00181C8.72029 2.00181 8.63247 1.99742 8.54118 1.9887L9.54748 4.50445Z"></path>
-                                    </svg>
-                                </div>
-
-                                <div class="flex-col justify-between h-48">
-                                    <span class="text-17 font-medium leading-20_4 text-mine-shaft-900">$14,000 - $25,000</span>
-                                    <span class="text-15 leading-22_5 text-gray-600">Monthly Salary</span>
-                                </div>
-                            </div>
-
-                            <div class="job_infor_card flex-row items-center w-290 h-1-1">
-                                <div class="flex justify-center items-center mr-15 w-54 h-54 rounded-1_2 bg-tan-hide-400">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF">
-                                        <path d="M9.65625 0C5.43457 0 2 3.43457 2 7.65625C2 9.00758 2.35703 10.3361 3.03246 11.4982C3.18992 11.7692 3.36594 12.0332 3.5557 12.283L9.32359 20H9.98887L15.7568 12.283C15.9465 12.0332 16.1225 11.7692 16.28 11.4983C16.9555 10.3361 17.3125 9.00758 17.3125 7.65625C17.3125 3.43457 13.8779 0 9.65625 0ZM9.65625 10.1953C8.25621 10.1953 7.11719 9.05629 7.11719 7.65625C7.11719 6.25621 8.25621 5.11719 9.65625 5.11719C11.0563 5.11719 12.1953 6.25621 12.1953 7.65625C12.1953 9.05629 11.0563 10.1953 9.65625 10.1953Z"></path>
-                                    </svg>
-                                </div>    
-
-                                <div class="flex-col justify-between h-48">
-                                    <span class="text-17 font-medium leading-20_4 text-mine-shaft-900">London, England</span>
-                                    <span class="text-15 leading-22_5 text-gray-600">Location</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="flex-row justify-end w-450">
-                            <a href="/html/jobdetail.html" class="mr-15 font-semibol text-primary text-primary link-lg link-titan-white-50">Apply Now</a>
-                            <button class="btn_icon btn_icon-sm btn_icon-persimmon-400">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                    <path d="M14.6875 2C12.3186 2 10.7965 3.55012 10 4.94285C9.20348 3.55012 7.68145 2 5.3125 2C2.30613 2 0 4.30254 0 7.35641C0 10.6678 2.88922 12.9228 7.20363 16.3371C9.31621 18.0075 9.45195 18.1345 10 18.575C10.4473 18.2155 10.6948 17.9988 12.7964 16.3371C17.1108 12.9228 20 10.6678 20 7.35641C20 4.30258 17.6939 2 14.6875 2Z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="job_card_harizontal p-20 rounded-20 flex-row items-center hover">
-                        <div class="job_infor w-450 h-80 flex items-center">
-                            <div class="job_image mr-20">
-                                <img src="/assets/images/joblist_job_image-1.png" alt="" class="w-80 h-80">
-                            </div>
-                            <div class="job_infor_inner flex-col justify-between h-57">
-                                <a href="" class="text-xl font-semibol text-secondary-color">Senior UX Designer</a>
-                                <a href="" class="text-15 font-medium">Highspeed Studios</a>
-                            </div>
-                        </div>
-
-                        <div class="flex-row justify-between items-center w-600 h-80">
-                            <div class="job_infor_card flex-row items-center w-290 h-1-1">
-                                <div class="infor_card_icon mr-15 flex justify-center items-center w-54 h-54 rounded-1_2 bg-jungle-green-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF">
-                                        <path d="M10.4046 5.60143C7.9752 5.60143 5.87177 7.28874 5.34477 9.66027L3.61889 17.4267C3.60623 17.4837 3.59984 17.5419 3.59984 17.6002C3.59984 18.042 3.95798 18.4002 4.39976 18.4002H16.4094C16.4678 18.4002 16.526 18.3938 16.5829 18.3811C17.0142 18.2853 17.2861 17.858 17.1903 17.4267L15.4644 9.66027C14.9374 7.28874 12.834 5.60143 10.4046 5.60143ZM10.4046 4.00159C13.5838 4.00159 16.3365 6.2097 17.0261 9.31322L18.752 17.0797C19.0395 18.3734 18.2238 19.6553 16.93 19.9429C16.7591 19.9808 16.5845 20 16.4094 20H4.39976C3.07441 20 2 18.9256 2 17.6002C2 17.4251 2.01916 17.2506 2.05715 17.0797L3.78302 9.31322C4.47269 6.2097 7.22536 4.00159 10.4046 4.00159Z"></path>
-                                        <path d="M12.0045 8.80111C12.4463 8.80111 12.8044 9.15924 12.8044 9.60103C12.8044 10.0428 12.4463 10.4009 12.0045 10.4009H10.0047C9.78379 10.4009 9.60472 10.58 9.60472 10.8009C9.60472 11.0218 9.78379 11.2009 10.0047 11.2009H10.8046C11.9091 11.2009 12.8044 12.0962 12.8044 13.2007C12.8044 14.3051 11.9091 15.2005 10.8046 15.2005H8.8048C8.36302 15.2005 8.00488 14.8423 8.00488 14.4006C8.00488 13.9588 8.36302 13.6006 8.8048 13.6006H10.8046C11.0255 13.6006 11.2046 13.4216 11.2046 13.2007C11.2046 12.9798 11.0255 12.8007 10.8046 12.8007H10.0047C8.90022 12.8007 8.00488 11.9054 8.00488 10.8009C8.00488 9.69645 8.90022 8.80111 10.0047 8.80111H12.0045Z"></path>
-                                        <path d="M9.60474 8.0012C9.60474 7.55942 9.96288 7.20128 10.4047 7.20128C10.8465 7.20128 11.2046 7.55942 11.2046 8.0012V9.60105C11.2046 10.0428 10.8465 10.401 10.4047 10.401C9.96288 10.401 9.60474 10.0428 9.60474 9.60105V8.0012Z"></path>
-                                        <path d="M11.2046 16.0004C11.2046 16.4422 10.8465 16.8003 10.4047 16.8003C9.96288 16.8003 9.60474 16.4422 9.60474 16.0004V14.4006C9.60474 13.9588 9.96288 13.6007 10.4047 13.6007C10.8465 13.6007 11.2046 13.9588 11.2046 14.4006V16.0004Z"></path>
-                                        <path d="M9.54748 4.50445C9.71155 4.91463 9.51204 5.38016 9.10185 5.54424C8.69167 5.70831 8.22614 5.5088 8.06206 5.09861L6.46222 1.09901C6.20224 0.449068 6.84348 -0.197693 7.49563 0.0566953C8.09463 0.290354 8.54108 0.401965 8.80477 0.401965C8.87041 0.401965 8.92483 0.387937 9.04361 0.33746C9.07514 0.324059 9.11218 0.307698 9.19907 0.269255C9.6128 0.0879397 9.93961 0.00200497 10.4046 0.00200497C10.8685 0.00200497 11.2005 0.0881679 11.6156 0.267733C11.7209 0.313853 11.763 0.332196 11.8002 0.347533C11.9028 0.389764 11.9521 0.401965 12.0045 0.401965C12.2527 0.401965 12.7032 0.28935 13.3194 0.0544675C13.9707 -0.193814 14.6059 0.451807 14.347 1.09901L12.7472 5.09861C12.5831 5.5088 12.1176 5.70831 11.7074 5.54424C11.2972 5.38016 11.0977 4.91463 11.2617 4.50445L12.2683 1.98805C12.1763 1.9972 12.0884 2.00181 12.0045 2.00181C11.7125 2.00181 11.4706 1.94195 11.1911 1.82687C11.1359 1.80414 11.0754 1.77776 10.9804 1.73608C10.7489 1.6359 10.6177 1.60185 10.4046 1.60185C10.1936 1.60185 10.0697 1.63442 9.84124 1.73456C9.76276 1.76933 9.71304 1.79129 9.66931 1.80987C9.36971 1.93719 9.11906 2.00181 8.80477 2.00181C8.72029 2.00181 8.63247 1.99742 8.54118 1.9887L9.54748 4.50445Z"></path>
-                                    </svg>
-                                </div>
-
-                                <div class="flex-col justify-between h-48">
-                                    <span class="text-17 font-medium leading-20_4 text-mine-shaft-900">$14,000 - $25,000</span>
-                                    <span class="text-15 leading-22_5 text-gray-600">Monthly Salary</span>
-                                </div>
-                            </div>
-
-                            <div class="job_infor_card flex-row items-center w-290 h-1-1">
-                                <div class="flex justify-center items-center mr-15 w-54 h-54 rounded-1_2 bg-tan-hide-400">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF">
-                                        <path d="M9.65625 0C5.43457 0 2 3.43457 2 7.65625C2 9.00758 2.35703 10.3361 3.03246 11.4982C3.18992 11.7692 3.36594 12.0332 3.5557 12.283L9.32359 20H9.98887L15.7568 12.283C15.9465 12.0332 16.1225 11.7692 16.28 11.4983C16.9555 10.3361 17.3125 9.00758 17.3125 7.65625C17.3125 3.43457 13.8779 0 9.65625 0ZM9.65625 10.1953C8.25621 10.1953 7.11719 9.05629 7.11719 7.65625C7.11719 6.25621 8.25621 5.11719 9.65625 5.11719C11.0563 5.11719 12.1953 6.25621 12.1953 7.65625C12.1953 9.05629 11.0563 10.1953 9.65625 10.1953Z"></path>
-                                    </svg>
-                                </div>    
-
-                                <div class="flex-col justify-between h-48">
-                                    <span class="text-17 font-medium leading-20_4 text-mine-shaft-900">London, England</span>
-                                    <span class="text-15 leading-22_5 text-gray-600">Location</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="flex-row justify-end w-450">
-                            <a href="/html/jobdetail.html" class="mr-15 font-semibol text-primary text-primary link-lg link-titan-white-50">Apply Now</a>
-                            <button class="btn_icon btn_icon-sm btn_icon-persimmon-400">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                    <path d="M14.6875 2C12.3186 2 10.7965 3.55012 10 4.94285C9.20348 3.55012 7.68145 2 5.3125 2C2.30613 2 0 4.30254 0 7.35641C0 10.6678 2.88922 12.9228 7.20363 16.3371C9.31621 18.0075 9.45195 18.1345 10 18.575C10.4473 18.2155 10.6948 17.9988 12.7964 16.3371C17.1108 12.9228 20 10.6678 20 7.35641C20 4.30258 17.6939 2 14.6875 2Z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="job_card_harizontal p-20 rounded-20 flex-row items-center hover">
-                        <div class="job_infor w-450 h-80 flex items-center">
-                            <div class="job_image mr-20">
-                                <img src="/assets/images/joblist_job_image-1.png" alt="" class="w-80 h-80">
-                            </div>
-                            <div class="job_infor_inner flex-col justify-between h-57">
-                                <a href="" class="text-xl font-semibol text-secondary-color">Senior UX Designer</a>
-                                <a href="" class="text-15 font-medium">Highspeed Studios</a>
-                            </div>
-                        </div>
-
-                        <div class="flex-row justify-between items-center w-600 h-80">
-                            <div class="job_infor_card flex-row items-center w-290 h-1-1">
-                                <div class="infor_card_icon mr-15 flex justify-center items-center w-54 h-54 rounded-1_2 bg-jungle-green-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF">
-                                        <path d="M10.4046 5.60143C7.9752 5.60143 5.87177 7.28874 5.34477 9.66027L3.61889 17.4267C3.60623 17.4837 3.59984 17.5419 3.59984 17.6002C3.59984 18.042 3.95798 18.4002 4.39976 18.4002H16.4094C16.4678 18.4002 16.526 18.3938 16.5829 18.3811C17.0142 18.2853 17.2861 17.858 17.1903 17.4267L15.4644 9.66027C14.9374 7.28874 12.834 5.60143 10.4046 5.60143ZM10.4046 4.00159C13.5838 4.00159 16.3365 6.2097 17.0261 9.31322L18.752 17.0797C19.0395 18.3734 18.2238 19.6553 16.93 19.9429C16.7591 19.9808 16.5845 20 16.4094 20H4.39976C3.07441 20 2 18.9256 2 17.6002C2 17.4251 2.01916 17.2506 2.05715 17.0797L3.78302 9.31322C4.47269 6.2097 7.22536 4.00159 10.4046 4.00159Z"></path>
-                                        <path d="M12.0045 8.80111C12.4463 8.80111 12.8044 9.15924 12.8044 9.60103C12.8044 10.0428 12.4463 10.4009 12.0045 10.4009H10.0047C9.78379 10.4009 9.60472 10.58 9.60472 10.8009C9.60472 11.0218 9.78379 11.2009 10.0047 11.2009H10.8046C11.9091 11.2009 12.8044 12.0962 12.8044 13.2007C12.8044 14.3051 11.9091 15.2005 10.8046 15.2005H8.8048C8.36302 15.2005 8.00488 14.8423 8.00488 14.4006C8.00488 13.9588 8.36302 13.6006 8.8048 13.6006H10.8046C11.0255 13.6006 11.2046 13.4216 11.2046 13.2007C11.2046 12.9798 11.0255 12.8007 10.8046 12.8007H10.0047C8.90022 12.8007 8.00488 11.9054 8.00488 10.8009C8.00488 9.69645 8.90022 8.80111 10.0047 8.80111H12.0045Z"></path>
-                                        <path d="M9.60474 8.0012C9.60474 7.55942 9.96288 7.20128 10.4047 7.20128C10.8465 7.20128 11.2046 7.55942 11.2046 8.0012V9.60105C11.2046 10.0428 10.8465 10.401 10.4047 10.401C9.96288 10.401 9.60474 10.0428 9.60474 9.60105V8.0012Z"></path>
-                                        <path d="M11.2046 16.0004C11.2046 16.4422 10.8465 16.8003 10.4047 16.8003C9.96288 16.8003 9.60474 16.4422 9.60474 16.0004V14.4006C9.60474 13.9588 9.96288 13.6007 10.4047 13.6007C10.8465 13.6007 11.2046 13.9588 11.2046 14.4006V16.0004Z"></path>
-                                        <path d="M9.54748 4.50445C9.71155 4.91463 9.51204 5.38016 9.10185 5.54424C8.69167 5.70831 8.22614 5.5088 8.06206 5.09861L6.46222 1.09901C6.20224 0.449068 6.84348 -0.197693 7.49563 0.0566953C8.09463 0.290354 8.54108 0.401965 8.80477 0.401965C8.87041 0.401965 8.92483 0.387937 9.04361 0.33746C9.07514 0.324059 9.11218 0.307698 9.19907 0.269255C9.6128 0.0879397 9.93961 0.00200497 10.4046 0.00200497C10.8685 0.00200497 11.2005 0.0881679 11.6156 0.267733C11.7209 0.313853 11.763 0.332196 11.8002 0.347533C11.9028 0.389764 11.9521 0.401965 12.0045 0.401965C12.2527 0.401965 12.7032 0.28935 13.3194 0.0544675C13.9707 -0.193814 14.6059 0.451807 14.347 1.09901L12.7472 5.09861C12.5831 5.5088 12.1176 5.70831 11.7074 5.54424C11.2972 5.38016 11.0977 4.91463 11.2617 4.50445L12.2683 1.98805C12.1763 1.9972 12.0884 2.00181 12.0045 2.00181C11.7125 2.00181 11.4706 1.94195 11.1911 1.82687C11.1359 1.80414 11.0754 1.77776 10.9804 1.73608C10.7489 1.6359 10.6177 1.60185 10.4046 1.60185C10.1936 1.60185 10.0697 1.63442 9.84124 1.73456C9.76276 1.76933 9.71304 1.79129 9.66931 1.80987C9.36971 1.93719 9.11906 2.00181 8.80477 2.00181C8.72029 2.00181 8.63247 1.99742 8.54118 1.9887L9.54748 4.50445Z"></path>
-                                    </svg>
-                                </div>
-
-                                <div class="flex-col justify-between h-48">
-                                    <span class="text-17 font-medium leading-20_4 text-mine-shaft-900">$14,000 - $25,000</span>
-                                    <span class="text-15 leading-22_5 text-gray-600">Monthly Salary</span>
-                                </div>
-                            </div>
-
-                            <div class="job_infor_card flex-row items-center w-290 h-1-1">
-                                <div class="flex justify-center items-center mr-15 w-54 h-54 rounded-1_2 bg-tan-hide-400">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF">
-                                        <path d="M9.65625 0C5.43457 0 2 3.43457 2 7.65625C2 9.00758 2.35703 10.3361 3.03246 11.4982C3.18992 11.7692 3.36594 12.0332 3.5557 12.283L9.32359 20H9.98887L15.7568 12.283C15.9465 12.0332 16.1225 11.7692 16.28 11.4983C16.9555 10.3361 17.3125 9.00758 17.3125 7.65625C17.3125 3.43457 13.8779 0 9.65625 0ZM9.65625 10.1953C8.25621 10.1953 7.11719 9.05629 7.11719 7.65625C7.11719 6.25621 8.25621 5.11719 9.65625 5.11719C11.0563 5.11719 12.1953 6.25621 12.1953 7.65625C12.1953 9.05629 11.0563 10.1953 9.65625 10.1953Z"></path>
-                                    </svg>
-                                </div>    
-
-                                <div class="flex-col justify-between h-48">
-                                    <span class="text-17 font-medium leading-20_4 text-mine-shaft-900">London, England</span>
-                                    <span class="text-15 leading-22_5 text-gray-600">Location</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="flex-row justify-end w-450">
-                            <a href="/html/jobdetail.html" class="mr-15 font-semibol text-primary text-primary link-lg link-titan-white-50">Apply Now</a>
-                            <button class="btn_icon btn_icon-sm btn_icon-persimmon-400">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                    <path d="M14.6875 2C12.3186 2 10.7965 3.55012 10 4.94285C9.20348 3.55012 7.68145 2 5.3125 2C2.30613 2 0 4.30254 0 7.35641C0 10.6678 2.88922 12.9228 7.20363 16.3371C9.31621 18.0075 9.45195 18.1345 10 18.575C10.4473 18.2155 10.6948 17.9988 12.7964 16.3371C17.1108 12.9228 20 10.6678 20 7.35641C20 4.30258 17.6939 2 14.6875 2Z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="job_card_harizontal p-20 rounded-20 flex-row items-center hover">
-                        <div class="job_infor w-450 h-80 flex items-center">
-                            <div class="job_image mr-20">
-                                <img src="/assets/images/joblist_job_image-1.png" alt="" class="w-80 h-80">
-                            </div>
-                            <div class="job_infor_inner flex-col justify-between h-57">
-                                <a href="" class="text-xl font-semibol text-secondary-color">Senior UX Designer</a>
-                                <a href="" class="text-15 font-medium">Highspeed Studios</a>
-                            </div>
-                        </div>
-
-                        <div class="flex-row justify-between items-center w-600 h-80">
-                            <div class="job_infor_card flex-row items-center w-290 h-1-1">
-                                <div class="infor_card_icon mr-15 flex justify-center items-center w-54 h-54 rounded-1_2 bg-jungle-green-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF">
-                                        <path d="M10.4046 5.60143C7.9752 5.60143 5.87177 7.28874 5.34477 9.66027L3.61889 17.4267C3.60623 17.4837 3.59984 17.5419 3.59984 17.6002C3.59984 18.042 3.95798 18.4002 4.39976 18.4002H16.4094C16.4678 18.4002 16.526 18.3938 16.5829 18.3811C17.0142 18.2853 17.2861 17.858 17.1903 17.4267L15.4644 9.66027C14.9374 7.28874 12.834 5.60143 10.4046 5.60143ZM10.4046 4.00159C13.5838 4.00159 16.3365 6.2097 17.0261 9.31322L18.752 17.0797C19.0395 18.3734 18.2238 19.6553 16.93 19.9429C16.7591 19.9808 16.5845 20 16.4094 20H4.39976C3.07441 20 2 18.9256 2 17.6002C2 17.4251 2.01916 17.2506 2.05715 17.0797L3.78302 9.31322C4.47269 6.2097 7.22536 4.00159 10.4046 4.00159Z"></path>
-                                        <path d="M12.0045 8.80111C12.4463 8.80111 12.8044 9.15924 12.8044 9.60103C12.8044 10.0428 12.4463 10.4009 12.0045 10.4009H10.0047C9.78379 10.4009 9.60472 10.58 9.60472 10.8009C9.60472 11.0218 9.78379 11.2009 10.0047 11.2009H10.8046C11.9091 11.2009 12.8044 12.0962 12.8044 13.2007C12.8044 14.3051 11.9091 15.2005 10.8046 15.2005H8.8048C8.36302 15.2005 8.00488 14.8423 8.00488 14.4006C8.00488 13.9588 8.36302 13.6006 8.8048 13.6006H10.8046C11.0255 13.6006 11.2046 13.4216 11.2046 13.2007C11.2046 12.9798 11.0255 12.8007 10.8046 12.8007H10.0047C8.90022 12.8007 8.00488 11.9054 8.00488 10.8009C8.00488 9.69645 8.90022 8.80111 10.0047 8.80111H12.0045Z"></path>
-                                        <path d="M9.60474 8.0012C9.60474 7.55942 9.96288 7.20128 10.4047 7.20128C10.8465 7.20128 11.2046 7.55942 11.2046 8.0012V9.60105C11.2046 10.0428 10.8465 10.401 10.4047 10.401C9.96288 10.401 9.60474 10.0428 9.60474 9.60105V8.0012Z"></path>
-                                        <path d="M11.2046 16.0004C11.2046 16.4422 10.8465 16.8003 10.4047 16.8003C9.96288 16.8003 9.60474 16.4422 9.60474 16.0004V14.4006C9.60474 13.9588 9.96288 13.6007 10.4047 13.6007C10.8465 13.6007 11.2046 13.9588 11.2046 14.4006V16.0004Z"></path>
-                                        <path d="M9.54748 4.50445C9.71155 4.91463 9.51204 5.38016 9.10185 5.54424C8.69167 5.70831 8.22614 5.5088 8.06206 5.09861L6.46222 1.09901C6.20224 0.449068 6.84348 -0.197693 7.49563 0.0566953C8.09463 0.290354 8.54108 0.401965 8.80477 0.401965C8.87041 0.401965 8.92483 0.387937 9.04361 0.33746C9.07514 0.324059 9.11218 0.307698 9.19907 0.269255C9.6128 0.0879397 9.93961 0.00200497 10.4046 0.00200497C10.8685 0.00200497 11.2005 0.0881679 11.6156 0.267733C11.7209 0.313853 11.763 0.332196 11.8002 0.347533C11.9028 0.389764 11.9521 0.401965 12.0045 0.401965C12.2527 0.401965 12.7032 0.28935 13.3194 0.0544675C13.9707 -0.193814 14.6059 0.451807 14.347 1.09901L12.7472 5.09861C12.5831 5.5088 12.1176 5.70831 11.7074 5.54424C11.2972 5.38016 11.0977 4.91463 11.2617 4.50445L12.2683 1.98805C12.1763 1.9972 12.0884 2.00181 12.0045 2.00181C11.7125 2.00181 11.4706 1.94195 11.1911 1.82687C11.1359 1.80414 11.0754 1.77776 10.9804 1.73608C10.7489 1.6359 10.6177 1.60185 10.4046 1.60185C10.1936 1.60185 10.0697 1.63442 9.84124 1.73456C9.76276 1.76933 9.71304 1.79129 9.66931 1.80987C9.36971 1.93719 9.11906 2.00181 8.80477 2.00181C8.72029 2.00181 8.63247 1.99742 8.54118 1.9887L9.54748 4.50445Z"></path>
-                                    </svg>
-                                </div>
-
-                                <div class="flex-col justify-between h-48">
-                                    <span class="text-17 font-medium leading-20_4 text-mine-shaft-900">$14,000 - $25,000</span>
-                                    <span class="text-15 leading-22_5 text-gray-600">Monthly Salary</span>
-                                </div>
-                            </div>
-
-                            <div class="job_infor_card flex-row items-center w-290 h-1-1">
-                                <div class="flex justify-center items-center mr-15 w-54 h-54 rounded-1_2 bg-tan-hide-400">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF">
-                                        <path d="M9.65625 0C5.43457 0 2 3.43457 2 7.65625C2 9.00758 2.35703 10.3361 3.03246 11.4982C3.18992 11.7692 3.36594 12.0332 3.5557 12.283L9.32359 20H9.98887L15.7568 12.283C15.9465 12.0332 16.1225 11.7692 16.28 11.4983C16.9555 10.3361 17.3125 9.00758 17.3125 7.65625C17.3125 3.43457 13.8779 0 9.65625 0ZM9.65625 10.1953C8.25621 10.1953 7.11719 9.05629 7.11719 7.65625C7.11719 6.25621 8.25621 5.11719 9.65625 5.11719C11.0563 5.11719 12.1953 6.25621 12.1953 7.65625C12.1953 9.05629 11.0563 10.1953 9.65625 10.1953Z"></path>
-                                    </svg>
-                                </div>    
-
-                                <div class="flex-col justify-between h-48">
-                                    <span class="text-17 font-medium leading-20_4 text-mine-shaft-900">London, England</span>
-                                    <span class="text-15 leading-22_5 text-gray-600">Location</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="flex-row justify-end w-450">
-                            <a href="/html/jobdetail.html" class="mr-15 font-semibol text-primary text-primary link-lg link-titan-white-50">Apply Now</a>
-                            <button class="btn_icon btn_icon-sm btn_icon-persimmon-400">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                    <path d="M14.6875 2C12.3186 2 10.7965 3.55012 10 4.94285C9.20348 3.55012 7.68145 2 5.3125 2C2.30613 2 0 4.30254 0 7.35641C0 10.6678 2.88922 12.9228 7.20363 16.3371C9.31621 18.0075 9.45195 18.1345 10 18.575C10.4473 18.2155 10.6948 17.9988 12.7964 16.3371C17.1108 12.9228 20 10.6678 20 7.35641C20 4.30258 17.6939 2 14.6875 2Z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="job_card_harizontal p-20 rounded-20 flex-row items-center hover">
-                        <div class="job_infor w-450 h-80 flex items-center">
-                            <div class="job_image mr-20">
-                                <img src="/assets/images/joblist_job_image-1.png" alt="" class="w-80 h-80">
-                            </div>
-                            <div class="job_infor_inner flex-col justify-between h-57">
-                                <a href="" class="text-xl font-semibol text-secondary-color">Senior UX Designer</a>
-                                <a href="" class="text-15 font-medium">Highspeed Studios</a>
-                            </div>
-                        </div>
-
-                        <div class="flex-row justify-between items-center w-600 h-80">
-                            <div class="job_infor_card flex-row items-center w-290 h-1-1">
-                                <div class="infor_card_icon mr-15 flex justify-center items-center w-54 h-54 rounded-1_2 bg-jungle-green-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF">
-                                        <path d="M10.4046 5.60143C7.9752 5.60143 5.87177 7.28874 5.34477 9.66027L3.61889 17.4267C3.60623 17.4837 3.59984 17.5419 3.59984 17.6002C3.59984 18.042 3.95798 18.4002 4.39976 18.4002H16.4094C16.4678 18.4002 16.526 18.3938 16.5829 18.3811C17.0142 18.2853 17.2861 17.858 17.1903 17.4267L15.4644 9.66027C14.9374 7.28874 12.834 5.60143 10.4046 5.60143ZM10.4046 4.00159C13.5838 4.00159 16.3365 6.2097 17.0261 9.31322L18.752 17.0797C19.0395 18.3734 18.2238 19.6553 16.93 19.9429C16.7591 19.9808 16.5845 20 16.4094 20H4.39976C3.07441 20 2 18.9256 2 17.6002C2 17.4251 2.01916 17.2506 2.05715 17.0797L3.78302 9.31322C4.47269 6.2097 7.22536 4.00159 10.4046 4.00159Z"></path>
-                                        <path d="M12.0045 8.80111C12.4463 8.80111 12.8044 9.15924 12.8044 9.60103C12.8044 10.0428 12.4463 10.4009 12.0045 10.4009H10.0047C9.78379 10.4009 9.60472 10.58 9.60472 10.8009C9.60472 11.0218 9.78379 11.2009 10.0047 11.2009H10.8046C11.9091 11.2009 12.8044 12.0962 12.8044 13.2007C12.8044 14.3051 11.9091 15.2005 10.8046 15.2005H8.8048C8.36302 15.2005 8.00488 14.8423 8.00488 14.4006C8.00488 13.9588 8.36302 13.6006 8.8048 13.6006H10.8046C11.0255 13.6006 11.2046 13.4216 11.2046 13.2007C11.2046 12.9798 11.0255 12.8007 10.8046 12.8007H10.0047C8.90022 12.8007 8.00488 11.9054 8.00488 10.8009C8.00488 9.69645 8.90022 8.80111 10.0047 8.80111H12.0045Z"></path>
-                                        <path d="M9.60474 8.0012C9.60474 7.55942 9.96288 7.20128 10.4047 7.20128C10.8465 7.20128 11.2046 7.55942 11.2046 8.0012V9.60105C11.2046 10.0428 10.8465 10.401 10.4047 10.401C9.96288 10.401 9.60474 10.0428 9.60474 9.60105V8.0012Z"></path>
-                                        <path d="M11.2046 16.0004C11.2046 16.4422 10.8465 16.8003 10.4047 16.8003C9.96288 16.8003 9.60474 16.4422 9.60474 16.0004V14.4006C9.60474 13.9588 9.96288 13.6007 10.4047 13.6007C10.8465 13.6007 11.2046 13.9588 11.2046 14.4006V16.0004Z"></path>
-                                        <path d="M9.54748 4.50445C9.71155 4.91463 9.51204 5.38016 9.10185 5.54424C8.69167 5.70831 8.22614 5.5088 8.06206 5.09861L6.46222 1.09901C6.20224 0.449068 6.84348 -0.197693 7.49563 0.0566953C8.09463 0.290354 8.54108 0.401965 8.80477 0.401965C8.87041 0.401965 8.92483 0.387937 9.04361 0.33746C9.07514 0.324059 9.11218 0.307698 9.19907 0.269255C9.6128 0.0879397 9.93961 0.00200497 10.4046 0.00200497C10.8685 0.00200497 11.2005 0.0881679 11.6156 0.267733C11.7209 0.313853 11.763 0.332196 11.8002 0.347533C11.9028 0.389764 11.9521 0.401965 12.0045 0.401965C12.2527 0.401965 12.7032 0.28935 13.3194 0.0544675C13.9707 -0.193814 14.6059 0.451807 14.347 1.09901L12.7472 5.09861C12.5831 5.5088 12.1176 5.70831 11.7074 5.54424C11.2972 5.38016 11.0977 4.91463 11.2617 4.50445L12.2683 1.98805C12.1763 1.9972 12.0884 2.00181 12.0045 2.00181C11.7125 2.00181 11.4706 1.94195 11.1911 1.82687C11.1359 1.80414 11.0754 1.77776 10.9804 1.73608C10.7489 1.6359 10.6177 1.60185 10.4046 1.60185C10.1936 1.60185 10.0697 1.63442 9.84124 1.73456C9.76276 1.76933 9.71304 1.79129 9.66931 1.80987C9.36971 1.93719 9.11906 2.00181 8.80477 2.00181C8.72029 2.00181 8.63247 1.99742 8.54118 1.9887L9.54748 4.50445Z"></path>
-                                    </svg>
-                                </div>
-
-                                <div class="flex-col justify-between h-48">
-                                    <span class="text-17 font-medium leading-20_4 text-mine-shaft-900">$14,000 - $25,000</span>
-                                    <span class="text-15 leading-22_5 text-gray-600">Monthly Salary</span>
-                                </div>
-                            </div>
-
-                            <div class="job_infor_card flex-row items-center w-290 h-1-1">
-                                <div class="flex justify-center items-center mr-15 w-54 h-54 rounded-1_2 bg-tan-hide-400">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF">
-                                        <path d="M9.65625 0C5.43457 0 2 3.43457 2 7.65625C2 9.00758 2.35703 10.3361 3.03246 11.4982C3.18992 11.7692 3.36594 12.0332 3.5557 12.283L9.32359 20H9.98887L15.7568 12.283C15.9465 12.0332 16.1225 11.7692 16.28 11.4983C16.9555 10.3361 17.3125 9.00758 17.3125 7.65625C17.3125 3.43457 13.8779 0 9.65625 0ZM9.65625 10.1953C8.25621 10.1953 7.11719 9.05629 7.11719 7.65625C7.11719 6.25621 8.25621 5.11719 9.65625 5.11719C11.0563 5.11719 12.1953 6.25621 12.1953 7.65625C12.1953 9.05629 11.0563 10.1953 9.65625 10.1953Z"></path>
-                                    </svg>
-                                </div>    
-
-                                <div class="flex-col justify-between h-48">
-                                    <span class="text-17 font-medium leading-20_4 text-mine-shaft-900">London, England</span>
-                                    <span class="text-15 leading-22_5 text-gray-600">Location</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="flex-row justify-end w-450">
-                            <a href="/html/jobdetail.html" class="mr-15 font-semibol text-primary text-primary link-lg link-titan-white-50">Apply Now</a>
-                            <button class="btn_icon btn_icon-sm btn_icon-persimmon-400">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                    <path d="M14.6875 2C12.3186 2 10.7965 3.55012 10 4.94285C9.20348 3.55012 7.68145 2 5.3125 2C2.30613 2 0 4.30254 0 7.35641C0 10.6678 2.88922 12.9228 7.20363 16.3371C9.31621 18.0075 9.45195 18.1345 10 18.575C10.4473 18.2155 10.6948 17.9988 12.7964 16.3371C17.1108 12.9228 20 10.6678 20 7.35641C20 4.30258 17.6939 2 14.6875 2Z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="job_card_harizontal p-20 rounded-20 flex-row items-center hover">
-                        <div class="job_infor w-450 h-80 flex items-center">
-                            <div class="job_image mr-20">
-                                <img src="/assets/images/joblist_job_image-1.png" alt="" class="w-80 h-80">
-                            </div>
-                            <div class="job_infor_inner flex-col justify-between h-57">
-                                <a href="" class="text-xl font-semibol text-secondary-color">Senior UX Designer</a>
-                                <a href="" class="text-15 font-medium">Highspeed Studios</a>
-                            </div>
-                        </div>
-
-                        <div class="flex-row justify-between items-center w-600 h-80">
-                            <div class="job_infor_card flex-row items-center w-290 h-1-1">
-                                <div class="infor_card_icon mr-15 flex justify-center items-center w-54 h-54 rounded-1_2 bg-jungle-green-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF">
-                                        <path d="M10.4046 5.60143C7.9752 5.60143 5.87177 7.28874 5.34477 9.66027L3.61889 17.4267C3.60623 17.4837 3.59984 17.5419 3.59984 17.6002C3.59984 18.042 3.95798 18.4002 4.39976 18.4002H16.4094C16.4678 18.4002 16.526 18.3938 16.5829 18.3811C17.0142 18.2853 17.2861 17.858 17.1903 17.4267L15.4644 9.66027C14.9374 7.28874 12.834 5.60143 10.4046 5.60143ZM10.4046 4.00159C13.5838 4.00159 16.3365 6.2097 17.0261 9.31322L18.752 17.0797C19.0395 18.3734 18.2238 19.6553 16.93 19.9429C16.7591 19.9808 16.5845 20 16.4094 20H4.39976C3.07441 20 2 18.9256 2 17.6002C2 17.4251 2.01916 17.2506 2.05715 17.0797L3.78302 9.31322C4.47269 6.2097 7.22536 4.00159 10.4046 4.00159Z"></path>
-                                        <path d="M12.0045 8.80111C12.4463 8.80111 12.8044 9.15924 12.8044 9.60103C12.8044 10.0428 12.4463 10.4009 12.0045 10.4009H10.0047C9.78379 10.4009 9.60472 10.58 9.60472 10.8009C9.60472 11.0218 9.78379 11.2009 10.0047 11.2009H10.8046C11.9091 11.2009 12.8044 12.0962 12.8044 13.2007C12.8044 14.3051 11.9091 15.2005 10.8046 15.2005H8.8048C8.36302 15.2005 8.00488 14.8423 8.00488 14.4006C8.00488 13.9588 8.36302 13.6006 8.8048 13.6006H10.8046C11.0255 13.6006 11.2046 13.4216 11.2046 13.2007C11.2046 12.9798 11.0255 12.8007 10.8046 12.8007H10.0047C8.90022 12.8007 8.00488 11.9054 8.00488 10.8009C8.00488 9.69645 8.90022 8.80111 10.0047 8.80111H12.0045Z"></path>
-                                        <path d="M9.60474 8.0012C9.60474 7.55942 9.96288 7.20128 10.4047 7.20128C10.8465 7.20128 11.2046 7.55942 11.2046 8.0012V9.60105C11.2046 10.0428 10.8465 10.401 10.4047 10.401C9.96288 10.401 9.60474 10.0428 9.60474 9.60105V8.0012Z"></path>
-                                        <path d="M11.2046 16.0004C11.2046 16.4422 10.8465 16.8003 10.4047 16.8003C9.96288 16.8003 9.60474 16.4422 9.60474 16.0004V14.4006C9.60474 13.9588 9.96288 13.6007 10.4047 13.6007C10.8465 13.6007 11.2046 13.9588 11.2046 14.4006V16.0004Z"></path>
-                                        <path d="M9.54748 4.50445C9.71155 4.91463 9.51204 5.38016 9.10185 5.54424C8.69167 5.70831 8.22614 5.5088 8.06206 5.09861L6.46222 1.09901C6.20224 0.449068 6.84348 -0.197693 7.49563 0.0566953C8.09463 0.290354 8.54108 0.401965 8.80477 0.401965C8.87041 0.401965 8.92483 0.387937 9.04361 0.33746C9.07514 0.324059 9.11218 0.307698 9.19907 0.269255C9.6128 0.0879397 9.93961 0.00200497 10.4046 0.00200497C10.8685 0.00200497 11.2005 0.0881679 11.6156 0.267733C11.7209 0.313853 11.763 0.332196 11.8002 0.347533C11.9028 0.389764 11.9521 0.401965 12.0045 0.401965C12.2527 0.401965 12.7032 0.28935 13.3194 0.0544675C13.9707 -0.193814 14.6059 0.451807 14.347 1.09901L12.7472 5.09861C12.5831 5.5088 12.1176 5.70831 11.7074 5.54424C11.2972 5.38016 11.0977 4.91463 11.2617 4.50445L12.2683 1.98805C12.1763 1.9972 12.0884 2.00181 12.0045 2.00181C11.7125 2.00181 11.4706 1.94195 11.1911 1.82687C11.1359 1.80414 11.0754 1.77776 10.9804 1.73608C10.7489 1.6359 10.6177 1.60185 10.4046 1.60185C10.1936 1.60185 10.0697 1.63442 9.84124 1.73456C9.76276 1.76933 9.71304 1.79129 9.66931 1.80987C9.36971 1.93719 9.11906 2.00181 8.80477 2.00181C8.72029 2.00181 8.63247 1.99742 8.54118 1.9887L9.54748 4.50445Z"></path>
-                                    </svg>
-                                </div>
-
-                                <div class="flex-col justify-between h-48">
-                                    <span class="text-17 font-medium leading-20_4 text-mine-shaft-900">$14,000 - $25,000</span>
-                                    <span class="text-15 leading-22_5 text-gray-600">Monthly Salary</span>
-                                </div>
-                            </div>
-
-                            <div class="job_infor_card flex-row items-center w-290 h-1-1">
-                                <div class="flex justify-center items-center mr-15 w-54 h-54 rounded-1_2 bg-tan-hide-400">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF">
-                                        <path d="M9.65625 0C5.43457 0 2 3.43457 2 7.65625C2 9.00758 2.35703 10.3361 3.03246 11.4982C3.18992 11.7692 3.36594 12.0332 3.5557 12.283L9.32359 20H9.98887L15.7568 12.283C15.9465 12.0332 16.1225 11.7692 16.28 11.4983C16.9555 10.3361 17.3125 9.00758 17.3125 7.65625C17.3125 3.43457 13.8779 0 9.65625 0ZM9.65625 10.1953C8.25621 10.1953 7.11719 9.05629 7.11719 7.65625C7.11719 6.25621 8.25621 5.11719 9.65625 5.11719C11.0563 5.11719 12.1953 6.25621 12.1953 7.65625C12.1953 9.05629 11.0563 10.1953 9.65625 10.1953Z"></path>
-                                    </svg>
-                                </div>    
-
-                                <div class="flex-col justify-between h-48">
-                                    <span class="text-17 font-medium leading-20_4 text-mine-shaft-900">London, England</span>
-                                    <span class="text-15 leading-22_5 text-gray-600">Location</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="flex-row justify-end w-450">
-                            <a href="/html/jobdetail.html" class="mr-15 font-semibol text-primary text-primary link-lg link-titan-white-50">Apply Now</a>
-                            <button class="btn_icon btn_icon-sm btn_icon-persimmon-400">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                    <path d="M14.6875 2C12.3186 2 10.7965 3.55012 10 4.94285C9.20348 3.55012 7.68145 2 5.3125 2C2.30613 2 0 4.30254 0 7.35641C0 10.6678 2.88922 12.9228 7.20363 16.3371C9.31621 18.0075 9.45195 18.1345 10 18.575C10.4473 18.2155 10.6948 17.9988 12.7964 16.3371C17.1108 12.9228 20 10.6678 20 7.35641C20 4.30258 17.6939 2 14.6875 2Z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="job_card_harizontal p-20 rounded-20 flex-row items-center hover">
-                        <div class="job_infor w-450 h-80 flex items-center">
-                            <div class="job_image mr-20">
-                                <img src="/assets/images/joblist_job_image-1.png" alt="" class="w-80 h-80">
-                            </div>
-                            <div class="job_infor_inner flex-col justify-between h-57">
-                                <a href="" class="text-xl font-semibol text-secondary-color">Senior UX Designer</a>
-                                <a href="" class="text-15 font-medium">Highspeed Studios</a>
-                            </div>
-                        </div>
-
-                        <div class="flex-row justify-between items-center w-600 h-80">
-                            <div class="job_infor_card flex-row items-center w-290 h-1-1">
-                                <div class="infor_card_icon mr-15 flex justify-center items-center w-54 h-54 rounded-1_2 bg-jungle-green-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF">
-                                        <path d="M10.4046 5.60143C7.9752 5.60143 5.87177 7.28874 5.34477 9.66027L3.61889 17.4267C3.60623 17.4837 3.59984 17.5419 3.59984 17.6002C3.59984 18.042 3.95798 18.4002 4.39976 18.4002H16.4094C16.4678 18.4002 16.526 18.3938 16.5829 18.3811C17.0142 18.2853 17.2861 17.858 17.1903 17.4267L15.4644 9.66027C14.9374 7.28874 12.834 5.60143 10.4046 5.60143ZM10.4046 4.00159C13.5838 4.00159 16.3365 6.2097 17.0261 9.31322L18.752 17.0797C19.0395 18.3734 18.2238 19.6553 16.93 19.9429C16.7591 19.9808 16.5845 20 16.4094 20H4.39976C3.07441 20 2 18.9256 2 17.6002C2 17.4251 2.01916 17.2506 2.05715 17.0797L3.78302 9.31322C4.47269 6.2097 7.22536 4.00159 10.4046 4.00159Z"></path>
-                                        <path d="M12.0045 8.80111C12.4463 8.80111 12.8044 9.15924 12.8044 9.60103C12.8044 10.0428 12.4463 10.4009 12.0045 10.4009H10.0047C9.78379 10.4009 9.60472 10.58 9.60472 10.8009C9.60472 11.0218 9.78379 11.2009 10.0047 11.2009H10.8046C11.9091 11.2009 12.8044 12.0962 12.8044 13.2007C12.8044 14.3051 11.9091 15.2005 10.8046 15.2005H8.8048C8.36302 15.2005 8.00488 14.8423 8.00488 14.4006C8.00488 13.9588 8.36302 13.6006 8.8048 13.6006H10.8046C11.0255 13.6006 11.2046 13.4216 11.2046 13.2007C11.2046 12.9798 11.0255 12.8007 10.8046 12.8007H10.0047C8.90022 12.8007 8.00488 11.9054 8.00488 10.8009C8.00488 9.69645 8.90022 8.80111 10.0047 8.80111H12.0045Z"></path>
-                                        <path d="M9.60474 8.0012C9.60474 7.55942 9.96288 7.20128 10.4047 7.20128C10.8465 7.20128 11.2046 7.55942 11.2046 8.0012V9.60105C11.2046 10.0428 10.8465 10.401 10.4047 10.401C9.96288 10.401 9.60474 10.0428 9.60474 9.60105V8.0012Z"></path>
-                                        <path d="M11.2046 16.0004C11.2046 16.4422 10.8465 16.8003 10.4047 16.8003C9.96288 16.8003 9.60474 16.4422 9.60474 16.0004V14.4006C9.60474 13.9588 9.96288 13.6007 10.4047 13.6007C10.8465 13.6007 11.2046 13.9588 11.2046 14.4006V16.0004Z"></path>
-                                        <path d="M9.54748 4.50445C9.71155 4.91463 9.51204 5.38016 9.10185 5.54424C8.69167 5.70831 8.22614 5.5088 8.06206 5.09861L6.46222 1.09901C6.20224 0.449068 6.84348 -0.197693 7.49563 0.0566953C8.09463 0.290354 8.54108 0.401965 8.80477 0.401965C8.87041 0.401965 8.92483 0.387937 9.04361 0.33746C9.07514 0.324059 9.11218 0.307698 9.19907 0.269255C9.6128 0.0879397 9.93961 0.00200497 10.4046 0.00200497C10.8685 0.00200497 11.2005 0.0881679 11.6156 0.267733C11.7209 0.313853 11.763 0.332196 11.8002 0.347533C11.9028 0.389764 11.9521 0.401965 12.0045 0.401965C12.2527 0.401965 12.7032 0.28935 13.3194 0.0544675C13.9707 -0.193814 14.6059 0.451807 14.347 1.09901L12.7472 5.09861C12.5831 5.5088 12.1176 5.70831 11.7074 5.54424C11.2972 5.38016 11.0977 4.91463 11.2617 4.50445L12.2683 1.98805C12.1763 1.9972 12.0884 2.00181 12.0045 2.00181C11.7125 2.00181 11.4706 1.94195 11.1911 1.82687C11.1359 1.80414 11.0754 1.77776 10.9804 1.73608C10.7489 1.6359 10.6177 1.60185 10.4046 1.60185C10.1936 1.60185 10.0697 1.63442 9.84124 1.73456C9.76276 1.76933 9.71304 1.79129 9.66931 1.80987C9.36971 1.93719 9.11906 2.00181 8.80477 2.00181C8.72029 2.00181 8.63247 1.99742 8.54118 1.9887L9.54748 4.50445Z"></path>
-                                    </svg>
-                                </div>
-
-                                <div class="flex-col justify-between h-48">
-                                    <span class="text-17 font-medium leading-20_4 text-mine-shaft-900">$14,000 - $25,000</span>
-                                    <span class="text-15 leading-22_5 text-gray-600">Monthly Salary</span>
-                                </div>
-                            </div>
-
-                            <div class="job_infor_card flex-row items-center w-290 h-1-1">
-                                <div class="flex justify-center items-center mr-15 w-54 h-54 rounded-1_2 bg-tan-hide-400">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF">
-                                        <path d="M9.65625 0C5.43457 0 2 3.43457 2 7.65625C2 9.00758 2.35703 10.3361 3.03246 11.4982C3.18992 11.7692 3.36594 12.0332 3.5557 12.283L9.32359 20H9.98887L15.7568 12.283C15.9465 12.0332 16.1225 11.7692 16.28 11.4983C16.9555 10.3361 17.3125 9.00758 17.3125 7.65625C17.3125 3.43457 13.8779 0 9.65625 0ZM9.65625 10.1953C8.25621 10.1953 7.11719 9.05629 7.11719 7.65625C7.11719 6.25621 8.25621 5.11719 9.65625 5.11719C11.0563 5.11719 12.1953 6.25621 12.1953 7.65625C12.1953 9.05629 11.0563 10.1953 9.65625 10.1953Z"></path>
-                                    </svg>
-                                </div>    
-
-                                <div class="flex-col justify-between h-48">
-                                    <span class="text-17 font-medium leading-20_4 text-mine-shaft-900">London, England</span>
-                                    <span class="text-15 leading-22_5 text-gray-600">Location</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="flex-row justify-end w-450">
-                            <a href="/html/jobdetail.html" class="mr-15 font-semibol text-primary text-primary link-lg link-titan-white-50">Apply Now</a>
-                            <button class="btn_icon btn_icon-sm btn_icon-persimmon-400">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                    <path d="M14.6875 2C12.3186 2 10.7965 3.55012 10 4.94285C9.20348 3.55012 7.68145 2 5.3125 2C2.30613 2 0 4.30254 0 7.35641C0 10.6678 2.88922 12.9228 7.20363 16.3371C9.31621 18.0075 9.45195 18.1345 10 18.575C10.4473 18.2155 10.6948 17.9988 12.7964 16.3371C17.1108 12.9228 20 10.6678 20 7.35641C20 4.30258 17.6939 2 14.6875 2Z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="job_card_harizontal p-20 rounded-20 flex-row items-center hover">
-                        <div class="job_infor w-450 h-80 flex items-center">
-                            <div class="job_image mr-20">
-                                <img src="/assets/images/joblist_job_image-1.png" alt="" class="w-80 h-80">
-                            </div>
-                            <div class="job_infor_inner flex-col justify-between h-57">
-                                <a href="" class="text-xl font-semibol text-secondary-color">Senior UX Designer</a>
-                                <a href="" class="text-15 font-medium">Highspeed Studios</a>
-                            </div>
-                        </div>
-
-                        <div class="flex-row justify-between items-center w-600 h-80">
-                            <div class="job_infor_card flex-row items-center w-290 h-1-1">
-                                <div class="infor_card_icon mr-15 flex justify-center items-center w-54 h-54 rounded-1_2 bg-jungle-green-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF">
-                                        <path d="M10.4046 5.60143C7.9752 5.60143 5.87177 7.28874 5.34477 9.66027L3.61889 17.4267C3.60623 17.4837 3.59984 17.5419 3.59984 17.6002C3.59984 18.042 3.95798 18.4002 4.39976 18.4002H16.4094C16.4678 18.4002 16.526 18.3938 16.5829 18.3811C17.0142 18.2853 17.2861 17.858 17.1903 17.4267L15.4644 9.66027C14.9374 7.28874 12.834 5.60143 10.4046 5.60143ZM10.4046 4.00159C13.5838 4.00159 16.3365 6.2097 17.0261 9.31322L18.752 17.0797C19.0395 18.3734 18.2238 19.6553 16.93 19.9429C16.7591 19.9808 16.5845 20 16.4094 20H4.39976C3.07441 20 2 18.9256 2 17.6002C2 17.4251 2.01916 17.2506 2.05715 17.0797L3.78302 9.31322C4.47269 6.2097 7.22536 4.00159 10.4046 4.00159Z"></path>
-                                        <path d="M12.0045 8.80111C12.4463 8.80111 12.8044 9.15924 12.8044 9.60103C12.8044 10.0428 12.4463 10.4009 12.0045 10.4009H10.0047C9.78379 10.4009 9.60472 10.58 9.60472 10.8009C9.60472 11.0218 9.78379 11.2009 10.0047 11.2009H10.8046C11.9091 11.2009 12.8044 12.0962 12.8044 13.2007C12.8044 14.3051 11.9091 15.2005 10.8046 15.2005H8.8048C8.36302 15.2005 8.00488 14.8423 8.00488 14.4006C8.00488 13.9588 8.36302 13.6006 8.8048 13.6006H10.8046C11.0255 13.6006 11.2046 13.4216 11.2046 13.2007C11.2046 12.9798 11.0255 12.8007 10.8046 12.8007H10.0047C8.90022 12.8007 8.00488 11.9054 8.00488 10.8009C8.00488 9.69645 8.90022 8.80111 10.0047 8.80111H12.0045Z"></path>
-                                        <path d="M9.60474 8.0012C9.60474 7.55942 9.96288 7.20128 10.4047 7.20128C10.8465 7.20128 11.2046 7.55942 11.2046 8.0012V9.60105C11.2046 10.0428 10.8465 10.401 10.4047 10.401C9.96288 10.401 9.60474 10.0428 9.60474 9.60105V8.0012Z"></path>
-                                        <path d="M11.2046 16.0004C11.2046 16.4422 10.8465 16.8003 10.4047 16.8003C9.96288 16.8003 9.60474 16.4422 9.60474 16.0004V14.4006C9.60474 13.9588 9.96288 13.6007 10.4047 13.6007C10.8465 13.6007 11.2046 13.9588 11.2046 14.4006V16.0004Z"></path>
-                                        <path d="M9.54748 4.50445C9.71155 4.91463 9.51204 5.38016 9.10185 5.54424C8.69167 5.70831 8.22614 5.5088 8.06206 5.09861L6.46222 1.09901C6.20224 0.449068 6.84348 -0.197693 7.49563 0.0566953C8.09463 0.290354 8.54108 0.401965 8.80477 0.401965C8.87041 0.401965 8.92483 0.387937 9.04361 0.33746C9.07514 0.324059 9.11218 0.307698 9.19907 0.269255C9.6128 0.0879397 9.93961 0.00200497 10.4046 0.00200497C10.8685 0.00200497 11.2005 0.0881679 11.6156 0.267733C11.7209 0.313853 11.763 0.332196 11.8002 0.347533C11.9028 0.389764 11.9521 0.401965 12.0045 0.401965C12.2527 0.401965 12.7032 0.28935 13.3194 0.0544675C13.9707 -0.193814 14.6059 0.451807 14.347 1.09901L12.7472 5.09861C12.5831 5.5088 12.1176 5.70831 11.7074 5.54424C11.2972 5.38016 11.0977 4.91463 11.2617 4.50445L12.2683 1.98805C12.1763 1.9972 12.0884 2.00181 12.0045 2.00181C11.7125 2.00181 11.4706 1.94195 11.1911 1.82687C11.1359 1.80414 11.0754 1.77776 10.9804 1.73608C10.7489 1.6359 10.6177 1.60185 10.4046 1.60185C10.1936 1.60185 10.0697 1.63442 9.84124 1.73456C9.76276 1.76933 9.71304 1.79129 9.66931 1.80987C9.36971 1.93719 9.11906 2.00181 8.80477 2.00181C8.72029 2.00181 8.63247 1.99742 8.54118 1.9887L9.54748 4.50445Z"></path>
-                                    </svg>
-                                </div>
-
-                                <div class="flex-col justify-between h-48">
-                                    <span class="text-17 font-medium leading-20_4 text-mine-shaft-900">$14,000 - $25,000</span>
-                                    <span class="text-15 leading-22_5 text-gray-600">Monthly Salary</span>
-                                </div>
-                            </div>
-
-                            <div class="job_infor_card flex-row items-center w-290 h-1-1">
-                                <div class="flex justify-center items-center mr-15 w-54 h-54 rounded-1_2 bg-tan-hide-400">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF">
-                                        <path d="M9.65625 0C5.43457 0 2 3.43457 2 7.65625C2 9.00758 2.35703 10.3361 3.03246 11.4982C3.18992 11.7692 3.36594 12.0332 3.5557 12.283L9.32359 20H9.98887L15.7568 12.283C15.9465 12.0332 16.1225 11.7692 16.28 11.4983C16.9555 10.3361 17.3125 9.00758 17.3125 7.65625C17.3125 3.43457 13.8779 0 9.65625 0ZM9.65625 10.1953C8.25621 10.1953 7.11719 9.05629 7.11719 7.65625C7.11719 6.25621 8.25621 5.11719 9.65625 5.11719C11.0563 5.11719 12.1953 6.25621 12.1953 7.65625C12.1953 9.05629 11.0563 10.1953 9.65625 10.1953Z"></path>
-                                    </svg>
-                                </div>    
-
-                                <div class="flex-col justify-between h-48">
-                                    <span class="text-17 font-medium leading-20_4 text-mine-shaft-900">London, England</span>
-                                    <span class="text-15 leading-22_5 text-gray-600">Location</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="flex-row justify-end w-450">
-                            <a href="/html/jobdetail.html" class="mr-15 font-semibol text-primary text-primary link-lg link-titan-white-50">Apply Now</a>
-                            <button class="btn_icon btn_icon-sm btn_icon-persimmon-400">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                    <path d="M14.6875 2C12.3186 2 10.7965 3.55012 10 4.94285C9.20348 3.55012 7.68145 2 5.3125 2C2.30613 2 0 4.30254 0 7.35641C0 10.6678 2.88922 12.9228 7.20363 16.3371C9.31621 18.0075 9.45195 18.1345 10 18.575C10.4473 18.2155 10.6948 17.9988 12.7964 16.3371C17.1108 12.9228 20 10.6678 20 7.35641C20 4.30258 17.6939 2 14.6875 2Z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="job_card_harizontal p-20 rounded-20 flex-row items-center hover">
-                        <div class="job_infor w-450 h-80 flex items-center">
-                            <div class="job_image mr-20">
-                                <img src="/assets/images/joblist_job_image-1.png" alt="" class="w-80 h-80">
-                            </div>
-                            <div class="job_infor_inner flex-col justify-between h-57">
-                                <a href="" class="text-xl font-semibol text-secondary-color">Senior UX Designer</a>
-                                <a href="" class="text-15 font-medium">Highspeed Studios</a>
-                            </div>
-                        </div>
-
-                        <div class="flex-row justify-between items-center w-600 h-80">
-                            <div class="job_infor_card flex-row items-center w-290 h-1-1">
-                                <div class="infor_card_icon mr-15 flex justify-center items-center w-54 h-54 rounded-1_2 bg-jungle-green-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF">
-                                        <path d="M10.4046 5.60143C7.9752 5.60143 5.87177 7.28874 5.34477 9.66027L3.61889 17.4267C3.60623 17.4837 3.59984 17.5419 3.59984 17.6002C3.59984 18.042 3.95798 18.4002 4.39976 18.4002H16.4094C16.4678 18.4002 16.526 18.3938 16.5829 18.3811C17.0142 18.2853 17.2861 17.858 17.1903 17.4267L15.4644 9.66027C14.9374 7.28874 12.834 5.60143 10.4046 5.60143ZM10.4046 4.00159C13.5838 4.00159 16.3365 6.2097 17.0261 9.31322L18.752 17.0797C19.0395 18.3734 18.2238 19.6553 16.93 19.9429C16.7591 19.9808 16.5845 20 16.4094 20H4.39976C3.07441 20 2 18.9256 2 17.6002C2 17.4251 2.01916 17.2506 2.05715 17.0797L3.78302 9.31322C4.47269 6.2097 7.22536 4.00159 10.4046 4.00159Z"></path>
-                                        <path d="M12.0045 8.80111C12.4463 8.80111 12.8044 9.15924 12.8044 9.60103C12.8044 10.0428 12.4463 10.4009 12.0045 10.4009H10.0047C9.78379 10.4009 9.60472 10.58 9.60472 10.8009C9.60472 11.0218 9.78379 11.2009 10.0047 11.2009H10.8046C11.9091 11.2009 12.8044 12.0962 12.8044 13.2007C12.8044 14.3051 11.9091 15.2005 10.8046 15.2005H8.8048C8.36302 15.2005 8.00488 14.8423 8.00488 14.4006C8.00488 13.9588 8.36302 13.6006 8.8048 13.6006H10.8046C11.0255 13.6006 11.2046 13.4216 11.2046 13.2007C11.2046 12.9798 11.0255 12.8007 10.8046 12.8007H10.0047C8.90022 12.8007 8.00488 11.9054 8.00488 10.8009C8.00488 9.69645 8.90022 8.80111 10.0047 8.80111H12.0045Z"></path>
-                                        <path d="M9.60474 8.0012C9.60474 7.55942 9.96288 7.20128 10.4047 7.20128C10.8465 7.20128 11.2046 7.55942 11.2046 8.0012V9.60105C11.2046 10.0428 10.8465 10.401 10.4047 10.401C9.96288 10.401 9.60474 10.0428 9.60474 9.60105V8.0012Z"></path>
-                                        <path d="M11.2046 16.0004C11.2046 16.4422 10.8465 16.8003 10.4047 16.8003C9.96288 16.8003 9.60474 16.4422 9.60474 16.0004V14.4006C9.60474 13.9588 9.96288 13.6007 10.4047 13.6007C10.8465 13.6007 11.2046 13.9588 11.2046 14.4006V16.0004Z"></path>
-                                        <path d="M9.54748 4.50445C9.71155 4.91463 9.51204 5.38016 9.10185 5.54424C8.69167 5.70831 8.22614 5.5088 8.06206 5.09861L6.46222 1.09901C6.20224 0.449068 6.84348 -0.197693 7.49563 0.0566953C8.09463 0.290354 8.54108 0.401965 8.80477 0.401965C8.87041 0.401965 8.92483 0.387937 9.04361 0.33746C9.07514 0.324059 9.11218 0.307698 9.19907 0.269255C9.6128 0.0879397 9.93961 0.00200497 10.4046 0.00200497C10.8685 0.00200497 11.2005 0.0881679 11.6156 0.267733C11.7209 0.313853 11.763 0.332196 11.8002 0.347533C11.9028 0.389764 11.9521 0.401965 12.0045 0.401965C12.2527 0.401965 12.7032 0.28935 13.3194 0.0544675C13.9707 -0.193814 14.6059 0.451807 14.347 1.09901L12.7472 5.09861C12.5831 5.5088 12.1176 5.70831 11.7074 5.54424C11.2972 5.38016 11.0977 4.91463 11.2617 4.50445L12.2683 1.98805C12.1763 1.9972 12.0884 2.00181 12.0045 2.00181C11.7125 2.00181 11.4706 1.94195 11.1911 1.82687C11.1359 1.80414 11.0754 1.77776 10.9804 1.73608C10.7489 1.6359 10.6177 1.60185 10.4046 1.60185C10.1936 1.60185 10.0697 1.63442 9.84124 1.73456C9.76276 1.76933 9.71304 1.79129 9.66931 1.80987C9.36971 1.93719 9.11906 2.00181 8.80477 2.00181C8.72029 2.00181 8.63247 1.99742 8.54118 1.9887L9.54748 4.50445Z"></path>
-                                    </svg>
-                                </div>
-
-                                <div class="flex-col justify-between h-48">
-                                    <span class="text-17 font-medium leading-20_4 text-mine-shaft-900">$14,000 - $25,000</span>
-                                    <span class="text-15 leading-22_5 text-gray-600">Monthly Salary</span>
-                                </div>
-                            </div>
-
-                            <div class="job_infor_card flex-row items-center w-290 h-1-1">
-                                <div class="flex justify-center items-center mr-15 w-54 h-54 rounded-1_2 bg-tan-hide-400">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#FFFFFF">
-                                        <path d="M9.65625 0C5.43457 0 2 3.43457 2 7.65625C2 9.00758 2.35703 10.3361 3.03246 11.4982C3.18992 11.7692 3.36594 12.0332 3.5557 12.283L9.32359 20H9.98887L15.7568 12.283C15.9465 12.0332 16.1225 11.7692 16.28 11.4983C16.9555 10.3361 17.3125 9.00758 17.3125 7.65625C17.3125 3.43457 13.8779 0 9.65625 0ZM9.65625 10.1953C8.25621 10.1953 7.11719 9.05629 7.11719 7.65625C7.11719 6.25621 8.25621 5.11719 9.65625 5.11719C11.0563 5.11719 12.1953 6.25621 12.1953 7.65625C12.1953 9.05629 11.0563 10.1953 9.65625 10.1953Z"></path>
-                                    </svg>
-                                </div>    
-
-                                <div class="flex-col justify-between h-48">
-                                    <span class="text-17 font-medium leading-20_4 text-mine-shaft-900">London, England</span>
-                                    <span class="text-15 leading-22_5 text-gray-600">Location</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="flex-row justify-end w-450">
-                            <a href="/html/jobdetail.html" class="mr-15 font-semibol text-primary text-primary link-lg link-titan-white-50">Apply Now</a>
-                            <button class="btn_icon btn_icon-sm btn_icon-persimmon-400">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                    <path d="M14.6875 2C12.3186 2 10.7965 3.55012 10 4.94285C9.20348 3.55012 7.68145 2 5.3125 2C2.30613 2 0 4.30254 0 7.35641C0 10.6678 2.88922 12.9228 7.20363 16.3371C9.31621 18.0075 9.45195 18.1345 10 18.575C10.4473 18.2155 10.6948 17.9988 12.7964 16.3371C17.1108 12.9228 20 10.6678 20 7.35641C20 4.30258 17.6939 2 14.6875 2Z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- PAGINATION -->
-            <div class="pagination flex flex-row justify-between items-center w-466 h-48 m-0-auto my-60">
-
-                <a href="" class="previous_btn flex flex-row justify-between items-center p-12-20 w-133 h-1-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 20 20" fill="#5F4BDB">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2762 1.39052C9.75552 0.869825 8.9113 0.869825 8.39061 1.39052L0.390606 9.39052C-0.130094 9.91122 -0.130094 10.7554 0.390606 11.2761L8.39061 19.2761C8.9113 19.7968 9.75552 19.7968 10.2762 19.2761C10.7969 18.7554 10.7969 17.9112 10.2762 17.3905L3.21903 10.3333L10.2762 3.27614C10.7969 2.75544 10.7969 1.91122 10.2762 1.39052Z"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.6095 1.39052C19.0888 0.869825 18.2446 0.869825 17.7239 1.39052L9.72386 9.39052C9.20316 9.91122 9.20316 10.7554 9.72386 11.2761L17.7239 19.2761C18.2446 19.7968 19.0888 19.7968 19.6095 19.2761C20.1302 18.7554 20.1302 17.9112 19.6095 17.3905L12.5523 10.3333L19.6095 3.27614C20.1302 2.75544 20.1302 1.91122 19.6095 1.39052Z"></path>
-                    </svg>
-                    <span>Previous</span>
-                </a>
-
-                <ul class="pagination_group w-202 h-48 bg-blue-chalk-200 rounded-24 flex flex-row items-center">
-                    <li class="w-48 h-48"><a href="" class="w-48 h-48 flex justify-center items-center">1</a></li>
-                    <li class="w-48 h-48"><a href="" class="w-48 h-48 flex justify-center items-center">2</a></li>
-                    <li class="w-58 h-48"><a href="" class="w-58 h-48 rounded-24 bg-primary text-third-color flex justify-center items-center">3</a></li>
-                    <li class="w-48 h-48"><a href="" class="w-48 h-48 flex justify-center items-center">4</a></li>
-                </ul>
-
-                <a class="next_btn flex flex-row justify-between items-center p-12-20 w-100 h-1-1">
-                    <span>Next</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 20 20" fill="#5F4BDB">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72378 19.2761C10.2445 19.7968 11.0887 19.7968 11.6094 19.2761L19.6094 11.2761C20.1301 10.7554 20.1301 9.91118 19.6094 9.39048L11.6094 1.39048C11.0887 0.869785 10.2445 0.869785 9.72378 1.39048C9.20308 1.91118 9.20308 2.7554 9.72378 3.2761L16.781 10.3333L9.72378 17.3905C9.20308 17.9112 9.20308 18.7554 9.72378 19.2761Z"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.390524 19.2761C0.911223 19.7968 1.75544 19.7968 2.27614 19.2761L10.2761 11.2761C10.7968 10.7554 10.7968 9.91118 10.2761 9.39048L2.27614 1.39048C1.75544 0.869785 0.911223 0.869785 0.390524 1.39048C-0.130175 1.91118 -0.130175 2.7554 0.390524 3.2761L7.44772 10.3333L0.390524 17.3905C-0.130175 17.9112 -0.130175 18.7554 0.390524 19.2761Z"></path>
-                    </svg>
-                </a>
-
-            </div>
-            
-            <!-- LINE -->
-            <div class="mt-80 w-1-1 h-2 bg-titan-white-50"></div>
-            <!-- UPCOMING EVENT -->
-            <div class="m-0-auto mt-80 p-60-28 max-w-1620">
-                <div class="upcoming_events">
-                    <div class="flex-row justify-between px-12">
-                        <span class="text-28 font-semibol leading-42 text-secondary-color">Upcoming Events</span>
-
-                        <div class="flex-row gap-15">
-                            <button class="btn btn-outline btn-3xl">
-                                <span class="flex justify-between items-center gap-15">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#5F4BDB">
-                                        <path d="M17 3H16V1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0C14.7348 0 14.4804 0.105357 14.2929 0.292893C14.1054 0.48043 14 0.734784 14 1V3H6V1C6 0.734784 5.89464 0.48043 5.70711 0.292893C5.51957 0.105357 5.26522 0 5 0C4.73478 0 4.48043 0.105357 4.29289 0.292893C4.10536 0.48043 4 0.734784 4 1V3H3C2.20435 3 1.44129 3.31607 0.87868 3.87868C0.316071 4.44129 0 5.20435 0 6V7H20V6C20 5.20435 19.6839 4.44129 19.1213 3.87868C18.5587 3.31607 17.7956 3 17 3Z"></path>
-                                        <path d="M0 17C0 17.7956 0.316071 18.5587 0.87868 19.1213C1.44129 19.6839 2.20435 20 3 20H17C17.7956 20 18.5587 19.6839 19.1213 19.1213C19.6839 18.5587 20 17.7956 20 17V9H0V17Z"></path>
-                                    </svg>
-
-                                    <span class="font-medium text-secondary-color">Filter Date</span>
-
-                                    <svg width="20" height="11" viewBox="0 0 20 11" fill="#5F4BDB" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19.6273 1.77879L10.6273 9.77878C10.4448 9.9391 10.2102 10.0275 9.96728 10.0275C9.72437 10.0275 9.48977 9.9391 9.30728 9.77878L0.307278 1.77879C0.121445 1.6003 0.0116842 1.35696 0.000880246 1.09952C-0.00992376 0.842077 0.0790634 0.5904 0.249287 0.396964C0.419511 0.203528 0.657833 0.0832638 0.91456 0.0612484C1.17129 0.039233 1.42661 0.117165 1.62728 0.278796L9.96728 7.68878L18.3073 0.278796C18.4046 0.185284 18.5199 0.112452 18.6462 0.0646883C18.7724 0.0169249 18.9071 -0.00478066 19.0419 0.000879482C19.1768 0.00653962 19.3091 0.0394483 19.4309 0.0976224C19.5528 0.155797 19.6615 0.238031 19.7507 0.339371C19.8399 0.440711 19.9076 0.559058 19.9498 0.687279C19.9921 0.8155 20.0079 0.950941 19.9963 1.08544C19.9848 1.21994 19.9462 1.35071 19.8827 1.46987C19.8193 1.58903 19.7324 1.69412 19.6273 1.77879Z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-
-                            <button class="btn btn-outline btn-sm ">
-                                <span class="flex-row items-center gap-15 justify-center">
-                                    <span class="font-medium text-secondary-color">Newest</span>
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="11" viewBox="0 0 20 11" fill="#5F4BDB">
-                                        <path d="M19.6273 1.77879L10.6273 9.77878C10.4448 9.9391 10.2102 10.0275 9.96728 10.0275C9.72437 10.0275 9.48977 9.9391 9.30728 9.77878L0.307278 1.77879C0.121445 1.6003 0.0116842 1.35696 0.000880246 1.09952C-0.00992376 0.842077 0.0790634 0.5904 0.249287 0.396964C0.419511 0.203528 0.657833 0.0832638 0.91456 0.0612484C1.17129 0.039233 1.42661 0.117165 1.62728 0.278796L9.96728 7.68878L18.3073 0.278796C18.4046 0.185284 18.5199 0.112452 18.6462 0.0646883C18.7724 0.0169249 18.9071 -0.00478066 19.0419 0.000879482C19.1768 0.00653962 19.3091 0.0394483 19.4309 0.0976224C19.5528 0.155797 19.6615 0.238031 19.7507 0.339371C19.8399 0.440711 19.9076 0.559058 19.9498 0.687279C19.9921 0.8155 20.0079 0.950941 19.9963 1.08544C19.9848 1.21994 19.9462 1.35071 19.8827 1.46987C19.8193 1.58903 19.7324 1.69412 19.6273 1.77879Z"></path>
-                                        </svg></span>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="grid-cols-3 mt-60 w-1-1 h-501">
-
-                        <div class="grid-item4 p-15-12 w-1-1 h-1-1">
-                            <div class="relative flex flex-col w-1-1 h-1-1 rounded-20 shadow-blue-bell-500">
-    
-                                <img src="/assets/images/event_data_grid_bg_1.png" alt="" class="w-1-1 h-250 rounded-t-20">
-                                <span class="flex items-center mt-25 ml-123 h-24 font-semibol tracking-2 text-coral-400">MOBILE APP</span>
-                                <span class="mt-5 ml-123 pr-80 h-58 text-xl font-semibol leading-30 text-secondary-color">Global Android Programmer Meetup 2020 </span>
-                                <span class="mt-16 ml-25 text-19 leading-22_5 text-secondary-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-    
-                                <div class="absolute bottom-107 left-25 p-13 w-86 h-172 bg-apple-500 rounded-43">
-                                    <div class="flex flex-col justify-between h-1-1">
-                                        <div class="p-5 flex flex-col items-center">
-                                            <div class="text-28 font-bold leading-42 text-third-color">20</div>
-                                            <div class="font-semibol leading-24 text-invalid-44">NOV</div>
+           <!-- jobslist -->
+           <div class="mt-43 px-40">
+            <div class="jobslist flex-col gap-60">
+                <div class="joblist-header flex-col gap-20">
+                    <h4 class="heading-section-4 text-secondary-color">Showing 34 Jobs</h4>
+
+                    <div class="joblist-header-nav flex-col gap-15">
+                        <div class="py-15 flex-row gap-43 overflow-auto">
+                            <div class="flex-row gap-25">
+                                <div class="checkbox-type relative">
+                                    <input type="checkbox" name="" id="checkFulltime" class="checkbox-type-input invisible absolute">
+                                    <label class="checkbox-type-lable flex-row items-center gap-10" for="checkFulltime">
+                                        <div class="checkbox-type-icon flex items-center">
+                                            <img src="/assets/icons/jobslist_check_box_type_icon1.svg" alt="" class="checkbox-type-icon1 w-20 h-20">
                                         </div>
-                                        <button class="m-0 p-0 flex justify-center items-center w-60 h-60 bg-third rounded-1_2 border-none">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 20" fill= "#30C736">
-                                                <path d="M10 0C8.02219 0 6.08879 0.586489 4.4443 1.6853C2.79981 2.78412 1.51809 4.3459 0.761209 6.17316C0.00433288 8.00042 -0.1937 10.0111 0.192152 11.9509C0.578004 13.8907 1.53041 15.6725 2.92894 17.0711C4.32746 18.4696 6.10929 19.422 8.0491 19.8078C9.98891 20.1937 11.9996 19.9957 13.8268 19.2388C15.6541 18.4819 17.2159 17.2002 18.3147 15.5557C19.4135 13.9112 20 11.9778 20 10C19.9969 7.34879 18.9423 4.80707 17.0676 2.93239C15.1929 1.0577 12.6512 0.0031277 10 0V0ZM10 18.1818C8.38179 18.1818 6.79992 17.702 5.45443 16.8029C4.10894 15.9039 3.06025 14.6261 2.44099 13.131C1.82173 11.636 1.6597 9.99092 1.9754 8.4038C2.29109 6.81669 3.07034 5.35883 4.21458 4.21458C5.35883 3.07033 6.81669 2.29109 8.40381 1.97539C9.99093 1.6597 11.636 1.82172 13.131 2.44098C14.6261 3.06025 15.9039 4.10893 16.8029 5.45442C17.702 6.79992 18.1818 8.38179 18.1818 10C18.1794 12.1692 17.3166 14.2489 15.7828 15.7828C14.2489 17.3166 12.1692 18.1794 10 18.1818V18.1818Z"></path>
-                                                <path d="M13.9309 7.05739L9.11816 11.4692L7.00635 9.35739C6.92249 9.27057 6.82217 9.20131 6.71126 9.15367C6.60035 9.10602 6.48106 9.08094 6.36035 9.07989C6.23964 9.07884 6.11993 9.10185 6.00821 9.14756C5.89648 9.19327 5.79498 9.26077 5.70963 9.34613C5.62427 9.43148 5.55677 9.53298 5.51106 9.64471C5.46535 9.75643 5.44234 9.87614 5.44339 9.99685C5.44444 10.1176 5.46952 10.2368 5.51717 10.3478C5.56481 10.4587 5.63407 10.559 5.72089 10.6428L8.44816 13.3701C8.61383 13.5358 8.83707 13.6311 9.07132 13.6362C9.30557 13.6413 9.53274 13.5557 9.70543 13.3974L15.16 8.39739C15.3377 8.23441 15.4433 8.00751 15.4537 7.76661C15.4641 7.52571 15.3784 7.29054 15.2154 7.11285C15.0524 6.93515 14.8255 6.82948 14.5846 6.81908C14.3437 6.80868 14.1086 6.89441 13.9309 7.05739V7.05739Z"></path>
-                                            </svg>
-                                        </button>
-                                    </div>
+
+                                        <span class="font-semibol text-secondary-color">Fulltime</span>
+                                    </label>
                                 </div>
-    
-                            </div>
-                        </div>
-    
-                        <div class="grid-item5 p-15-12 w-1-1 h-1-1">
-                            <div class="relative flex flex-col w-1-1 h-1-1 rounded-20 shadow-blue-bell-500">
-    
-                                <img src="/assets/images/event_data_grid_bg_1.png" alt="" class="w-1-1 h-250 rounded-t-20">
-                                <span class="flex items-center mt-25 ml-123 h-24 font-semibol tracking-2 text-coral-400">ART EXIBITHION</span>
-                                <span class="mt-5 ml-123 pr-80 h-58 text-xl font-semibol leading-30 text-secondary-color">Paris Designer Meetup with Ziro Partner</span>
-                                <span class="mt-16 ml-25 text-19 leading-22_5 text-secondary-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-    
-                                <div class="absolute bottom-107 left-25 p-13 w-86 h-172 bg-secondary rounded-43">
-                                    <div class="flex flex-col justify-between h-1-1">
-                                        <div class="p-5 flex flex-col items-center">
-                                            <div class="text-28 font-bold leading-42 text-third-color">15</div>
-                                            <div class="font-semibol leading-24 text-invalid-44">NOV</div>
+
+                                <div class="checkbox-type relative">
+                                    <input type="checkbox" name="" id="checkFreelancer" class="checkbox-type-input invisible absolute">
+
+                                    <label class="checkbox-type-lable flex-row items-center gap-10" for="checkFreelancer">
+                                        <div class="checkbox-type-icon flex items-center">
+                                            <img src="/assets/icons/jobslist_check_box_type_icon1.svg" alt="" class="checkbox-type-icon1 w-20 h-20">
                                         </div>
-                                        <button class="m-0 p-0 flex justify-center items-center w-60 h-60 bg-white-11 rounded-1_2 border-none hover_btn_3">
-                                            <svg width="25" height="25" viewBox="0 0 20 20" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M14.6875 2C12.3186 2 10.7965 3.55012 10 4.94285C9.20348 3.55012 7.68145 2 5.3125 2C2.30613 2 0 4.30254 0 7.35641C0 10.6678 2.88922 12.9228 7.20363 16.3371C9.31621 18.0075 9.45195 18.1345 10 18.575C10.4473 18.2155 10.6948 17.9988 12.7964 16.3371C17.1108 12.9228 20 10.6678 20 7.35641C20 4.30258 17.6939 2 14.6875 2Z"></path>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
     
+                                        <span class="font-semibol text-secondary-color">Freelance</span>
+                                    </label>
+                                </div>
                             </div>
-                        </div>
-    
-                        <div class="grid-item6 p-15-12 w-1-1 h-1-1">
-                            <div class="relative flex flex-col w-1-1 h-1-1 rounded-20 shadow-blue-bell-500">
-    
-                                <img src="/assets/images/event_data_grid_bg_1.png" alt="" class="w-1-1 h-250 rounded-t-20">
-                                <span class="flex items-center mt-25 ml-123 h-24 font-semibol tracking-2 text-coral-400">ACCOUNTING</span>
-                                <span class="mt-5 ml-123 pr-80 h-58 text-xl font-semibol leading-30 text-secondary-color">Bussiness Plan in Pandemic with Famous Native Speaker</span>
-                                <span class="mt-16 ml-25 text-19 leading-22_5 text-secondary-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-    
-                                <div class="absolute bottom-107 left-25 p-13 w-86 h-172 bg-secondary rounded-43">
-                                    <div class="flex flex-col justify-between h-1-1">
-                                        <div class="p-5 flex flex-col items-center">
-                                            <div class="text-28 font-bold leading-42 text-third-color">07</div>
-                                            <div class="font-semibol leading-24 text-invalid-44">NOV</div>
+
+                            <div class="flex-row gap-25">
+                                <div class="checkbox-swith relative">
+                                    <input type="checkbox" id="checkboxDeatails" class="checkbox-swith-input invisible absolute">
+
+                                    <label class="checkbox-swith-lable flex-row items-center gap-10" for="checkboxDeatails">
+                                        <span class="font-semibol text-secondary-color">Details</span>
+
+                                        <div class="checkbox-swith-icon">
+                                            <div class="checkbox-swith-icon-circle"></div>
                                         </div>
-                                        <button class="m-0 p-0 flex justify-center items-center w-60 h-60 bg-white-11 rounded-1_2 border-none hover_btn_3">
-                                            <svg width="25" height="25" viewBox="0 0 20 20" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M14.6875 2C12.3186 2 10.7965 3.55012 10 4.94285C9.20348 3.55012 7.68145 2 5.3125 2C2.30613 2 0 4.30254 0 7.35641C0 10.6678 2.88922 12.9228 7.20363 16.3371C9.31621 18.0075 9.45195 18.1345 10 18.575C10.4473 18.2155 10.6948 17.9988 12.7964 16.3371C17.1108 12.9228 20 10.6678 20 7.35641C20 4.30258 17.6939 2 14.6875 2Z"></path>
-                                            </svg>
-                                        </button>
-                                    </div>
+                                    </label>
                                 </div>
-    
+
+                                <div class="checkbox-swith relative">
+                                    <input type="checkbox" id="checkboxSalary" class="checkbox-swith-input invisible absolute">
+
+                                    <label class="checkbox-swith-lable flex-row items-center gap-10" for="checkboxSalary">
+                                        <span class="font-semibol text-secondary-color">Salary</span>
+
+                                        <div class="checkbox-swith-icon">
+                                            <div class="checkbox-swith-icon-circle"></div>
+                                        </div>
+                                    </label>
+                                </div>
                             </div>
                         </div>
 
-                    </div>
-
-                    <div class="mt-60 flex justify-center items-center h-52">
-                        <a href="" class="p-14-45 bg-primary rounded-26 border-none hover"><span class="font-semibol text-third-color">View more</span></a>
+                        <div></div>
                     </div>
                 </div>
             </div>
-            <div class="w-1-1 h-43"></div>
-            <!-- BRAND LOGO -->
-            <div class="brand_logo">
-                <div class="client_logo flex flex-row justify-between items-center">
-                    <img src="/assets/icons/client1.svg" alt="">
-                    <img src="/assets/icons/client2.svg" alt="">
-                    <img src="/assets/icons/client3.svg" alt="">
-                    <img src="/assets/icons/client4.svg" alt="">
-                    <img src="/assets/icons/client5.svg" alt="">
-                </div>
-            </div>
-        </div>
+           </div>
+        </main>
 
         <!-- FOOTER -->
 
