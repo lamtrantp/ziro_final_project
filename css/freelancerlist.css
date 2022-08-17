@@ -6,7 +6,6 @@
 @import url(/css/customization/spacing.css);
 @import url(/css/customization/typrography.css);
 
-
 *, body {
     font-family: "Poppins";
     font-size: 16px;
@@ -20,96 +19,542 @@ body {
     display: block;
 }
 
-/* navigation */
-button:hover {
-    cursor: pointer;
-}
-a {
-    text-decoration-line: none;
-}
-
-.nav_logo {
-    width: 120px;
-    height: 47px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-
-.nav_logo > img {
-    width: 100%;
-    height: 100%;
-}
-
-.nav_menu {
-    width: 415px;
-    height: 48px;
-}
-.menu_list {
-    width: 100%;
-    height: 100%;
-}
-.menu_list > li > a {
-    text-decoration-line: none;
-    position: relative;
+::before {
     box-sizing: border-box;
 }
-.menu_list > .item > a::after {
+
+figure {
+    margin: 0 0 1rem;
+}
+
+/* header */
+.header_nav_btn {
+    display: none;
+}
+.freelancer-heading-header-2 {
+    font-size: calc(1.36875rem + 1.425vw);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* header background */
+.header-bg {
     position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--primary-color);
-    transition: width 0.25s linear;
-    box-sizing: border-box;
-}
-.menu_list > .item > a:hover::after {
+    background-color: #F8F9FD;
     width: 100%;
+    height: 60rem;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
-.menu_list > li > a:hover {
-    color: var(--primary-color);
+.figure-avatar-1 {
+    bottom: 88%;
+    right: 93%;
+}
+.avatar-rounded {
+    position: relative;
+    display: inline-flex;
+    border-radius: 50rem;
+}
+.avatar-rounded > img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+    z-index: 5;
+}
+.avatar-rounded:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(1.4);
+    border-radius: inherit;
+}
+.avatar-rounded:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(1.7);
+    border: 1px solid #8F98BF;
+    opacity: 0.28;
+    border-radius: inherit;
 }
 
-.nav_btn {
-    width: 602px;
+.figure-avatar-2 {
+    bottom: 79%;
+    right: 72%;
 }
-.nav_search {
-    width: 310px;
-    height: 50px;
+.figure-avatar-2 > .avatar-rounded > img {
+    width: 90px;
+    height: 90px;
 }
-.nav_search > input {
-    width: 210px;
+.figure-avatar-3 {
+    bottom: 60%;
+    right: 85%;
 }
-.nav_search > img {
-    width: 20.05px;
-    height: 20.05px;
+.figure-avatar-3 > .avatar-rounded > img {
+    width: 70px;
+    height: 70px;
+}
+.figure-avatar-4 {
+    bottom: 85%;
+    left: 91%;
+}
+.figure-avatar-4 > .avatar-rounded > img {
+    width: 65px;
+    height: 65px;
+}
+.figure-avatar-5 {
+    bottom: 75%;
+    left: 72%;
+}
+.figure-avatar-5 > .avatar-rounded > img {
+    width: 87px;
+    height: 87px;
+}
+.figure-avatar-6 {
+    bottom: 38%;
+    left: 89%;
+}
+.figure-avatar-6 > .avatar-rounded > img {
+    width: 120px;
+    height: 120px;
 }
 
-.login_btn {
-    width: 118px;
-    height: 51px;
+/* banner */
+.form_control {
+    width: 100%;
+    padding: 0 15px;
+    border: none;
+    color: var(--secondary-color);
 }
-
-.signup_btn {
-    width: 150px;
-    height: 51px;
-}
-
-.brand_logo {
-    margin: 0 auto;
-    margin-top: 80px;
-    max-width: 1620px;
-    height: auto;
-    padding: 100px 0px;
-}
-.client_logo {
-    margin: 0 auto;
-    max-width: 1380px;
-    height: 51px;
-}
-.select_icon {
-    background-image: url(/assets/icons/freelancer_form_select_icon1.svg);
+.freelancer-banner-form-location {
+    padding: 15px 20px 15px 50px;
+    border: none;
+    border-radius: 50rem;
+    background-color: var(--third-color);
+    color: var(--secondary-color);
+    background-image: url(/assets/icons/freelancerlist/banner_form_location.svg), url(/assets/icons/freelancerlist/banner_form_select.svg);
     background-repeat: no-repeat no-repeat;
     background-position: right calc(100% - 20px) center,left calc(100% - 20px) center;
+    appearance: none;
+    outline: none;
+}
+
+.freelancer-banner-form-title {
+    padding: 15px 20px 15px 20px;
+    border: none;
+    border-radius: 50rem;
+    background-color: var(--third-color);
+    color: var(--secondary-color);
+    background-image:url(/assets/icons/freelancerlist/banner_form_select.svg);
+    background-repeat: no-repeat;
+    background-position:left calc(100% - 20px) center;
+    appearance: none;
+    outline: none;
+}
+
+/* FEATURED PROFILE */
+.featured_profile_nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.profile_card_item {
+    padding: 33px;
+    border-radius: 18px;
+    background-color: var(--third-color);
+    box-shadow: 0px 7px 22px 0px rgba(143, 134, 196, 0.07);
+}
+.profile_card_item:hover {
+    box-shadow: 0px 19px 29px 0px rgba(62,53,120, 0.14);
+}
+.profile_card_item_status {
+    position: absolute;
+    right: 0px;
+    bottom: -5px;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 5px solid var(--third-color);
+}
+.profile_card_item_name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--secondary-color);
+}
+.profile_card_item_work {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--c-black-900);
+}
+.profile_card_btn_left {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+.profile_card_btn_right {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+} 
+
+/* showing */
+.checkbox-swith-icon {
+    position: relative;
+    margin: 0px 10px;
+    width: 30px;
+    height: 16px;
+    background-color: #D8D8D8;
+    border-radius: 50rem;
+    transition: background-color 0.2s linear;
+}
+.checkbox-swith-icon-circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    top: -2px;
+    background-color: #959595;
+    border-radius: 50rem;
+    transition: transform 0.2s linear;
+}
+
+.checkbox-swith-input:checked + .checkbox-swith-lable > .checkbox-swith-icon {
+    background-color: #E4CFFF;
+}
+.checkbox-swith-input:checked + .checkbox-swith-lable > .checkbox-swith-icon  > .checkbox-swith-icon-circle {
+    transform: translateX(30px);
+    background-color: var(--primary-color);
+}
+
+/* freelancer content */
+.freelancer-showing-grid-data {
+    margin: 20px -12px 0px -12px ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.profile-card-grid {
+    padding: 40px;
+    border-radius: 18px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.profile-card-grid-online-status {
+    position: absolute;
+    background-color: var(--c-apple-500);
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--third-color);
+    padding: 7px 20px 7px 40px;
+    line-height: 1.5;
+    border-radius: 50rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% - 15px);
+}
+.profile-card-grid-online-status::before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50rem;
+    background-color: var(--third-color);
+    left: 20px;
+    top: 50%;
+    transform:  translateY(-50%);
+}
+.profile-card-grid-name {
+    font-size: calc(1.275rem + 0.3vw);
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--secondary-color);
+}
+.profile-card-grid-work {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--c-black-900);
+}
+.profile-card-grid-detail-title {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color:  var(--secondary-color);
+}
+.profile-card-grid-detail-value {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color:  var(--c-black-900);
+}
+
+.pagination-select {
+    display: flex;
+    flex-direction: row;
+    border-radius: 50rem;
+    background-color: var(--c-blue-chalk-200);
+}
+
+
+@media screen and (min-width: 576px) {
+    .brand_swiper_wrapper {
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 460px;
+    }
+    .icon-brand_logo_2 {
+        display: block;
+    }
+    .icon-brand_logo_4 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* header */
+    .header_nav_btn_icon {
+        display: none;
+    }
+    .nav_menu_icon {
+        display: block;
+    }
+    .header_nav_btn {
+        display: flex;
+    }
+
+    .header-bg {
+        height: 52rem;
+    }
+
+    /* banner */
+    .freelancer-banner-form {
+        padding: 7px;
+        display: grid;
+        grid-template-columns: 7fr 9fr;
+        background-color: var(--third-color);
+        border-radius: 50rem;
+        gap: 0px;
+    }
+    .freelancer-banner-form-inp {
+        order: 2;
+        padding: 0px;
+    }
+    .freelancer-banner-form-content {
+        display: grid;
+        grid-template-columns: 5fr 4fr;
+        gap: 0px;
+    }
+    .freelancer-banner-form-location {
+        border-radius: 0px;
+        border-right: 1px solid var(--c-gallery-100);
+    }
+    .freelancer-banner-form-title {
+        border-radius: 0px;
+        border-right: 1px solid var(--c-gallery-100);
+    }
+    .link-admin-sp, .link-customer-service, .link-accouting {
+        display: block;
+    }
+
+    /* featured profile */
+    .featured_profile_card_item2 {
+        display: block;
+    }
+    .jobs_card_layout {
+        width: 50%;
+    }
+
+    /* showing header */
+    .joblist-header-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 34px;
+    } 
+    .freelancer-showing-grid-data {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .pagination {
+        flex-direction: row;
+    }
+
+    /* brand logo */
+    .brand_swiper_wrapper {
+        max-width: 640px;
+    }
+
+    /* footer */
+    .footer_header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header-bg {
+        height: 56rem;
+    }
+    /* banner */
+    .freelancer-banner-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* featured profile */
+    .featured_profile_card {
+        margin-top: 25px;
+    }
+    .jobs_card_list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .jobs_card_layout {
+        width: 100%;
+    }
+
+    /* brand logo */
+    .brand_swiper_wrapper {
+        max-width: 880px;
+    }
+    .icon-brand_logo_1 {
+        display: block;
+    }
+
+    /* footer */
+    .footer_input_btn {
+        margin-left: 16.666666%;
+    }
+    .footer_content_secondary {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .copyright {
+        flex-direction:  row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0px;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    /* header */
+    .nav_menu_icon {
+        display: none;
+    }
+    .header_nav_menu {
+        display: flex;
+    }
+    .header_nav_form {
+        display: block;
+    }
+
+    .header-bg {
+        height: 58rem;
+    }
+    .header-bg-display {
+        display: block;
+    }
+
+    /* banner */
+    .freelancer-banner-header {
+        margin: 0 auto;
+        width: 60%;
+    }
+    .freelancer-banner-form {
+        margin: 0 auto;
+        width: 70%;
+        margin-top: 60px;
+    }
+    .suggestions {
+        margin: 0 auto;
+        width: 50%;
+        margin-top: 34px;
+    }
+
+    /* featured profile */
+    .featured_profile_card_item3 {
+        display: block;
+    }
+    .heading-section-4 {
+        font-size: 1.75rem;
+    }
+
+    /* showing header */
+    .joblist-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .freelancer-showing-grid-data {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* brand logo */
+    .brand_swiper_wrapper {
+        max-width: 992px;
+    }
+    .icon-brand_logo_5 {
+        display: block;
+    }
+
+     /* footer */
+     .footer_content {
+        display: grid;
+        grid-template-columns: 4fr 5fr 3fr;
+        gap: 0px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    /* banner */
+    .freelancer-banner-header {
+        margin: 0 auto;
+        width: 50%;
+    }
+    .freelancer-heading-header-2 {
+        font-size: 2.4375rem;
+    }
+    .freelancer-banner-form {
+        width: 60%;
+    }
+
+    /* featured profile */
+    .featured_profile_card_item4 {
+        display: block;
+    } 
+
+    /* showing */
+    .freelancer-showing-grid-data {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

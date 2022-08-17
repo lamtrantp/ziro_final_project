@@ -27,7 +27,7 @@ body {
 
 /* serach jobs */
 
-.form_search {
+/* .form_search {
     width: 100%;
     height: 64px;
     padding: 7px;
@@ -35,7 +35,7 @@ body {
     border: none;
     display: grid;
     grid-template-columns: auto 133px;
-}
+} */
 .form_search_content {
     padding: 0 20px;
     width: auto;
@@ -75,8 +75,51 @@ body {
     background-color: var(--primary-color);
 }
 
+/* joblist */
+.job_acction_btn:hover > span > i::before {
+    color: var(--c-persimmon-400);
+}
+.infor-card-title {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.job-card-content-collapse {
+    display: none;
+}
+.pagination-select {
+    display: flex;
+    flex-direction: row;
+    border-radius: 50rem;
+    background-color: var(--c-blue-chalk-200);
+}
+
+/* upcoming event */
+.event-thumb-bg {
+    background-image: url(/assets/images/joblist/upcoming_event_card_bg1.png);
+    background-size: cover;
+    background-position: center;
+}
+.event-thumb-bg2 {
+    background-image: url(/assets/images/joblist/upcoming_event_card_bg2.png);
+    background-size: cover;
+    background-position: center;
+}
+.event-thumb-bg3 {
+    background-image: url(/assets/images/joblist/upcoming_event_card_bg3.png);
+    background-size: cover;
+    background-position: center;
+}
+.event-title-link {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
 
 @media screen and (min-width: 576px) {
+    .brand_logo {
+        max-width: 540px;
+    }
     .brand_swiper_wrapper {
         justify-content: space-between;
         margin: 0 auto;
@@ -112,6 +155,52 @@ body {
     .link-accouting {
         display: block;
     }
+
+    /* joblist */
+    .joblist-header-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 34px;
+    }
+    .job-card-harizontal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .job-card-action-link  {
+        width: 174.56px;
+    }
+    .pagination {
+        flex-direction: row;
+    }
+
+    /* event upcoming header */
+    .event-upcoming-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .event-upcoming-header-btn {
+        justify-content: flex-end;
+        gap: 15px;
+    }
+    .event-card {
+        width: 50%;
+    }
+
+    /* brand logo */
+    .brand_logo {
+        max-width: 720px;
+    }
+    .brand_swiper_wrapper {
+        max-width: 640px;
+    }
+
+    /* footer */
+    .footer_header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -122,6 +211,33 @@ body {
     
     .banner-2 {
         display: block;
+    }
+
+    /* brand logo */
+    .brand_logo {
+        padding: 100px 40px;
+        max-width: 960px;
+    }
+    .brand_swiper_wrapper {
+        max-width: 880px;
+    }
+    .icon-brand_logo_1 {
+        display: block;
+    }
+
+    /* footer */
+    .footer_input_btn {
+        margin-left: 16.666666%;
+    }
+    .footer_content_secondary {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .copyright {
+        flex-direction:  row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0px;
     }
 }
 
@@ -144,6 +260,47 @@ body {
     .banner-2-bg {
         width: 40rem;
     }
+
+    /* joblist */
+    .joblist-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .job-card-harizontal {
+        display: grid;
+        grid-template-columns: 3fr 4fr 3fr;
+    }
+    .job-card-content-collapse  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 0px;
+    }
+    #job-card-content-collapse-btn {
+        display: none;
+    }
+
+    /* event upcoming */
+    .event-card {
+        width: 33.33333333333333%;
+    }
+
+    /* brand logo */
+    .brand_logo {
+        max-width: 1140px;
+    }
+    .brand_swiper_wrapper {
+        max-width: 992px;
+    }
+    .icon-brand_logo_5 {
+        display: block;
+    }
+
+    /* footer */
+    .footer_content {
+        display: grid;
+        grid-template-columns: 4fr 5fr 3fr;
+        gap: 0px;
+    }
 }
 
 @media screen and (min-width: 1400px) {
@@ -153,5 +310,15 @@ body {
     }
     .banner-2-bg {
         width: 50rem;
+    }
+
+    /* brand logo */
+    .brand_logo {
+        max-width: 1620px;
+    }
+    .brand_swiper_wrapper {
+        margin: 0px 80px;
+        max-width: 100%;
+        justify-content: space-between;
     }
 }

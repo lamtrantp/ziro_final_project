@@ -27,6 +27,36 @@ body {
     display: none;
 }
 
+.header_nav_secondary {
+    position: absolute;
+    width: 100%;
+}
+.nav_secondary_item > a {
+    padding: 8px 0px;
+}
+.nav_secondary_item > a:hover {
+    color: var(--primary-color);
+}
+.nav_secondary_item {
+    display: flex;
+}
+
+/* main */
+.main {
+    z-index: 99;
+    position: relative;
+    top: 0px;
+    transition: top 0.5s ease-out;
+}
+.steps1_bg {
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    vertical-align: middle;
+    border-radius: 40px;
+}
 
 /* steps */
 .steps2_background {
@@ -63,6 +93,11 @@ body {
 .accordion-arrow {
     top: 50%;
     right: 40px;
+}
+.collapetwo {
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: height 0.5s ease-out;
 }
 .card-icon {
     display: flex;
@@ -222,7 +257,7 @@ body {
     gap: 15px;
     align-items: center;
 }
-.job_acction_btn > span > i:hover {
+.job_acction_btn:hover > span > i::before {
     color: var(--c-persimmon-400);
 }
 
@@ -359,6 +394,7 @@ body {
     }
     .accordion-number {
         width: 80px; 
+        min-width: 80px;
         height: 80px;
     }
 

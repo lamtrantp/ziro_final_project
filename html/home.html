@@ -21,7 +21,7 @@
                         <span class="icon-logo_ziro"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span></span>
                     </a>
     
-                    <button class="nav_menu_icon btn w-20 h-20 bg-third hidden">
+                    <button id="nav_menu_icon" class="nav_menu_icon btn w-20 h-20 bg-third hidden">
                         <img src="/assets/icons/navbar_toggler.svg" alt="" class="w-20 h-20">
                     </button>
                 </div>
@@ -80,7 +80,33 @@
 
         </header>
 
-        <main class="main m-0-auto max-w-1620">
+        <div id="header_nav_secondary" class="header_nav_secondary flex-col gap-20 bg-white-lilac-50 px-40">
+            <form action="" class="px-20 p-7 w-1-1 flex-row items-center rounded-50rem bg-third">
+                <input type="text" placeholder="Search here..." class="input w-1-1">
+                <button class="w-20 h-20 border-none p-0 m-0 bg-third">
+                    <span>
+                        <img src="/assets/icons/home/header_nav_secondary_icon1.svg" alt="" class="w-20 h-20">
+                    </span>
+                </button>
+            </form>
+            
+            <ul class="nav_secondary">
+                <li class="nav_secondary_item">
+                    <a href="" class="font-medium text-secondary-color">Home</a>
+                </li>
+                <li class="nav_secondary_item">
+                    <a href="" class="font-medium text-secondary-color">Pricing</a>
+                </li>
+                <li class="nav_secondary_item">
+                    <a href="" class="font-medium text-secondary-color">Blog</a>
+                </li>
+                <li class="nav_secondary_item">
+                    <a href="" class="font-medium text-secondary-color">Become a member</a>
+                </li>
+            </ul>
+        </div>
+
+        <main id="main" class="main m-0-auto max-w-1620 bg-third">
             <!-- BANNER -->
             <div class="banner1 px-40">
                 <div class="-mx-12 flex-col">
@@ -171,11 +197,13 @@
             </div>
             <!-- STEPS -->
             <div class="steps1 mt-43 p-60-28 flex-col gap-34">
-                <div class="relative w-1-1 px-12 h-auto">
-                    <img src="/assets/images/steps_bg.png" alt="" class="steps_bg w-1-1 h-auto rounded-40">
-                    <img class="absolute steps_icon1 -top-26 left-92 w-48 h-58" src="/assets/icons/steps_bg_1.svg" alt="">
-                    <img class="absolute steps_icon2 hidden" src="/assets/icons/steps_bg_2.svg" alt="">
-                    <img class="absolute steps_icon3 bottom-37 -left-4 w-48 h-43" src="/assets/icons/steps_bg_3.svg" alt="">
+                <div class="w-1-1 px-12 max-w-1-1">
+                    <div class="relative">
+                        <img src="/assets/images/steps_background.png" alt="" class="steps1_bg">
+                        <img class="absolute steps_icon1 -top-26 left-80 w-48 h-58" src="/assets/icons/steps_bg_1.svg" alt="">
+                        <img class="absolute steps_icon2 hidden" src="/assets/icons/steps_bg_2.svg" alt="">
+                        <img class="absolute steps_icon3 bottom-37 -left-16 w-48 h-43" src="/assets/icons/steps_bg_3.svg" alt="">
+                    </div>
                 </div>
 
                 <div class="flex-col px-12">
@@ -189,11 +217,16 @@
                             <button class="relative accordion-btn w-1-1">
                                 <span class="flex-row gap-24 w-1-1">
                                     <div class="accordion-number bg-blue-chalk-100 flex justify-center items-center text-purpe-heart">1</div>
-                                    <div class="accordion-content py-10 flex items-center">
-                                        <h2 class="accordion-header text-start">Complete Profile</h2>
+                                    <div class="accordion-content pr-25 py-10 flex-col">
+                                        <h2 class="accordion-header text-start mt-auto mb-auto">Complete Profile</h2>
+                                        <div class="collapetwo">
+                                            <div class="mt-14 text-gray-500 text-start">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </div>
+                                        </div>
                                     </div>
-                                    <img src="/assets/icons/steps_card_1.svg" alt="" class="absolute accordion-arrow">
                                 </span>
+                                <img src="/assets/icons/steps_card_1.svg" alt="" class="absolute accordion-arrow">
                             </button>
                         </div>
 
@@ -201,11 +234,16 @@
                             <button class="relative accordion-btn w-1-1">
                                 <span class="flex-row gap-24 w-1-1">
                                     <div class="accordion-number flex justify-center items-center bg-titan-white-100 text-cerulean-blue-700">2</div>
-                                    <div class="accordion-content py-10 flex items-center">
-                                        <h2 class="accordion-header text-start">Search Vacancies</h2>
+                                    <div class="accordion-content pr-25 py-10 flex-col">
+                                        <h2 class="accordion-header text-start mt-auto mb-auto">Search Vacancies</h2>
+                                        <div class="collapetwo">
+                                            <div class="mt-14 text-gray-500 text-start">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </div>
+                                        </div>
                                     </div>
-                                    <img src="/assets/icons/steps_card_1.svg" alt="" class="absolute accordion-arrow">
                                 </span>
+                                <img src="/assets/icons/steps_card_1.svg" alt="" class="absolute accordion-arrow">
                             </button>
                         </div>
 
@@ -213,11 +251,16 @@
                             <button class="relative accordion-btn w-1-1">
                                 <span class="flex-row gap-24 w-1-1">
                                     <div class="accordion-number bg-blue-chalk-100 flex justify-center items-center bg-hint-of-green-50 text-emerald-400">3</div>
-                                    <div class="accordion-content py-10 flex items-center">
-                                        <h2 class="accordion-header text-start">Apply Jobs</h2>
+                                    <div class="accordion-content pr-25 py-10 flex-col">
+                                        <h2 class="accordion-header text-start mt-auto mb-auto">Apply Jobs</h2>
+                                        <div class="collapetwo">
+                                            <div class="mt-14 text-gray-500 text-start">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </div>
+                                        </div>
                                     </div>
-                                    <img src="/assets/icons/steps_card_1.svg" alt="" class="absolute accordion-arrow">
                                 </span>
+                                <img src="/assets/icons/steps_card_1.svg" alt="" class="absolute accordion-arrow">
                             </button>
                         </div>
                     </div>
@@ -233,27 +276,37 @@
                         </div>
     
                         <div class="accordion mt-43 flex-col gap-34">
-                            <div class="accordion_item">
+                            <div class="accordion_item ">
                                 <button class="relative accordion-btn w-1-1">
                                     <span class="flex-row gap-24 w-1-1">
                                         <div class="accordion-number bg-blue-chalk-100 flex justify-center items-center text-purpe-heart">1</div>
-                                        <div class="accordion-content mr-25 py-10 flex items-center">
-                                            <h2 class="accordion-header text-start">Complete Profile</h2>
+                                        <div class="accordion-content pr-25 py-10 flex-col">
+                                            <h2 class="accordion-header text-start mt-auto mb-auto">Complete Profile</h2>
+                                            <div class="collapetwo">
+                                                <div class="mt-14 text-gray-500 text-start">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                </div>
+                                            </div>
                                         </div>
-                                        <img src="/assets/icons/steps_card_1.svg" alt="" class="absolute accordion-arrow">
                                     </span>
+                                    <img src="/assets/icons/steps_card_1.svg" alt="" class="absolute accordion-arrow">
                                 </button>
                             </div>
     
                             <div class="accordion_item">
-                                <button class="relative accordion-btn w-1-1">
+                                <button class="relative accordion-btn w-1-1" id="accordion-btn">
                                     <span class="flex-row gap-24 w-1-1">
                                         <div class="accordion-number flex justify-center items-center bg-titan-white-100 text-cerulean-blue-700">2</div>
-                                        <div class="accordion-content mr-25 py-10 flex items-center">
-                                            <h2 class="accordion-header text-start">Search Vacancies</h2>
+                                        <div class="accordion-content pr-25 py-10 flex-col">
+                                            <h2 class="accordion-header text-start mt-auto mb-auto">Search Vacancies</h2>
+                                            <div class="collapetwo">
+                                                <div class="mt-14 text-gray-500 text-start">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                </div>
+                                            </div>
                                         </div>
-                                        <img src="/assets/icons/steps_card_1.svg" alt="" class="absolute accordion-arrow">
                                     </span>
+                                    <img src="/assets/icons/steps_card_1.svg" alt="" class="absolute accordion-arrow">
                                 </button>
                             </div>
     
@@ -261,11 +314,16 @@
                                 <button class="relative accordion-btn w-1-1">
                                     <span class="flex-row gap-24 w-1-1">
                                         <div class="accordion-number bg-blue-chalk-100 flex justify-center items-center bg-hint-of-green-50 text-emerald-400">3</div>
-                                        <div class="accordion-content mr-25 py-10 flex items-center">
-                                            <h2 class="accordion-header text-start">Apply Jobs</h2>
+                                        <div class="accordion-content pr-25 py-10 flex-col">
+                                            <h2 class="accordion-header text-start mt-auto mb-auto">Apply Jobs</h2>
+                                            <div class="collapetwo">
+                                                <div class="mt-14 text-gray-500 text-start">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                </div>
+                                            </div>
                                         </div>
-                                        <img src="/assets/icons/steps_card_1.svg" alt="" class="absolute accordion-arrow">
                                     </span>
+                                    <img src="/assets/icons/steps_card_1.svg" alt="" class="absolute accordion-arrow">
                                 </button>
                             </div>
                         </div>
