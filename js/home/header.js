@@ -12,10 +12,11 @@ button.addEventListener("click", function() {
     }
 })
 
+
+
 let collapeTwoOpen = false;
 let height = document.querySelector("div.collapetwo").clientHeight;
 document.querySelectorAll("div.collapetwo").forEach ((item, index) => {
-    console.log(height);
     item.style.height = "0px";
 })
 
@@ -23,8 +24,6 @@ const btns = document.querySelectorAll("div.accordion_item")
 btns.forEach ((item, index) => {
 
     item.addEventListener("click", event => {
-        console.log(index);
-        console.log(event.target, index);
 
         let action = event.target.querySelector("div.collapetwo").style.height;
         
@@ -33,12 +32,71 @@ btns.forEach ((item, index) => {
         btns.forEach ((item, index) => {
             console.log(item);
             item.querySelector(".collapetwo").style.height = "0px";
+            item.querySelector(".accordion-arrow").style.display = "block";
         })
         
         if (action === "0px") {
             event.target.querySelector(".collapetwo").style.height = height + "px";
+            event.target.querySelector(".accordion-arrow").style.display = "none";
         } else {
             event.target.querySelector(".collapetwo").style.height = "0px";
+            event.target.querySelector(".accordion-arrow").style.display = "block";
         }
     })
 })
+
+
+const nextBtn = document.querySelector("button#featured-profile-btn-next");
+
+const previousBtn = document.querySelector("button#featured-profile-btn-previous");
+
+const slider = document.querySelector("div.featured_profile_card_list");
+
+let firstSlide;
+let lastSlide;
+
+const projects = document.querySelectorAll("div.featured_profile_card_item");
+
+projects.forEach((item, index) => {
+    console.log(index);
+    item.classList.add("slide_content")
+    if (index === 0) {
+        firstSlide = item;
+        item.classList.add("active")
+    }
+    
+    if (index + 1 == projects.length) {
+        lastSlide = item;
+    } 
+})
+
+nextBtn.addEventListener('click', () => {
+    const active_slide = document.querySelector('.featured_profile_card_item.active');
+    let sibling = active_slide.nextElementSibling;
+    console.log(active_slide)
+    if (sibling == null) {
+        sibling = firstSlide;
+    }
+    console.log(sibling);
+
+    if (sibling.classList.contains("featured_profile_card_item")) {
+        active_slide.classList.remove('active');
+        sibling.classList.add('active');
+    }
+
+});
+
+previousBtn.addEventListener('click', () => {
+    const active_slide = document.querySelector('.featured_profile_card_item.active');
+    let sibling = active_slide.previousElementSibling;
+    if (sibling == null || !sibling.classList.contains('featured_profile_card_item')) {
+        sibling = lastSlide;
+        console.log(sibling);
+    }
+    
+
+    if (sibling.classList.contains('featured_profile_card_item')) {
+        active_slide.classList.remove('active');
+        sibling.classList.add('active');
+    }
+});

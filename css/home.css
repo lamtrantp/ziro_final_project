@@ -124,10 +124,43 @@ body {
 }
 
 /* FEATURED PROFILE */
+.featured_profile {
+    display: grid;
+    grid-template-rows: auto auto;
+}
 .featured_profile_nav {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
+.featured_profile_card {
+    height: 290px;
+    width: 100%;
+}
+.featured_profile_card_list {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+}
+.featured_profile_card_item {
+    position: absolute;
+    /* opacity: 0; */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /* transition: opacity 0.5s linear; */
+}
+.slide_content {
+    transition: transform 0.25s linear;
+    transform: translateX(100%);
+}
+.active {
+    z-index: 1;
+    /* opacity: 1; */
+    transform: translateX(0%);
+}
+
 
 .profile_card_item {
     padding: 33px;
@@ -167,6 +200,8 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    border: none;
+    padding: 0;
     background-color: var(--primary-color);
 }
 .profile_card_btn_right {
@@ -177,6 +212,8 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    border: none;
+    padding: 0;
     background-color: var(--primary-color);
 } 
 
@@ -404,9 +441,10 @@ body {
     }
 
     /* featured profile */
-    .featured_profile_card_item2 {
-        display: block;
+    .featured_profile_card_item {
+        width: 50%;
     }
+
     .jobs_card_layout {
         width: 50%;
     }
@@ -470,10 +508,12 @@ body {
 
     /* steps */
     .steps1 {
-        display: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
     }
-    .steps2 {
-        display: block;
+    .steps1-background {
+        order: 2;
     }
 
     /* Why choose us */
@@ -555,6 +595,10 @@ body {
         display: block;
     }
 
+    .header_nav_secondary {
+        display: none;
+    }
+
     /* banner */
     .banner2_layout {
         grid-template-columns: 5fr 7fr;
@@ -596,8 +640,8 @@ body {
     }
 
     /* featured profile */
-    .featured_profile_card_item3 {
-        display: block;
+    .featured_profile_card_item {
+        width: 33.3333333%;
     }
 
     /* customer */
@@ -640,17 +684,18 @@ body {
     }
 
     /* steps */
-    .steps2_layout {
+    .steps1 {
         grid-template-columns: 5fr 7fr;
     }
-    .steps2_container {
-        margin-left: 14.2857143%;
+    .steps1-background {
+        width: 85.7142867%;
+        justify-self: end;
     }
 
     /* featured profile */
-    .featured_profile_card_item4 {
-        display: block;
-    } 
+    .featured_profile_card_item {
+        width: 25%;
+    }
 
     /* featured jobs */
     .jobs_card_list {
