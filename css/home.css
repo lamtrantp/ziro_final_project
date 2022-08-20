@@ -125,8 +125,8 @@ body {
 
 /* FEATURED PROFILE */
 .featured_profile {
-    display: grid;
-    grid-template-rows: auto auto;
+    display: flex;
+    flex-direction: column;
 }
 .featured_profile_nav {
     display: grid;
@@ -136,32 +136,24 @@ body {
     height: 290px;
     width: 100%;
 }
+
 .featured_profile_card_list {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    box-sizing: content-box;
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: auto;
+    /* width: 100%; */
+    /* height: 100%; */
 }
 .featured_profile_card_item {
-    position: absolute;
+    /* position: absolute; */
     /* opacity: 0; */
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+    height: 290px;
+    width: 385px !important;
+    /* overflow: hidden; */
     /* transition: opacity 0.5s linear; */
 }
-.slide_content {
-    transition: transform 0.25s linear;
-    transform: translateX(100%);
-}
-.active {
-    z-index: 1;
-    /* opacity: 1; */
-    transform: translateX(0%);
-}
-
-
 .profile_card_item {
     padding: 33px;
     border-radius: 18px;
@@ -640,9 +632,9 @@ body {
     }
 
     /* featured profile */
-    .featured_profile_card_item {
+    /* .featured_profile_card_item {
         width: 33.3333333%;
-    }
+    } */
 
     /* customer */
     .testimonial_slider {
@@ -693,9 +685,9 @@ body {
     }
 
     /* featured profile */
-    .featured_profile_card_item {
+    /* .featured_profile_card_item {
         width: 25%;
-    }
+    } */
 
     /* featured jobs */
     .jobs_card_list {

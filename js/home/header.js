@@ -46,57 +46,76 @@ btns.forEach ((item, index) => {
 })
 
 
-const nextBtn = document.querySelector("button#featured-profile-btn-next");
+// const nextBtn = document.querySelector("button#featured-profile-btn-next");
 
-const previousBtn = document.querySelector("button#featured-profile-btn-previous");
+// const previousBtn = document.querySelector("button#featured-profile-btn-previous");
 
-const slider = document.querySelector("div.featured_profile_card_list");
+// const slider = document.querySelector("div.featured_profile_card_list");
 
-let firstSlide;
-let lastSlide;
+// let firstSlide;
+// let lastSlide;
 
-const projects = document.querySelectorAll("div.featured_profile_card_item");
+// const projects = document.querySelectorAll("div.featured_profile_card_item");
 
-projects.forEach((item, index) => {
-    console.log(index);
-    item.classList.add("slide_content")
-    if (index === 0) {
-        firstSlide = item;
-        item.classList.add("active")
-    }
+// projects.forEach((item, index) => {
+//     console.log(index);
+//     item.classList.add("slide_content")
+//     if (index < 2) {
+//         item.classList.add("slide_item_pre");
+//     }
+//     if (index === 2) {
+//         firstSlide = item;
+//         item.classList.add("active")
+//     }
+
+//     if (index === 3) {
+//         item.classList.add("slide_item2");
+//     }
+//     if (index === 4) {
+//         item.classList.add("slide_item3");
+//     }
+//     if (index === 5) {
+//         item.classList.add("slide_item4");
+//         lastSlide = item;
+//     }
+
+//     if (index > 5) {
+//         item.classList.add("slide_item_next")
+//     }
     
-    if (index + 1 == projects.length) {
-        lastSlide = item;
-    } 
-})
+    
+// })
 
-nextBtn.addEventListener('click', () => {
-    const active_slide = document.querySelector('.featured_profile_card_item.active');
-    let sibling = active_slide.nextElementSibling;
-    console.log(active_slide)
-    if (sibling == null) {
-        sibling = firstSlide;
-    }
-    console.log(sibling);
+// nextBtn.addEventListener('click', () => {
+//     const active_slide = document.querySelector('.featured_profile_card_item.active');
 
-    if (sibling.classList.contains("featured_profile_card_item")) {
-        active_slide.classList.remove('active');
-        sibling.classList.add('active');
-    }
+//     const slide_end = document.querySelector(".featured_profile_card_item.slide_item4")
 
-});
+//     let sibling = active_slide.nextElementSibling;
+//     let next_slide = slide_end.nextElementSibling;
+//     if (next_slide == null || !sibling.classList.contains('featured_profile_card_item')) {
+//         next_slide = firstSlide;
+//     }
+//     console.log(sibling);
 
-previousBtn.addEventListener('click', () => {
-    const active_slide = document.querySelector('.featured_profile_card_item.active');
-    let sibling = active_slide.previousElementSibling;
-    if (sibling == null || !sibling.classList.contains('featured_profile_card_item')) {
-        sibling = lastSlide;
-        console.log(sibling);
-    }
+//     if (sibling.classList.contains("featured_profile_card_item")) {
+//         active_slide.classList.remove('active');
+//         sibling.classList.add('active');
+//     }
+
+// });
+
+// previousBtn.addEventListener('click', () => {
+//     const active_slide = document.querySelector('.featured_profile_card_item.active');
+//     let sibling = active_slide.previousElementSibling;
+//     if (sibling == null || !sibling.classList.contains('featured_profile_card_item')) {
+//         sibling = lastSlide;
+//         console.log(sibling);
+//     }
     
 
-    if (sibling.classList.contains('featured_profile_card_item')) {
-        active_slide.classList.remove('active');
-        sibling.classList.add('active');
-    }
-});
+//     if (sibling.classList.contains('featured_profile_card_item')) {
+//         active_slide.classList.remove('active');
+//         sibling.classList.add('active');
+//     }
+// });
