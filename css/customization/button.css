@@ -81,6 +81,9 @@
     border: none;
 }
 /* size */
+.btn-follow {
+    padding: 13px 56.5px;
+}
 .btn-129-50 {
     width: 129px;
     height: 50px;
@@ -115,7 +118,7 @@
 }
 .btn-xl {
     width: 179px;
-    height: 52px;
+    height: 50px;
 }
 .btn-2xl {
     width: 183px;
@@ -194,6 +197,10 @@
     padding: 13px 35px;
     border-radius: 50rem;
 }
+.link-md {
+    padding: 13px 35px;
+    border-radius: 26px;
+}
 .link-13-79 {
     padding: 13px 79px;
     border-radius: 50px;
@@ -201,6 +208,10 @@
 .link-13_5-35 {
     padding: 13.5px 35px;
     border-radius: 50px;
+}
+.link-13-44 {
+    padding: 13px 44px;
+    border-radius: 50rem;
 }
 .link-13_5-44 {
     padding: 13.5px 44px;
@@ -216,10 +227,6 @@
 }
 .link-14-30_5 {
     padding: 14px 30.5px;
-    border-radius: 26px;
-}
-.link-md {
-    padding: 13px 35px;
     border-radius: 26px;
 }
 .link-14-37_5 {
@@ -317,11 +324,24 @@
     border-radius: 25px;
     background-color: var(--c-titan-white-50);
 }
+.link-w-full > span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+}
 .link-w-full:hover {
     background-color: var(--primary-color);
 }
 .link-w-full > span:hover {
     color: var(--third-color);
+}
+.link-w-full-2 {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
 }
 
 .link_icon-11 {
@@ -334,6 +354,14 @@
 }
 .link_icon-third {
     background-color: var(--third-color);
+}
+
+.link > span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .input {

@@ -348,6 +348,10 @@ figure {
         display: flex;
     }
 
+    .header_nav_secondary_btn {
+        display: none;
+    }
+
     .header-bg {
         height: 52rem;
     }

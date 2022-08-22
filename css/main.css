@@ -99,6 +99,21 @@ a {
     display: none;
 }
 
+.header_nav_secondary {
+    width: 100%;
+    overflow: hidden;
+    transition: height 0.25s ease-out;
+}
+.nav_secondary_item > a {
+    padding: 8px 0px;
+}
+.nav_secondary_item > a:hover {
+    color: var(--primary-color);
+}
+.nav_secondary_item {
+    display: flex;
+}
+
 /* footer */
 .form_btn_inner {
     height: 66px;

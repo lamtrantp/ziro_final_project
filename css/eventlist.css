@@ -26,6 +26,8 @@ body {
 .header_nav_btn {
     display: none;
 }
+
+
 /* event banner */
 .event-baner-slider-image {
     background-image: url(/assets/images/event_baner1.jpeg);
@@ -87,6 +89,10 @@ body {
     }
     .header_nav_btn {
         display: flex;
+    }
+
+    .header_nav_secondary_btn {
+        display: none;
     }
     
     /* event banner */

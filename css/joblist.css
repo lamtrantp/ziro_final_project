@@ -145,6 +145,10 @@ body {
         display: flex;
     }
 
+    .header_nav_secondary_btn {
+        display: none;
+    }
+
     /* banner */
     .link-admin-sp {
         display: block;

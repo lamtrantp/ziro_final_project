@@ -67,6 +67,11 @@ html {
     font-weight: 400;
     line-height: 1.5;
 }
+.infor-card-title {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
 .fs-15 {
     font-size: 1rem;
     font-weight: 500;
@@ -74,6 +79,8 @@ html {
 }
 .fs-14 {
     font-size: 0.875rem;
+    line-height: 1.5;
+    font-weight: 400;
 }
 
 

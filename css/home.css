@@ -27,20 +27,6 @@ body {
     display: none;
 }
 
-.header_nav_secondary {
-    position: absolute;
-    width: 100%;
-}
-.nav_secondary_item > a {
-    padding: 8px 0px;
-}
-.nav_secondary_item > a:hover {
-    color: var(--primary-color);
-}
-.nav_secondary_item {
-    display: flex;
-}
-
 /* main */
 .main {
     z-index: 99;
@@ -48,6 +34,26 @@ body {
     top: 0px;
     transition: top 0.5s ease-out;
 }
+/* brand logo */
+.brand-carousel-container {
+    width: 100%;
+    height: 51px;
+    overflow: hidden;
+}
+.brand-carousel-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.brand-carousel-slide-item {
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .steps1_bg {
     max-width: 100%;
     max-height: 100%;
@@ -137,22 +143,22 @@ body {
     width: 100%;
 }
 
-.featured_profile_card_list {
-    /* position: relative; */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-slide {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    overflow: auto;
-    /* width: 100%; */
-    /* height: 100%; */
+    height: 100%;
+    min-width: 100%;
 }
 .featured_profile_card_item {
-    /* position: absolute; */
-    /* opacity: 0; */
-    height: 290px;
-    width: 385px !important;
-    /* overflow: hidden; */
-    /* transition: opacity 0.5s linear; */
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
 }
 .profile_card_item {
     padding: 33px;
@@ -371,16 +377,19 @@ body {
 
 
 @media screen and (min-width: 576px) {
-    .brand_swiper_wrapper {
-        justify-content: space-between;
+    .brand_logo {
+        max-width: 540px;
         margin: 0 auto;
-        max-width: 460px;
     }
-    .icon-brand_logo_2 {
-        display: block;
+    .brand-carousel-container {
+        height: 47.97px;
     }
-    .icon-brand_logo_4 {
-        display: block;
+    .brand-carousel-slide-item {
+        width: 33.3333333333%;
+    }
+    .brand-carousel-slide-item > img {
+        width: 92%;
+        height: auto;
     }
 }
 
@@ -399,9 +408,22 @@ body {
     .header_nav_btn {
         display: flex;
     }
+
+    .header_nav_secondary_btn {
+        display: none;
+    }
+
     /* brand logo */
-    .brand_swiper_wrapper {
-        max-width: 640px;
+    .brand_logo {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    .brand-carousel-container {
+        height: 51.391px;
+    }
+
+    .featured_profile_card_item {
+        width: 50% !important;
     }
 
     /* steps */
@@ -432,10 +454,7 @@ body {
         width: 50%;
     }
 
-    /* featured profile */
-    .featured_profile_card_item {
-        width: 50%;
-    }
+    /* featured jobs */
 
     .jobs_card_layout {
         width: 50%;
@@ -491,11 +510,17 @@ body {
     }
 
     /* brand logo */
-    .brand_swiper_wrapper {
-        max-width: 880px;
+    .brand_logo {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 100px 40px;
     }
-    .icon-brand_logo_1 {
-        display: block;
+    .brand-carousel-slide-item {
+        width: 25%;
+    }
+    .brand-carousel-slide-item > img {
+        width: 85%;
+        height: auto;
     }
 
     /* steps */
@@ -521,6 +546,8 @@ body {
     .featured_profile_card {
         margin-top: 25px;
     }
+
+    /* featured jobs */
     .jobs_card_list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -601,11 +628,17 @@ body {
     }
 
     /* brand logo */
-    .brand_swiper_wrapper {
-        max-width: 992px;
+    .brand_logo {
+        max-width: 1140px;
+        margin: 0 auto;
     }
-    .icon-brand_logo_5 {
-        display: block;
+    .brand-carousel-container {
+        margin-left: 34px;
+        margin-right: 34px;
+        width: auto;
+    }
+    .brand-carousel-slide-item {
+        width: 20%;
     }
 
     /* steps */
@@ -632,9 +665,9 @@ body {
     }
 
     /* featured profile */
-    /* .featured_profile_card_item {
-        width: 33.3333333%;
-    } */
+    .featured_profile_card_item {
+        width: 33.3333333% !important;
+    }
 
     /* customer */
     .testimonial_slider {
@@ -667,12 +700,21 @@ body {
         grid-template-columns: 4fr 5fr 3fr;
         gap: 0px;
     }
+    .heading-section-2 {
+        font-size: 2.25rem;
+    }
 }
 
 @media screen and (min-width: 1400px) {
     /* brand logo */
-    .brand_swiper_wrapper {
-        width: 100%;
+    .brand_logo {
+        max-width: 1620px;
+        margin: 0 auto;
+    }
+    .brand-carousel-container {
+        margin-left: 80px;
+        margin-right: 80px;
+        width: auto;
     }
 
     /* steps */
@@ -685,9 +727,9 @@ body {
     }
 
     /* featured profile */
-    /* .featured_profile_card_item {
-        width: 25%;
-    } */
+    .featured_profile_card_item {
+        width: 25% !important;
+    }
 
     /* featured jobs */
     .jobs_card_list {

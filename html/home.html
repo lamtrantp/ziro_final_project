@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/js/home/header.js" defer></script>
-    <script src="/js/home/footer.js" defer></script>
+    <script src="/js/main/header.js" defer></script>
+    <script src="/js/main/footer.js" defer></script>
+    <script src="/js/home/home.js" defer></script>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
 
     <div class="container">
-        <!-- HEADER NAV -->
+        <!-- HEADER -->
         <header class="bg-white-lilac-50">
             <div class="header_nav m-0-auto max-w-1620 p-24-40 flex-row justify-between items-center ">
                 <div class="header_logo flex-row items-center gap-20">
@@ -28,7 +29,7 @@
     
                 <div class="header_nav_menu flex items-center hidden">
                     <ul class="menu_list flex-row items-center gap-41">
-                        <li class="menu_item_focus">
+                        <li class="menu_item">
                             <a class="menu_home relative py-12 text-secondary-color" href="/html/home.html">Home</a>
                         </li>
     
@@ -36,7 +37,7 @@
                             <a class="menu_pricing relative py-12 leading-24 text-secondary-color" href="#pricing_plan">Pricing</a>
                         </li>
     
-                        <li class="menu_item">
+                        <li class="menu_item_focus">
                             <a class="menu_blog relative py-12 leading-24 text-secondary-color" href="/html/eventlist.html">Blog</a>
                         </li>
     
@@ -64,13 +65,13 @@
                     </form>
     
                     <div>
-                        <a href="/html/application.html" class="link-13_5-35 link-titan-white-50 hover">
+                        <a href="/html/application.html" class="link-13_5-35 link-titan-white-50">
                             <span class="font-semibol text-secondary-color">Log In</span>
                         </a>
                     </div>
     
                     <div>
-                        <a href="/html/application.html" class="link-13_5-44 link-primary hover">
+                        <a href="/html/application.html" class="link-13_5-44 link-primary">
                             <span class="font-semibol text-third-color">Sign Up</span>
                         </a>
                     </div>
@@ -80,30 +81,42 @@
 
         </header>
 
-        <div id="header_nav_secondary" class="header_nav_secondary flex-col gap-20 bg-white-lilac-50 px-40">
-            <form action="" class="px-20 p-7 w-1-1 flex-row items-center rounded-50rem bg-third">
-                <input type="text" placeholder="Search here..." class="input w-1-1">
-                <button class="w-20 h-20 border-none p-0 m-0 bg-third">
-                    <span>
-                        <img src="/assets/icons/home/header_nav_secondary_icon1.svg" alt="" class="w-20 h-20">
-                    </span>
-                </button>
-            </form>
-            
-            <ul class="nav_secondary">
-                <li class="nav_secondary_item">
-                    <a href="" class="font-medium text-secondary-color">Home</a>
-                </li>
-                <li class="nav_secondary_item">
-                    <a href="" class="font-medium text-secondary-color">Pricing</a>
-                </li>
-                <li class="nav_secondary_item">
-                    <a href="" class="font-medium text-secondary-color">Blog</a>
-                </li>
-                <li class="nav_secondary_item">
-                    <a href="" class="font-medium text-secondary-color">Become a member</a>
-                </li>
-            </ul>
+        <div id="header_nav_secondary" class="header_nav_secondary bg-white-lilac-50 px-40">
+            <div class="flex-col gap-20 pb-15">
+                <form action="" class="px-20 p-7 w-1-1 flex-row items-center rounded-50rem bg-third">
+                    <input type="text" placeholder="Search here..." class="input w-1-1">
+                    <button class="w-20 h-20 border-none p-0 m-0 bg-third">
+                        <span>
+                            <img src="/assets/icons/home/header_nav_secondary_icon1.svg" alt="" class="w-20 h-20">
+                        </span>
+                    </button>
+                </form>
+                
+                <ul class="nav_secondary">
+                    <li class="nav_secondary_item">
+                        <a href="/html/home.html" class="font-medium text-secondary-color">Home</a>
+                    </li>
+                    <li class="nav_secondary_item">
+                        <a href="/html/home.html#pricing_plan" class="font-medium text-secondary-color">Pricing</a>
+                    </li>
+                    <li class="nav_secondary_item">
+                        <a href="/html/eventlist.html" class="font-medium text-secondary-color">Blog</a>
+                    </li>
+                    <li class="nav_secondary_item">
+                        <a href="/html/joblist.html" class="font-medium text-secondary-color">Become a member</a>
+                    </li>
+                </ul>
+    
+                <div class="header_nav_secondary_btn flex-col gap-15">
+                    <a href="/html/application.html" class="link-w-full-2 link-titan-white-50 hover">
+                        <span class="font-semibol text-secondary-color flex justify-center items-center w-1-1 h-1-1">Log In</span>
+                    </a>
+    
+                    <a href="/html/application.html" class="link-w-full-2 link-primary hover">
+                        <span class="font-semibol text-third-color flex justify-center items-center w-1-1 h-1-1">Sign Up</span>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <main id="main" class="main m-0-auto max-w-1620 bg-third">
@@ -186,13 +199,54 @@
             </div>
 
             <!-- BRAND LOGO -->
-            <div class="brand_logo p-60-40">
-                <div class="brand_swiper_wrapper h-51 flex-row justify-center items-center">
-                    <i class="icon-brand_logo_1 text-40 hidden"></i>
-                    <i class="icon-brand_logo_2 text-40 hidden"></i>
-                    <i class="icon-brand_logo_3 text-40"></i>
-                    <i class="icon-brand_logo_4 text-40 hidden"></i>
-                    <i class="icon-brand_logo_5 text-40 hidden"></i>
+            <div class="brand_logo w-1-1 p-60-40">
+                <div class="brand-carousel-container">
+                    <div class="brand-carousel-slide">
+                        <div id="lastSlide" class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_5.svg" alt="">
+                        </div>
+
+                        <div class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_1.svg" alt="">
+                        </div>
+
+                        <div class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_2.svg" alt="">
+                        </div>
+
+                        <div class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_3.svg" alt="">
+                        </div>
+
+                        <div class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_4.svg" alt="">
+                        </div>
+
+                        <div class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_5.svg" alt="">
+                        </div>
+
+                        <div id="firstSlide" class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_1.svg" alt="">
+                        </div>
+
+                        <div class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_2.svg" alt="">
+                        </div>
+
+                        <div class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_3.svg" alt="">
+                        </div>
+
+                        <div class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_4.svg" alt="">
+                        </div>
+
+                        <div class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_5.svg" alt="">
+                        </div>
+
+                    </div>
                 </div>
             </div>
             <!-- STEPS -->
@@ -322,379 +376,292 @@
                     </div>
 
                     <div class="featured_profile_card px-12 w-1-1 h-auto flex">
-                        <div class="relative w-1-1 h-auto">
+                        <div class="relative w-1-1 h-1-1">
 
-                            <div class="featured_profile_card_list">
+                            <div class="carousel-container">
 
-                                <div class="featured_profile_card_item featured_profile_card_item1 p-35-12">
-                                    <div class="profile_card_item">
-                                        <div class="flex flex-row justify-start items-center w-1-1">
-                                            <div class="profile_image relative mr-18 w-83 h-83">
-                                                <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_1.jpeg" alt="">
-                                                <div class="profile_card_item_status online"></div>
+                                <div class="carousel-slide">
+
+                                    <div id="last-slide-item" class="featured_profile_card_item featured_profile_card_item4 p-35-12">
+                                        <div class="profile_card_item w-1-1">
+                                            <div class="flex flex-row justify-start items-center w-1-1">
+                                                <div class="profile_image relative mr-18 w-83 h-83">
+                                                    <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_4.jpeg" alt="">
+                                                    <div class="profile_card_item_status online"></div>
+                                                </div>
+                
+                                                <div class="flex flex-col justify-center gap-5">
+                                                    <div class="profile_card_item_name">Louis Anderson</div>
+                                                    <div class="profile_card_item_work">Customer Service</div>
+                                                </div>
                                             </div>
-            
-                                            <div class="flex flex-col justify-center gap-5">
-                                                <div class="profile_card_item_name">David Hutapea</div>
-                                                <div class="profile_card_item_work">UI/UX Designer</div>
+        
+                                            <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
+                                                <div class="profile_rating flex flex-row justify-start items-center">
+                                                    <div class="rating_icons mr-12">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
+                                                    </div>
+                                                    <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
+                                                </div>
+                                                <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$27/hr</span>
                                             </div>
                                         </div>
+                                    </div>
     
-                                        <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
-                                            <div class="profile_rating flex flex-row justify-start items-center">
-                                                <div class="rating_icons mr-12">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
+                                    <div class="featured_profile_card_item featured_profile_card_item1 p-35-12">
+                                        <div class="profile_card_item w-1-1">
+                                            <div class="flex flex-row justify-start items-center w-1-1">
+                                                <div class="profile_image relative mr-18 w-83 h-83">
+                                                    <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_1.jpeg" alt="">
+                                                    <div class="profile_card_item_status online"></div>
                                                 </div>
-                                                <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
+                
+                                                <div class="flex flex-col justify-center gap-5">
+                                                    <div class="profile_card_item_name">David Hutapea</div>
+                                                    <div class="profile_card_item_work">UI/UX Designer</div>
+                                                </div>
                                             </div>
-                                            <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$84/hr</span>
+        
+                                            <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
+                                                <div class="profile_rating flex flex-row justify-start items-center">
+                                                    <div class="rating_icons mr-12">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
+                                                    </div>
+                                                    <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
+                                                </div>
+                                                <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$84/hr</span>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="featured_profile_card_item featured_profile_card_item2 p-35-12">
+                                        <div class="profile_card_item">
+                                            <div class="flex flex-row justify-start items-center w-1-1">
+                                                <div class="profile_image relative mr-18 w-83 h-83">
+                                                    <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_2.jpeg" alt="">
+                                                    <div class="profile_card_item_status online"></div>
+                                                </div>
+                
+                                                <div class="flex flex-col justify-center gap-5">
+                                                    <div class="profile_card_item_name">Henry Simatupang</div>
+                                                    <div class="profile_card_item_work">Photographer</div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
+                                                <div class="profile_rating flex flex-row justify-start items-center">
+                                                    <div class="rating_icons mr-12">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
+                                                    </div>
+                                                    <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
+                                                </div>
+                                                <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$95/hr</span>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="featured_profile_card_item  featured_profile_card_item3 p-35-12">
+                                        <div class="profile_card_item">
+                                            <div class="flex flex-row justify-start items-center w-1-1">
+                                                <div class="profile_image relative mr-18 w-83 h-83">
+                                                    <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_3.jpeg" alt="">
+                                                    <div class="profile_card_item_status online"></div>
+                                                </div>
+                
+                                                <div class="flex flex-col justify-center gap-5">
+                                                    <div class="profile_card_item_name">Jennie Smith</div>
+                                                    <div class="profile_card_item_work">Content Writer</div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
+                                                <div class="profile_rating flex flex-row justify-start items-center">
+                                                    <div class="rating_icons mr-12">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
+                                                    </div>
+                                                    <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
+                                                </div>
+                                                <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$86/hr</span>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="featured_profile_card_item featured_profile_card_item4 p-35-12">
+                                        <div class="profile_card_item">
+                                            <div class="flex flex-row justify-start items-center w-1-1">
+                                                <div class="profile_image relative mr-18 w-83 h-83">
+                                                    <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_4.jpeg" alt="">
+                                                    <div class="profile_card_item_status online"></div>
+                                                </div>
+                
+                                                <div class="flex flex-col justify-center gap-5">
+                                                    <div class="profile_card_item_name">Louis Anderson</div>
+                                                    <div class="profile_card_item_work">Customer Service</div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
+                                                <div class="profile_rating flex flex-row justify-start items-center">
+                                                    <div class="rating_icons mr-12">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
+                                                    </div>
+                                                    <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
+                                                </div>
+                                                <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$27/hr</span>
+                                            </div>
+                                        </div>
+                                    </div> 
+    
+                                    <div id="first-slide-item" class="featured_profile_card_item featured_profile_card_item1 p-35-12">
+                                        <div class="profile_card_item">
+                                            <div class="flex flex-row justify-start items-center w-1-1">
+                                                <div class="profile_image relative mr-18 w-83 h-83">
+                                                    <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_1.jpeg" alt="">
+                                                    <div class="profile_card_item_status online"></div>
+                                                </div>
+                
+                                                <div class="flex flex-col justify-center gap-5">
+                                                    <div class="profile_card_item_name">David Hutapea</div>
+                                                    <div class="profile_card_item_work">UI/UX Designer</div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
+                                                <div class="profile_rating flex flex-row justify-start items-center">
+                                                    <div class="rating_icons mr-12">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
+                                                    </div>
+                                                    <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
+                                                </div>
+                                                <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$84/hr</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="featured_profile_card_item featured_profile_card_item2 p-35-12">
+                                        <div class="profile_card_item">
+                                            <div class="flex flex-row justify-start items-center w-1-1">
+                                                <div class="profile_image relative mr-18 w-83 h-83">
+                                                    <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_2.jpeg" alt="">
+                                                    <div class="profile_card_item_status online"></div>
+                                                </div>
+                
+                                                <div class="flex flex-col justify-center gap-5">
+                                                    <div class="profile_card_item_name">Henry Simatupang</div>
+                                                    <div class="profile_card_item_work">Photographer</div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
+                                                <div class="profile_rating flex flex-row justify-start items-center">
+                                                    <div class="rating_icons mr-12">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
+                                                    </div>
+                                                    <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
+                                                </div>
+                                                <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$95/hr</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="featured_profile_card_item  featured_profile_card_item3 p-35-12">
+                                        <div class="profile_card_item">
+                                            <div class="flex flex-row justify-start items-center w-1-1">
+                                                <div class="profile_image relative mr-18 w-83 h-83">
+                                                    <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_3.jpeg" alt="">
+                                                    <div class="profile_card_item_status online"></div>
+                                                </div>
+                
+                                                <div class="flex flex-col justify-center gap-5">
+                                                    <div class="profile_card_item_name">Jennie Smith</div>
+                                                    <div class="profile_card_item_work">Content Writer</div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
+                                                <div class="profile_rating flex flex-row justify-start items-center">
+                                                    <div class="rating_icons mr-12">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
+                                                    </div>
+                                                    <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
+                                                </div>
+                                                <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$86/hr</span>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="featured_profile_card_item featured_profile_card_item4 p-35-12">
+                                        <div class="profile_card_item">
+                                            <div class="flex flex-row justify-start items-center w-1-1">
+                                                <div class="profile_image relative mr-18 w-83 h-83">
+                                                    <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_4.jpeg" alt="">
+                                                    <div class="profile_card_item_status online"></div>
+                                                </div>
+                
+                                                <div class="flex flex-col justify-center gap-5">
+                                                    <div class="profile_card_item_name">Louis Anderson</div>
+                                                    <div class="profile_card_item_work">Customer Service</div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
+                                                <div class="profile_rating flex flex-row justify-start items-center">
+                                                    <div class="rating_icons mr-12">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
+                                                        <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
+                                                    </div>
+                                                    <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
+                                                </div>
+                                                <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$27/hr</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="featured_profile_card_item featured_profile_card_item2 p-35-12">
-                                    <div class="profile_card_item">
-                                        <div class="flex flex-row justify-start items-center w-1-1">
-                                            <div class="profile_image relative mr-18 w-83 h-83">
-                                                <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_2.jpeg" alt="">
-                                                <div class="profile_card_item_status online"></div>
-                                            </div>
-            
-                                            <div class="flex flex-col justify-center gap-5">
-                                                <div class="profile_card_item_name">Henry Simatupang</div>
-                                                <div class="profile_card_item_work">Photographer</div>
-                                            </div>
-                                        </div>
-    
-                                        <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
-                                            <div class="profile_rating flex flex-row justify-start items-center">
-                                                <div class="rating_icons mr-12">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
-                                                </div>
-                                                <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
-                                            </div>
-                                            <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$95/hr</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="featured_profile_card_item featured_profile_card_item3 p-35-12">
-                                    <div class="profile_card_item">
-                                        <div class="flex flex-row justify-start items-center w-1-1">
-                                            <div class="profile_image relative mr-18 w-83 h-83">
-                                                <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_3.jpeg" alt="">
-                                                <div class="profile_card_item_status online"></div>
-                                            </div>
-            
-                                            <div class="flex flex-col justify-center gap-5">
-                                                <div class="profile_card_item_name">Jennie Smith</div>
-                                                <div class="profile_card_item_work">Content Writer</div>
-                                            </div>
-                                        </div>
-    
-                                        <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
-                                            <div class="profile_rating flex flex-row justify-start items-center">
-                                                <div class="rating_icons mr-12">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
-                                                </div>
-                                                <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
-                                            </div>
-                                            <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$86/hr</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="featured_profile_card_item featured_profile_card_item4 p-35-12">
-                                    <div class="profile_card_item">
-                                        <div class="flex flex-row justify-start items-center w-1-1">
-                                            <div class="profile_image relative mr-18 w-83 h-83">
-                                                <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_4.jpeg" alt="">
-                                                <div class="profile_card_item_status online"></div>
-                                            </div>
-            
-                                            <div class="flex flex-col justify-center gap-5">
-                                                <div class="profile_card_item_name">Louis Anderson</div>
-                                                <div class="profile_card_item_work">Customer Service</div>
-                                            </div>
-                                        </div>
-    
-                                        <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
-                                            <div class="profile_rating flex flex-row justify-start items-center">
-                                                <div class="rating_icons mr-12">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
-                                                </div>
-                                                <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
-                                            </div>
-                                            <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$27/hr</span>
-                                        </div>
-                                    </div>
-                                </div> 
-
-                                <div class="featured_profile_card_item featured_profile_card_item1 p-35-12">
-                                    <div class="profile_card_item">
-                                        <div class="flex flex-row justify-start items-center w-1-1">
-                                            <div class="profile_image relative mr-18 w-83 h-83">
-                                                <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_1.jpeg" alt="">
-                                                <div class="profile_card_item_status online"></div>
-                                            </div>
-            
-                                            <div class="flex flex-col justify-center gap-5">
-                                                <div class="profile_card_item_name">David Hutapea</div>
-                                                <div class="profile_card_item_work">UI/UX Designer</div>
-                                            </div>
-                                        </div>
-    
-                                        <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
-                                            <div class="profile_rating flex flex-row justify-start items-center">
-                                                <div class="rating_icons mr-12">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
-                                                </div>
-                                                <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
-                                            </div>
-                                            <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$84/hr</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="featured_profile_card_item featured_profile_card_item2 p-35-12">
-                                    <div class="profile_card_item">
-                                        <div class="flex flex-row justify-start items-center w-1-1">
-                                            <div class="profile_image relative mr-18 w-83 h-83">
-                                                <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_2.jpeg" alt="">
-                                                <div class="profile_card_item_status online"></div>
-                                            </div>
-            
-                                            <div class="flex flex-col justify-center gap-5">
-                                                <div class="profile_card_item_name">Henry Simatupang</div>
-                                                <div class="profile_card_item_work">Photographer</div>
-                                            </div>
-                                        </div>
-    
-                                        <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
-                                            <div class="profile_rating flex flex-row justify-start items-center">
-                                                <div class="rating_icons mr-12">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
-                                                </div>
-                                                <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
-                                            </div>
-                                            <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$95/hr</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="featured_profile_card_item featured_profile_card_item3 p-35-12">
-                                    <div class="profile_card_item">
-                                        <div class="flex flex-row justify-start items-center w-1-1">
-                                            <div class="profile_image relative mr-18 w-83 h-83">
-                                                <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_3.jpeg" alt="">
-                                                <div class="profile_card_item_status online"></div>
-                                            </div>
-            
-                                            <div class="flex flex-col justify-center gap-5">
-                                                <div class="profile_card_item_name">Jennie Smith</div>
-                                                <div class="profile_card_item_work">Content Writer</div>
-                                            </div>
-                                        </div>
-    
-                                        <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
-                                            <div class="profile_rating flex flex-row justify-start items-center">
-                                                <div class="rating_icons mr-12">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
-                                                </div>
-                                                <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
-                                            </div>
-                                            <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$86/hr</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="featured_profile_card_item featured_profile_card_item4 p-35-12">
-                                    <div class="profile_card_item">
-                                        <div class="flex flex-row justify-start items-center w-1-1">
-                                            <div class="profile_image relative mr-18 w-83 h-83">
-                                                <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_4.jpeg" alt="">
-                                                <div class="profile_card_item_status online"></div>
-                                            </div>
-            
-                                            <div class="flex flex-col justify-center gap-5">
-                                                <div class="profile_card_item_name">Louis Anderson</div>
-                                                <div class="profile_card_item_work">Customer Service</div>
-                                            </div>
-                                        </div>
-    
-                                        <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
-                                            <div class="profile_rating flex flex-row justify-start items-center">
-                                                <div class="rating_icons mr-12">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
-                                                </div>
-                                                <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
-                                            </div>
-                                            <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$27/hr</span>
-                                        </div>
-                                    </div>
-                                </div> 
-
-                                <div class="featured_profile_card_item featured_profile_card_item1 p-35-12">
-                                    <div class="profile_card_item">
-                                        <div class="flex flex-row justify-start items-center w-1-1">
-                                            <div class="profile_image relative mr-18 w-83 h-83">
-                                                <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_1.jpeg" alt="">
-                                                <div class="profile_card_item_status online"></div>
-                                            </div>
-            
-                                            <div class="flex flex-col justify-center gap-5">
-                                                <div class="profile_card_item_name">David Hutapea</div>
-                                                <div class="profile_card_item_work">UI/UX Designer</div>
-                                            </div>
-                                        </div>
-    
-                                        <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
-                                            <div class="profile_rating flex flex-row justify-start items-center">
-                                                <div class="rating_icons mr-12">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
-                                                </div>
-                                                <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
-                                            </div>
-                                            <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$84/hr</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="featured_profile_card_item featured_profile_card_item2 p-35-12">
-                                    <div class="profile_card_item">
-                                        <div class="flex flex-row justify-start items-center w-1-1">
-                                            <div class="profile_image relative mr-18 w-83 h-83">
-                                                <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_2.jpeg" alt="">
-                                                <div class="profile_card_item_status online"></div>
-                                            </div>
-            
-                                            <div class="flex flex-col justify-center gap-5">
-                                                <div class="profile_card_item_name">Henry Simatupang</div>
-                                                <div class="profile_card_item_work">Photographer</div>
-                                            </div>
-                                        </div>
-    
-                                        <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
-                                            <div class="profile_rating flex flex-row justify-start items-center">
-                                                <div class="rating_icons mr-12">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
-                                                </div>
-                                                <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
-                                            </div>
-                                            <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$95/hr</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="featured_profile_card_item featured_profile_card_item3 p-35-12">
-                                    <div class="profile_card_item">
-                                        <div class="flex flex-row justify-start items-center w-1-1">
-                                            <div class="profile_image relative mr-18 w-83 h-83">
-                                                <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_3.jpeg" alt="">
-                                                <div class="profile_card_item_status online"></div>
-                                            </div>
-            
-                                            <div class="flex flex-col justify-center gap-5">
-                                                <div class="profile_card_item_name">Jennie Smith</div>
-                                                <div class="profile_card_item_work">Content Writer</div>
-                                            </div>
-                                        </div>
-    
-                                        <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
-                                            <div class="profile_rating flex flex-row justify-start items-center">
-                                                <div class="rating_icons mr-12">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
-                                                </div>
-                                                <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
-                                            </div>
-                                            <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$86/hr</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="featured_profile_card_item featured_profile_card_item4 p-35-12">
-                                    <div class="profile_card_item">
-                                        <div class="flex flex-row justify-start items-center w-1-1">
-                                            <div class="profile_image relative mr-18 w-83 h-83">
-                                                <img class="absolute w-1-1 h-1-1 rounded-1_2" src="/assets/images/home/featured_profile_avt_4.jpeg" alt="">
-                                                <div class="profile_card_item_status online"></div>
-                                            </div>
-            
-                                            <div class="flex flex-col justify-center gap-5">
-                                                <div class="profile_card_item_name">Louis Anderson</div>
-                                                <div class="profile_card_item_work">Customer Service</div>
-                                            </div>
-                                        </div>
-    
-                                        <div class="profile_action flex flex-row justify-between items-center mt-29 w-1-1">
-                                            <div class="profile_rating flex flex-row justify-start items-center">
-                                                <div class="rating_icons mr-12">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon1 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon2 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon3 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon.svg" alt="" class="rating_icon4 w-18 h-18">
-                                                    <img src="/assets/icons/profile_rating_icon2.svg" alt="" class="rating_icon5 w-18 h-18">
-                                                </div>
-                                                <div class="rating_number text-base font-bold leading-24 text-black-900">4.3</div>
-                                            </div>
-                                            <span class="profile_price p-9-23 text-base font-semibol leading-24 text-third-color bg-coral-400 rounded-21">$27/hr</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
                             </div>
 
-                            <button id="featured-profile-btn-previous" class="profile_card_btn_left z-10">
+                            <button id="prevBtn" class="profile_card_btn_left z-10">
                                 <span class="flex justify-center items-center">
                                     <img src="/assets/icons/featured_profile_layer_icon1.svg" alt="">
                                 </span>
                             </button>
 
-                            <button id="featured-profile-btn-next" class="profile_card_btn_right z-10">
+                            <button id="nextBtn" class="profile_card_btn_right z-10">
                                 <span class="flex justify-center items-center">
                                     <img src="/assets/icons/featured_profile_layer_icon2.svg" alt="">
                                 </span>

@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/js/index.js" defer></script>
+    <script src="/js/main/header.js" defer></script>
+    <script src="/js/main/footer.js" defer></script>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/jobdetail.css">
 </head>
 <body>
-    <div class="container">
         <!-- HEADER -->
         <header class="bg-white-lilac-50">
             <div class="header_nav m-0-auto max-w-1620 p-24-40 flex-row justify-between items-center ">
@@ -19,14 +19,14 @@
                         <span class="icon-logo_ziro"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span></span>
                     </a>
     
-                    <button class="nav_menu_icon btn w-20 h-20 bg-third hidden">
+                    <button id="nav_menu_icon" class="nav_menu_icon btn w-20 h-20 bg-third hidden">
                         <img src="/assets/icons/navbar_toggler.svg" alt="" class="w-20 h-20">
                     </button>
                 </div>
     
                 <div class="header_nav_menu flex items-center hidden">
                     <ul class="menu_list flex-row items-center gap-41">
-                        <li class="menu_item_focus">
+                        <li class="menu_item">
                             <a class="menu_home relative py-12 text-secondary-color" href="/html/home.html">Home</a>
                         </li>
     
@@ -34,7 +34,7 @@
                             <a class="menu_pricing relative py-12 leading-24 text-secondary-color" href="#pricing_plan">Pricing</a>
                         </li>
     
-                        <li class="menu_item">
+                        <li class="menu_item_focus">
                             <a class="menu_blog relative py-12 leading-24 text-secondary-color" href="/html/eventlist.html">Blog</a>
                         </li>
     
@@ -78,6 +78,44 @@
 
         </header>
 
+        <div id="header_nav_secondary" class="header_nav_secondary bg-white-lilac-50 px-40">
+            <div class="flex-col gap-20 pb-15">
+                <form action="" class="px-20 p-7 w-1-1 flex-row items-center rounded-50rem bg-third">
+                    <input type="text" placeholder="Search here..." class="input w-1-1">
+                    <button class="w-20 h-20 border-none p-0 m-0 bg-third">
+                        <span>
+                            <img src="/assets/icons/home/header_nav_secondary_icon1.svg" alt="" class="w-20 h-20">
+                        </span>
+                    </button>
+                </form>
+                
+                <ul class="nav_secondary">
+                    <li class="nav_secondary_item">
+                        <a href="/html/home.html" class="font-medium text-secondary-color">Home</a>
+                    </li>
+                    <li class="nav_secondary_item">
+                        <a href="/html/home.html#pricing_plan" class="font-medium text-secondary-color">Pricing</a>
+                    </li>
+                    <li class="nav_secondary_item">
+                        <a href="/html/eventlist.html" class="font-medium text-secondary-color">Blog</a>
+                    </li>
+                    <li class="nav_secondary_item">
+                        <a href="/html/joblist.html" class="font-medium text-secondary-color">Become a member</a>
+                    </li>
+                </ul>
+    
+                <div class="header_nav_secondary_btn flex-col gap-15">
+                    <a href="/html/application.html" class="link-w-full-2 link-titan-white-50 hover">
+                        <span class="font-semibol text-secondary-color flex justify-center items-center w-1-1 h-1-1">Log In</span>
+                    </a>
+    
+                    <a href="/html/application.html" class="link-w-full-2 link-primary hover">
+                        <span class="font-semibol text-third-color flex justify-center items-center w-1-1 h-1-1">Sign Up</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <main class="main relative">
             <div class="detail-header-bg">
                 <img src="/assets/images/application/detail_header_bg.png" alt="" class="detail-header-bg-img">
@@ -111,15 +149,16 @@
                 </div>
             </div>
 
-            <div class="px-40">
+            <!-- job detail title -->
+            <div class="m-0-auto max-w-1620 px-40">
                 <div class="job-detail-container -mx-12 flex-col">
                     <div class="job-detail-title px-12">
-                        <div class="grid gap-34 p-20 bg-third rounded-20 hover">
+                        <div class="job-detail-title-layout grid gap-34 p-20 bg-third rounded-20 hover">
                             <div class="job-detail-title-header flex-row justify-between items-center">
                                 <div class="flex-col gap-10">
                                     <h2 class="heading-section-4 text-secondary-color">Lead UI/UX Designer</h2>
                                     
-                                    <div class="fs-14 text-secondary-color">Posted by <a href="" class="text-secondary-color">Admin</a> on November 12th, 2020</div>
+                                    <div class="heading-text-2 text-secondary-color">Posted by <a href="" class="text-secondary-color">Admin</a> on November 12th, 2020</div>
                                 </div>
 
                                 <div class="job-detail-title-action pl-20 flex-row gap-10">
@@ -172,11 +211,554 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="job-detail-title-description flex-col gap-15">
+                                <div class="heading-text-2 font-semibol text-secondary-color">Job Description</div>
+
+                                <div class="flex-col gap-16">
+                                    <p class="text-secondary-color">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                    </p>
+
+                                    <p class="text-secondary-color">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, s
+                                    </p>
+                                    <p></p>
+                                </div>
+                            </div>      
+                            
+                            <div class="job-detail-title-gallery flex-col gap-15">
+                                <span class="gallery-title heading-text-2 font-semibol text-secondary-color">Galery</span>
+
+                                <div class="flex-row gap-25 w-1-1">
+                                    <img src="/assets/images/jobdetail/gallery_img_1.png" alt="" class="gallery-image">
+
+                                    <img src="/assets/images/jobdetail/gallery_img_2.png" alt="" class="gallery-image gallery-image-2 hidden">
+
+                                    <img src="/assets/images/jobdetail/gallery_img_3.png" alt="" class="gallery-image gallery-image-3 hidden">
+
+                                    <img src="/assets/images/jobdetail/gallery_img_4.png" alt="" class="gallery-image gallery-image-4 hidden">
+                                </div>
+                            </div>
+
+                            <a href="" class="job-detail-title-apply link-w-full">
+                                <span class="font-semibol">Apply Now</span>
+                            </a>
+
+                            <div class="mt-34"></div>
+                        </div>
+                    </div>
+
+                    <div class="job-company mt-20 px-12">
+                        <div class="job-company-layout grid gap-34 p-43-20 bg-third rounded-20 hover">
+                            <div class="flex-col gap-34 items-center">
+                                <img src="/assets/images/jobdetail/job_company_logo.png" alt="" class="w-120 h-120 rounded-50rem">
+
+                                <div class="flex-col gap-10">
+                                    <h6 class="heading-text-1 font-medium text-black-900 text-center">Highspeed Studios</h6>
+
+                                    <a href="" class="heading-text-2 text-gray-600 text-center">Creative Design Agency</a>
+                                </div>
+
+                                <button class="btn btn-follow btn-primary">
+                                    <span class="font-semibol text-third-color">+ Follow</span>
+                                </button>
+                            </div>
+
+                            <div class="flex-row flex-wrap -mx-12">
+                                <div class="job-company-infor-card px-12">
+                                    <div class="flex-row gap-15 items-center">
+                                        <div class="p-13 rounded-10 bg-medium-purple-600 flex justify-center items-center">
+                                            <img src="/assets/icons/jobdetail/job_company_infor_card_icon_1.svg" alt="">
+                                        </div>
+
+                                        <div class="flex-col gap-5">
+                                            <h6 class="infor-card-title font-semibol text-secondary-color">80 - 100</h6>
+
+                                            <span class="heading-desc text-gray-600">Employee</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="job-company-infor-card px-12">
+                                    <div class="flex-row gap-15 items-center">
+                                        <div class="p-13 rounded-10 bg-lightning-yellow-400 flex justify-center items-center">
+                                            <img src="/assets/icons/jobdetail/job_company_infor_card_icon_2.svg" alt="">
+                                        </div>
+
+                                        <div class="flex-col gap-5">
+                                            <h6 class="infor-card-title font-semibol text-secondary-color">4.5</h6>
+
+                                            <span class="heading-desc text-gray-600">Reviews</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="job-company-infor-card job-company-infor-card-3 px-12 mt-25 ">
+                                    <div class="flex-row gap-15 items-center">
+                                        <div class="p-13 rounded-10 bg-gallery-100 flex justify-center items-center">
+                                            <img src="/assets/icons/jobdetail/job_company_infor_card_icon_3.svg" alt="">
+                                        </div>
+
+                                        <div class="flex-col gap-5">
+                                            <h6 class="infor-card-title font-semibol text-secondary-color">London, England</h6>
+
+                                            <span class="heading-desc text-gray-600">Location</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-1-1 h-1 bg-geyser-200"></div>
+
+                            <div class="flex-col gap-15">
+                                <h6 class="fs-15 text-secondary-color">About Company</h6>
+
+                                <div class="flex-col gap-16 fs-14">
+                                    <p class="text-mine-shaft-900">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                                    <p class="text-mine-shaft-900">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in</p>
+
+                                    <p></p>
+                                </div>
+                            </div>
+
+                            <div class="grid-cols-2 gap-15">
+                                <a href="" class="link-w-full">
+                                    <span class="font-semibol">23 Vacancy</span>
+                                </a>
+
+                                <a href="" class="link link-w-full-2 link-outline4">
+                                    <span class="font-semibol text-secondary-color">More Detail</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- FEATURED JOBS -->
+            <div class="featured_jobs m-0-auto max-w-1620 p-60-40 flex-col gap-60 w-1-1">
+                <div class="title_header m-0-auto">
+                    <div class="flex-col gap-12 px-12">
+                        <h2 class="heading-section-3 text-secondary-color text-center">Featured Jobs</h2>
+                        <div class="heading-text-2 text-secondary-color text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                    </div>
+                </div>
+
+                <div class="jobs_card_list flex-row flex-wrap justify-center -mx-12">
+
+                    <div class="jobs_card_layout my-12 px-12 w-1-1">
+                        <div class="jobs_card_item w-1-1">
+                            <div class="relative flex-col gap-40 w-1-1">
+                                <button class="job_dropdown_btn">
+                                    <img src="/assets/icons/job_dropdown_icon.svg" alt="" class="w-20 h-20">
+                                </button>
+
+                                <div class="jobs_infor flex-col justify-center items-center">
+                                    <div class="job_image">
+                                        <img src="/assets/images/job_image_1.png" alt="" class="w-115 h-115 rounded-1_2">
+                                    </div>
+
+                                    <a href="" class="job_title">Database&nbsp;Programmer</a>
+                                    <a href="" class="job_author">Maximoz Team</a>
+                                </div>
+
+                                <ul class="job_detail flex-col gap-18">
+                                    <li class="job_detail_item">
+                                        <div class="job_detail_start_1"></div>
+                                        <div class="job_detail_center">$14,000 - $25,000</div>
+                                        <div class="job_detail_end">/monthly</div>
+                                    </li>
+                                    <li class="job_detail_item">
+                                        <div class="job_detail_start_2"></div>
+                                        <div class="job_detail_center">London, England</div>
+                                        <div class="job_detail_end">View Maps</div>
+                                    </li>
+                                </ul>
+
+                                <div class="job_acction w-1-1">
+                                    <div>
+                                        <button class="job_acction_btn btn_icon btn_icon-sm btn_icon-persimmon-400">
+                                            <span class="w-1-1">
+                                                <i class="icon-featured_jobs_like text-17 text-primary-color"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <a href="/html/jobdetail.html" class="link-w-full">
+                                        <span class="font-semibol flex justify-center items-center h-1-1">Apply Now</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="jobs_card_layout my-12 px-12 w-1-1">
+                        <div class="jobs_card_item w-1-1">
+                            <div class="relative flex-col gap-40 w-1-1">
+                                <button class="job_dropdown_btn">
+                                    <img src="/assets/icons/job_dropdown_icon.svg" alt="" class="w-20 h-20">
+                                </button>
+
+                                <div class="jobs_infor flex-col justify-center items-center">
+                                    <div class="job_image">
+                                        <img src="/assets/images/job_image_2.png" alt="" class="w-115 h-115 rounded-1_2">
+                                    </div>
+
+                                    <a href="" class="job_title">UI/UX Designer</a>
+                                    <a href="" class="job_author">Colo Colo Studios</a>
+                                </div>
+
+                                <ul class="job_detail flex-col gap-18">
+                                    <li class="job_detail_item">
+                                        <div class="job_detail_start_1"></div>
+                                        <div class="job_detail_center">$14,000 - $25,000</div>
+                                        <div class="job_detail_end">/monthly</div>
+                                    </li>
+                                    <li class="job_detail_item">
+                                        <div class="job_detail_start_2"></div>
+                                        <div class="job_detail_center">London, England</div>
+                                        <div class="job_detail_end">View Maps</div>
+                                    </li>
+                                </ul>
+
+                                <div class="job_acction w-1-1">
+                                    <div>
+                                        <button class="job_acction_btn btn_icon btn_icon-sm btn_icon-persimmon-400">
+                                            <span class="w-1-1">
+                                                <i class="icon-featured_jobs_like text-17 text-primary-color"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <a href="/html/jobdetail.html" class="link-w-full">
+                                        <span class="font-semibol flex justify-center items-center h-1-1">Apply Now</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="jobs_card_layout my-12 px-12 w-1-1">
+                        <div class="jobs_card_item w-1-1">
+                            <div class="relative flex-col gap-40 w-1-1">
+                                <button class="job_dropdown_btn">
+                                    <img src="/assets/icons/job_dropdown_icon.svg" alt="" class="w-20 h-20">
+                                </button>
+
+                                <div class="jobs_infor flex-col justify-center items-center">
+                                    <div class="job_image">
+                                        <img src="/assets/images/job_image_3.png" alt="" class="w-115 h-115 rounded-1_2">
+                                    </div>
+
+                                    <a href="" class="job_title">Content Writer</a>
+                                    <a href="" class="job_author">Faster WOY Crew</a>
+                                </div>
+
+                                <ul class="job_detail flex-col gap-18">
+                                    <li class="job_detail_item">
+                                        <div class="job_detail_start_1"></div>
+                                        <div class="job_detail_center">$14,000 - $25,000</div>
+                                        <div class="job_detail_end">/monthly</div>
+                                    </li>
+                                    <li class="job_detail_item">
+                                        <div class="job_detail_start_2"></div>
+                                        <div class="job_detail_center">London, England</div>
+                                        <div class="job_detail_end">View Maps</div>
+                                    </li>
+                                </ul>
+
+                                <div class="job_acction w-1-1">
+                                    <div>
+                                        <button class="job_acction_btn btn_icon btn_icon-sm btn_icon-persimmon-400">
+                                            <span class="w-1-1">
+                                                <i class="icon-featured_jobs_like text-17 text-primary-color"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <a href="/html/jobdetail.html" class="link-w-full">
+                                        <span class="font-semibol flex justify-center items-center h-1-1">Apply Now</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="jobs_card_layout jobs_card_layout_secondary hidden my-12 px-12 w-1-1">
+                        <div class="jobs_card_item w-1-1">
+                            <div class="relative flex-col gap-40 w-1-1">
+                                <button class="job_dropdown_btn">
+                                    <img src="/assets/icons/job_dropdown_icon.svg" alt="" class="w-20 h-20">
+                                </button>
+
+                                <div class="jobs_infor flex-col justify-center items-center">
+                                    <div class="job_image">
+                                        <img src="/assets/images/job_image_4.png" alt="" class="w-115 h-115 rounded-1_2">
+                                    </div>
+
+                                    <a href="" class="job_title">Database&nbsp;Programmer</a>
+                                    <a href="" class="job_author">Snailination Studios</a>
+                                </div>
+
+                                <ul class="job_detail flex-col gap-18">
+                                    <li class="job_detail_item">
+                                        <div class="job_detail_start_1"></div>
+                                        <div class="job_detail_center">$14,000 - $25,000</div>
+                                        <div class="job_detail_end">/monthly</div>
+                                    </li>
+                                    <li class="job_detail_item">
+                                        <div class="job_detail_start_2"></div>
+                                        <div class="job_detail_center">London, England</div>
+                                        <div class="job_detail_end">View Maps</div>
+                                    </li>
+                                </ul>
+
+                                <div class="job_acction w-1-1">
+                                    <div>
+                                        <button class="job_acction_btn btn_icon btn_icon-sm btn_icon-persimmon-400">
+                                            <span class="w-1-1">
+                                                <i class="icon-featured_jobs_like text-17 text-primary-color"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <a href="/html/jobdetail.html" class="link-w-full">
+                                        <span class="font-semibol flex justify-center items-center h-1-1">Apply Now</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="flex-row justify-center">
+                    <a href="" class="link-13-44 link-primary hover">
+                        <span class="font-semibol text-third-color flex">View more</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- BRAND LOGO -->
+            <div class="brand_logo w-1-1 p-60-40">
+                <div class="brand-carousel-container">
+                    <div class="brand-carousel-slide">
+                        <div id="lastSlide" class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_5.svg" alt="">
+                        </div>
+
+                        <div class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_1.svg" alt="">
+                        </div>
+
+                        <div class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_2.svg" alt="">
+                        </div>
+
+                        <div class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_3.svg" alt="">
+                        </div>
+
+                        <div class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_4.svg" alt="">
+                        </div>
+
+                        <div class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_5.svg" alt="">
+                        </div>
+
+                        <div id="firstSlide" class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_1.svg" alt="">
+                        </div>
+
+                        <div class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_2.svg" alt="">
+                        </div>
+
+                        <div class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_3.svg" alt="">
+                        </div>
+
+                        <div class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_4.svg" alt="">
+                        </div>
+
+                        <div class="brand-carousel-slide-item">
+                            <img src="/assets/icons/home/brand_logo_5.svg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </main>
+
+        <!-- FOOTER -->
+        <footer class="flex-col bg-ebony-clay-900">
+            <div class="m-0-auto max-w-1620 flex-col px-40">
+                <div class="footer_header -mx-12 py-25 flex-col gap-25">
+                    <div class="px-12">
+                        <h2 class="heading-section-2 text-third-color">Don’t miss our weekly updates about freelancer career</h2>
+                    </div>
+
+                    <div class="footer_input_btn flex justify-end px-12">
+                        <form action="" class="w-1-1 flex justify-end items-center">
+                            <div class="form_btn_inner w-1-1 max-w-485">
+                                <input class="form_control" type="email" placeholder="Enter your email address..." value="">
+                                <button class="form_btn_inner_sub btn btn-129-50 btn-coral-400">
+                                    <span class="font-semibol text-third-color">SUBSCRIBE</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer_content -mx-12 py-20 flex-col gap-34">
+                    <div class="px-12 flex-col gap-34">
+                        <img src="/assets/icons/logo_white.svg" alt="" class="w-130">
+
+                        <p class="desc text-third-color">Ziro is a Freelance Landing Website lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+
+                        <ul class="social_btn_group flex-row">
+                            <li class="social_item">
+                                <a href="" class="social_link">
+                                    <i class="icon-footer_facebook_icon"></i>
+                                </a>
+                            </li>
+
+                            <li class="social_item">
+                                <a href="" class="social_link social_link2">
+                                    <i class="icon-footer_twitter_icon"></i>
+                                </a>
+                            </li>
+
+                            <li class="social_item">
+                                <a href="" class="social_link social_link3">
+                                    <i class="icon-footer_youtobe_icon"></i>
+                                </a>
+                            </li>
+
+                            <li class="social_item">
+                                <a href="" class="social_link social_link4">
+                                    <i class="icon-footer_in_icon"></i>
+                                </a>
+                            </li>
+
+                            <li class="social_item">
+                                <a href="" class="social_link social_link5">
+                                    <i class="icon-footer_instagram_icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_content_secondary">
+                        <div class="px-12 flex-col gap-20">
+                            <h6 class="footer_title">Ziro</h6>
+    
+                            <ul class="footer_link_list">
+                                <li class="link_item desc py-12">
+                                    <a href="" class="text-third-color">Why Ziro</a>
+                                </li>
+                                <li class="link_item desc py-12">
+                                    <a href="" class="text-third-color">Enterprise</a>
+                                </li>
+                                <li class="link_item desc py-12">
+                                    <a href="" class="text-third-color">Customer Story</a>
+                                </li>
+                                <li class="link_item desc py-12">
+                                    <a href="" class="text-third-color">Security</a>
+                                </li>
+                                <li class="link_item desc py-12">
+                                    <a href="" class="text-third-color">Pricing</a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="px-12 flex-col gap-20">
+                            <h6 class="footer_title">Resources</h6>
+    
+                            <ul class="footer_link_list">
+                                <li class="link_item desc py-12">
+                                    <a href="" class="text-third-color">Download</a>
+                                </li>
+                                <li class="link_item desc py-12">
+                                    <a href="" class="text-third-color">Help Center</a>
+                                </li>
+                                <li class="link_item desc py-12">
+                                    <a href="" class="text-third-color">Events</a>
+                                </li>
+                                <li class="link_item desc py-12">
+                                    <a href="" class="text-third-color">Guides</a>
+                                </li>
+                                <li class="link_item desc py-12">
+                                    <a href="" class="text-third-color">Partner</a>
+                                </li>
+                                <li class="link_item desc py-12">
+                                    <a href="" class="text-third-color">Directories</a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="px-12 flex-col gap-20">
+                            <h6 class="footer_title">Company</h6>
+    
+                            <ul class="footer_link_list">
+                                <li class="link_item desc py-12">
+                                    <a href="" class="text-third-color">About us</a>
+                                </li>
+                                <li class="link_item desc py-12">
+                                    <a href="" class="text-third-color">Contact us</a>
+                                </li>
+                                <li class="link_item desc py-12">
+                                    <a href="" class="text-third-color">Products</a>
+                                </li>
+                                <li class="link_item desc py-12">
+                                    <a href="" class="text-third-color">Login</a>
+                                </li>
+                                <li class="link_item desc py-12">
+                                    <a href="" class="text-third-color">Sign Up</a>
+                                </li>
+                                <li class="link_item desc py-12">
+                                    <a href="" class="text-third-color">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="px-12 flex-col gap-20">
+                        <h6 class="footer_title">Get in Touch with Us</h6>
+
+                        <ul class="footer_link_list">
+                            <li class="py-12 flex-row items-center gap-13">
+                                <img src="/assets/icons/footer_icon6.svg" alt="" class="w-22 h-22">
+
+                                <a href="" class="desc text-third-color">832  Thompson Drive, San Fransisco
+                                    CA 94107, United States</a>
+                            </li>
+                            
+                            <li class="py-12 flex-row items-center gap-13">
+                                <img src="/assets/icons/footer_icon7.svg" alt="" class="w-22 h-22">
+
+                                <a href="" class="desc text-third-color">+123 345123 556</a>
+                            </li>
+
+                            <li class="py-12 flex-row items-center gap-13">
+                                <img src="/assets/icons/footer_icon8.svg" alt="" class="w-22 h-22">
+
+                                <a href="" class="desc text-third-color">support@ziro.id</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t-1-bright-gray-800">
+                <div class="copyright m-0-auto max-w-1620 p-25-40 flex-col gap-12">
+                    <div class="desc text-third-color text-center">Ziro Freelancer Landing Website  -   © 2020 All Rights Reserved</div>
+
+                    <div class="desc text-third-color text-center">Made with ♥ by Peterdraw</div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
