@@ -29,7 +29,7 @@
     
                 <div class="header_nav_menu flex items-center hidden">
                     <ul class="menu_list flex-row items-center gap-41">
-                        <li class="menu_item">
+                        <li class="menu_item_focus">
                             <a class="menu_home relative py-12 text-secondary-color" href="/html/home.html">Home</a>
                         </li>
     
@@ -37,7 +37,7 @@
                             <a class="menu_pricing relative py-12 leading-24 text-secondary-color" href="#pricing_plan">Pricing</a>
                         </li>
     
-                        <li class="menu_item_focus">
+                        <li class="menu_item">
                             <a class="menu_blog relative py-12 leading-24 text-secondary-color" href="/html/eventlist.html">Blog</a>
                         </li>
     
@@ -121,20 +121,31 @@
 
         <main id="main" class="main m-0-auto max-w-1620 bg-third">
             <!-- BANNER -->
-            <div class="banner1 px-40">
-                <div class="-mx-12 flex-col">
-                    <div class="px-12">
-                        <div class="relative">
-                            <img src="/assets/images/heroImage.png" alt="" class="w-1-1 h-auto">
+            <div class="px-40">
+                <div class="banner -mx-12 flex-col">
+                    <div class="banner-bg px-12">
+                        <div class="w-1-1">
+                            <img src="/assets/images/heroImage.png" alt="" class="banner-bg-image w-1-1 h-auto">
                         </div>
                     </div>
 
-                    <div class="swiper my-34 px-12 flex-col gap-60">
-                        <div class="flex-col">
-                            <h1 class="heading-header-1 text-secondary-color">
-                                Find out <span class="text-primary-color">talented freelancer</span> with better review faster
-                            </h1>
-                            <span class="heading-text-2 text-secondary-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                    <div class="banner-content swiper my-34 px-12 flex-col gap-60">
+                        <div class="banner-swiper">
+                            <div class="banner-swiper-slider">
+                                <div class="banner-swiper-item flex-col">
+                                    <h1 class="heading-header-1 text-secondary-color">
+                                        Find out <span class="text-primary-color">talented freelancer</span> with better review faster
+                                    </h1>
+                                    <span class="heading-text-2 text-secondary-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                                </div>
+
+                                <div class="banner-swiper-item flex-col">
+                                    <h1 class="heading-header-1 text-secondary-color">
+                                        Flexible <span class="text-primary-color">Job</span> with reasonable payment
+                                    </h1>
+                                    <span class="heading-text-2 text-secondary-color">Make your website more attractive and marketable to attract more audiences, freelancers, and employers</span>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="flex-row items-center gap-20 flex-wrap">
@@ -151,48 +162,9 @@
                             </a>
                         </div>
 
-                        <div class="pagination flex gap-10">
-                            <div class="w-45 h-6 rounded-3 bg-primary"></div>
-                            <div class="w-25 h-6 rounded-3 bg-perfume-200"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="banner2 hidden px-40">
-                <div class="banner2_layout grid-cols-2 -mx-12">
-                    <div class="banner2_content my-60 px-12">
-                        <div class="flex-col gap-60">
-                            <div class="flex-col">
-                                <h1 class="heading-header-2 text-secondary-color">
-                                    Find out <span class="text-primary-color">talented freelancer</span> with better review faster
-                                </h1>
-                                <span class="heading-text-2 text-secondary-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-                            </div>
-
-                            <div class="flex-row items-center gap-20 flex-wrap">
-                                <a href="" class="link-md link-primary"><span class="font-semibol text-third-color">Discover Now</span></a>
-                                <a href="">
-                                    <span class="flex-row items-center gap-20">
-                                        <div class="w-50 h-50 rounded-1_2 flex justify-center items-center border-1-titan-white-50 bg-third ">
-                                            <i class="icon-play_icon"></i>
-                                        </div>
-                                        <span class="font-medium text-secondary-color">Watch Demo</span>
-                                    </span>
-                                </a>
-                            </div>
-
-                            <div class="pagination flex gap-10 mb-7">
-                                <div class="w-45 h-6 rounded-3 bg-primary"></div>
-                                <div class="w-25 h-6 rounded-3 bg-perfume-200"></div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="px-12 w-1-1 h-1-1">
-                        <div class="relative w-1-1 h-1-1 -z-1">
-                            <img src="/assets/images/heroImage.png" alt="" class="banner2_image_bg absolute top-0 right-0 w-auto h-1-1">
+                        <div class="pagination flex gap-10 mb-7">
+                            <div class="banner-pagination-prev w-45 h-6 rounded-3 bg-primary"></div>
+                            <div class="banner-pagination-next w-25 h-6 rounded-3 bg-perfume-200"></div>
                         </div>
                     </div>
                 </div>
@@ -1123,17 +1095,17 @@
                         <span class="heading-text-2 text-secondary-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
                     </div>
                     <div class="flex justify-end items-end">
-                        <div class="w-210 h-5 -mx-5 flex-row gap-10">
-                            <div class="w-100 h-5 rounded-5 bg-primary"></div>
-                            <div class="w-40 h-5 rounded-5 bg-third"></div>
-                            <div class="w-40 h-5 rounded-5 bg-third"></div>
+                        <div class="w-210 h-5 -mx-5 flex-row justify-end gap-10">
+                            <div class="latest-new-select-item1 w-100 h-5 rounded-5 bg-primary"></div>
+                            <div class="latest-new-select-item2 w-40 h-5 rounded-5 bg-perfume-200"></div>
+                            <div class="latest-new-select-item3 w-40 h-5 rounded-5 bg-perfume-200"></div>
                         </div>
                     </div>
                 </div>
 
-                <div class="-mx-10">
-                    <div class="swiper_wrapper">
-                        <div class="swiper_slide1 px-10">
+                <div class="latest-new-container -mx-10">
+                    <div class="latest-new-slide">
+                        <div class="latest-new-slide-item swiper_slide1 px-10">
                             <div class="grid grid-row-2 w-1-1 h-450 rounded-20 bg-blog-item1 bg-center bg-cover bg-no-repeat">
                                 <div class="p-27-15 justify-self-end">
                                     <a href="" class="p-12_5-24_5 text-15 font-bold leading-22_5 text-third-color bg-coral-400 rounded-23_5">PEOPLES</a>
@@ -1145,26 +1117,44 @@
                                             <a href="" class="ml-22 text-third-color">24min read</a>
                                         </div>
                                         
-                                        <a href="" class="blog_title mb-8">A Media Critic Focuses on the Crisis in Local News</a>
+                                        <a href="" class="text-underline-hover blog_title mb-8">A Media Critic Focuses on the Crisis in Local News</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="swiper_slide2 hidden px-10">
+                        <div class="latest-new-slide-item swiper_slide2 px-10">
                             <div class="grid grid-row-2 w-1-1 h-450 rounded-20 bg-blog-item2 bg-center bg-cover bg-no-repeat">
                                 <div class="p-27-15 justify-self-end">
                                     <a href="" class="p-12_5-24_5 text-15 font-bold leading-22_5 text-third-color bg-coral-400 rounded-23_5">TECHNOLOGY</a>
                                 </div>  
                                 <div class="flex flex-col justify-between p-40">
                                     <div class="flex flex-row mt-1">
-                                        <span class="text-third-color">James</span>
-                                        <span class="ml-22 text-third-color">24min read</span>
+                                        <a href="" class="text-third-color">James</a>
+                                        <a href="" class="ml-22 text-third-color">24min read</a>
                                     </div>
-                                    <div class="text-26 font-bold leading-40 text-third-color">
+                                    <a href="" class="text-underline-hover text-26 font-bold leading-40 text-third-color">
                                         Let’s increase your skills in pandemic with Ziro Workshops 2020
-                                    </div>
+                                    </a>
                                     <span class="swiper_slide2_desc hidden text-third-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="latest-new-slide-item swiper_slide1 px-10">
+                            <div class="grid grid-row-2 w-1-1 h-450 rounded-20 bg-blog-item1 bg-center bg-cover bg-no-repeat">
+                                <div class="p-27-15 justify-self-end">
+                                    <a href="" class="p-12_5-24_5 text-15 font-bold leading-22_5 text-third-color bg-coral-400 rounded-23_5">PEOPLES</a>
+                                </div>  
+                                <div class="flex items-end">
+                                    <div class="p-40 flex-col gap-15">
+                                        <div class="flex flex-row">
+                                            <a href="" class="text-third-color">James</a>
+                                            <a href="" class="ml-22 text-third-color">24min read</a>
+                                        </div>
+                                        
+                                        <a href="" class="text-underline-hover blog_title mb-8">A Media Critic Focuses on the Crisis in Local News</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
